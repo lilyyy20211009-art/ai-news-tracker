@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 热点追踪 - 2026年02月04日</title>
+    <title>AI 热点追踪</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
@@ -24,28 +24,16 @@
             color: var(--text-primary);
             min-height: 100vh;
             line-height: 1.6;
+            padding: 20px;
         }
-        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; }
         .header { text-align: center; padding: 40px 0; border-bottom: 1px solid var(--border-color); margin-bottom: 30px; }
         .header h1 { font-size: 2.5rem; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
-        .header-meta { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px; }
-        .refresh-btn { padding: 12px 32px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); border: none; border-radius: 24px; color: white; font-size: 1rem; cursor: pointer; transition: all 0.3s; }
-        .refresh-btn:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3); }
-        .stats { display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap; }
-        .stat-item { text-align: center; }
-        .stat-value { font-size: 1.8rem; font-weight: 700; color: var(--accent-blue); }
-        .stat-label { font-size: 0.85rem; color: var(--text-muted); }
+        .header-meta { color: var(--text-secondary); font-size: 0.9rem; }
         .summary-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 30px; margin-bottom: 30px; }
         .summary-section h2 { font-size: 1.5rem; margin-bottom: 20px; color: var(--accent-blue); }
-        .summary-section h3 { font-size: 1.2rem; margin: 20px 0 10px; color: var(--accent-purple); }
-        .summary-section ul { margin-left: 20px; }
-        .summary-section li { margin: 8px 0; color: var(--text-secondary); }
-        .filter-tabs { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; justify-content: center; }
-        .filter-tab { padding: 10px 24px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; cursor: pointer; transition: all 0.3s; color: var(--text-secondary); }
-        .filter-tab:hover { border-color: var(--accent-blue); color: var(--text-primary); }
-        .filter-tab.active { background: linear-gradient(135deg, #3b82f6, #8b5cf6); border-color: transparent; color: white; }
         .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 20px; }
-        .news-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 24px; transition: all 0.3s; cursor: pointer; position: relative; overflow: hidden; }
+        .news-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 24px; transition: all 0.3s; text-decoration: none; color: inherit; display: block; position: relative; overflow: hidden; }
         .news-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple)); opacity: 0; transition: opacity 0.3s; }
         .news-card:hover { transform: translateY(-4px); border-color: var(--accent-blue); box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15); }
         .news-card:hover::before { opacity: 1; }
@@ -54,14 +42,10 @@
         .card-source.verge::before { background: #e11d48; }
         .card-source.techcrunch::before { background: #0a9f1a; }
         .card-source.nyt::before { background: #3b82f6; }
-        .card-source.twitter::before { background: #000; }
-        .card-source.reddit::before { background: #ff4500; }
         .card-source.youtube::before { background: #ff0000; }
         .card-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; line-height: 1.4; }
-        .card-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-muted); }
-        .card-date { display: flex; align-items: center; gap: 4px; }
-        .card-link { display: inline-flex; align-items: center; gap: 4px; color: var(--accent-blue); text-decoration: none; font-size: 0.8rem; }
-        @media (max-width: 768px) { .header h1 { font-size: 1.8rem; } .news-grid { grid-template-columns: 1fr; } .stats { gap: 20px; } }
+        .card-meta { font-size: 0.8rem; color: var(--text-muted); }
+        @media (max-width: 768px) { .header h1 { font-size: 1.8rem; } .news-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -69,148 +53,98 @@
         <header class="header">
             <h1>🤖 AI 热点追踪</h1>
             <div class="header-meta">
-                <span>2026年02月04日 14:43 更新</span>
-            </div>
-            <div class="stats">
-                <div class="stat-item"><div class="stat-value">18</div><div class="stat-label">总条数</div></div>
-                <div class="stat-item"><div class="stat-value">6</div><div class="stat-label">Verge</div></div>
-                <div class="stat-item"><div class="stat-value">4</div><div class="stat-label">TechCrunch</div></div>
-                <div class="stat-item"><div class="stat-value">2</div><div class="stat-label">NYT</div></div>
-                <div class="stat-item"><div class="stat-value">0</div><div class="stat-label">Twitter/X</div></div>
-                <div class="stat-item"><div class="stat-value">0</div><div class="stat-label">Reddit</div></div>
-                <div class="stat-item"><div class="stat-value">6</div><div class="stat-label">YouTube</div></div>
+                <span>数据每天自动更新 | 访问 GitHub 查看源码</span>
             </div>
         </header>
 
         <div class="summary-section">
-            <h2>📊 今日热点摘要</h2>
-            **The Verge AI**: Verge 报道了OpenAI、Anthropic合并的相关消息<br><br>**TechCrunch AI**: TechCrunch 报道了OpenAI、Anthropic集成的相关消息<br><br>**NYT AI**: NYT 报道了关于Moltbook、马斯克的最新动态<br><br>**YouTube**: 3位博主发布6个视频，涵盖AI 理论与研究、AI 工具与应用、AI 编程与开发、AI 职业与变现等内容，涉及Google/Gemini等主流 AI 公司产品
+            <h2>📊 AI 热点追踪</h2>
+            <p>从多个来源聚合 AI 相关新闻和动态，包括 The Verge、TechCrunch、NYT、YouTube 等平台。</p>
+            <p style="margin-top: 15px; color: var(--text-secondary);">共 16 条内容</p>
         </div>
 
-        <div class="filter-tabs">
-            <button class="filter-tab active" onclick="filterNews('all')">全部</button>
-            <button class="filter-tab" onclick="filterNews('Verge')">Verge</button>
-            <button class="filter-tab" onclick="filterNews('TechCrunch')">TechCrunch</button>
-            <button class="filter-tab" onclick="filterNews('NYT')">NYT</button>
-            <button class="filter-tab" onclick="filterNews('Twitter')">Twitter/X</button>
-            <button class="filter-tab" onclick="filterNews('Reddit')">Reddit</button>
-            <button class="filter-tab" onclick="filterNews('YouTube')">YouTube</button>
+        <div class="news-grid">
+            <a href="https://www.theverge.com/transportation/873203/elon-musk-spacex-xai-merge-data-centers-space-tesla-ipo" target="_blank" class="news-card">
+                <div class="card-source verge">The Verge AI</div>
+                <div class="card-title">Elon Musk is merging SpaceX and xAI to build data centers in space — or so he says</div>
+                <div class="card-meta">🕒 2026-02-03 21:01:03</div>
+            </a>
+            <a href="https://www.theverge.com/news/873296/microsoft-publisher-content-marketplace-ai-licensing" target="_blank" class="news-card">
+                <div class="card-source verge">The Verge AI</div>
+                <div class="card-title">Microsoft says it’s building an app store for AI content licensing</div>
+                <div class="card-meta">🕒 2026-02-03 20:00:00</div>
+            </a>
+            <a href="https://www.theverge.com/news/873300/apple-xcode-openai-anthropic-ai-agentic-coding" target="_blank" class="news-card">
+                <div class="card-source verge">The Verge AI</div>
+                <div class="card-title">Apple’s Xcode adds OpenAI and Anthropic’s coding agents</div>
+                <div class="card-meta">🕒 2026-02-03 19:04:09</div>
+            </a>
+            <a href="https://www.theverge.com/tech/873142/french-police-raid-x-investigation" target="_blank" class="news-card">
+                <div class="card-source verge">The Verge AI</div>
+                <div class="card-title">French police raid X&#8217;s Paris office as UK investigation continues</div>
+                <div class="card-meta">🕒 2026-02-03 17:10:33</div>
+            </a>
+            <a href="https://www.theverge.com/news/873093/claude-code-down-outage-anthropic" target="_blank" class="news-card">
+                <div class="card-source verge">The Verge AI</div>
+                <div class="card-title">Claude Code was down, forcing developers to take a long coffee break</div>
+                <div class="card-meta">🕒 2026-02-03 16:05:42</div>
+            </a>
+            <a href="https://techcrunch.com/2026/02/03/intel-will-start-making-gpus-a-market-dominated-by-nvidia/" target="_blank" class="news-card">
+                <div class="card-source techcrunch">TechCrunch AI</div>
+                <div class="card-title">Intel will start making GPUs, a market dominated by Nvidia</div>
+                <div class="card-meta">🕒 2026-02-03 21:01:34</div>
+            </a>
+            <a href="https://techcrunch.com/2026/02/03/xcode-moves-into-agentic-coding-with-deeper-openai-and-anthropic-integrations/" target="_blank" class="news-card">
+                <div class="card-source techcrunch">TechCrunch AI</div>
+                <div class="card-title">Xcode moves into agentic coding with deeper OpenAI and Anthropic integrations</div>
+                <div class="card-meta">🕒 2026-02-03 18:00:00</div>
+            </a>
+            <a href="https://techcrunch.com/2026/02/03/lotus-health-nabs-35m-for-ai-doctor-that-sees-patients-for-free/" target="_blank" class="news-card">
+                <div class="card-source techcrunch">TechCrunch AI</div>
+                <div class="card-title">Lotus Health nabs $35M for AI doctor that sees patients for free</div>
+                <div class="card-meta">🕒 2026-02-03 17:14:27</div>
+            </a>
+            <a href="https://www.nytimes.com/2026/02/03/opinion/ai-agents-moltbook.html" target="_blank" class="news-card">
+                <div class="card-source nyt">NYT AI</div>
+                <div class="card-title">Are A.I. Bots Plotting a Revolution on Moltbook? Or Just Telling Stories?</div>
+                <div class="card-meta">🕒 2026-02-03 20:57:08</div>
+            </a>
+            <a href="https://www.nytimes.com/2026/02/03/world/europe/musk-x-france-police-search.html" target="_blank" class="news-card">
+                <div class="card-source nyt">NYT AI</div>
+                <div class="card-title">Police Search X’s Premises in France as Prosecutors Summon Elon Musk</div>
+                <div class="card-meta">🕒 2026-02-03 21:02:16</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=QikCsFDvt9g" target="_blank" class="news-card">
+                <div class="card-source youtube">YouTube - Google</div>
+                <div class="card-title">How a Graphic Designer uses AI Studio for Interactive Art</div>
+                <div class="card-meta">🕒 2026-02-02 22:51:15</div>
+            </a>
+            <a href="https://www.youtube.com/shorts/OSgNg1Zv4os" target="_blank" class="news-card">
+                <div class="card-source youtube">YouTube - Google</div>
+                <div class="card-title">Come on up–the air is fine!</div>
+                <div class="card-meta">🕒 2026-02-02 20:46:01</div>
+            </a>
+            <a href="https://www.youtube.com/shorts/mi-jgu3SO8Y" target="_blank" class="news-card">
+                <div class="card-source youtube">YouTube - Google</div>
+                <div class="card-title">Celebrating Black History Month #GoogleDoodle</div>
+                <div class="card-meta">🕒 2026-02-01 17:01:13</div>
+            </a>
+            <a href="https://www.youtube.com/shorts/3Imcjj1GWQs" target="_blank" class="news-card">
+                <div class="card-source youtube">YouTube - Google for Developers</div>
+                <div class="card-title">TFW you are one with the machine. 🧘</div>
+                <div class="card-meta">🕒 2026-02-03 05:00:04</div>
+            </a>
+            <a href="https://www.youtube.com/shorts/KW6bXeDJEUE" target="_blank" class="news-card">
+                <div class="card-source youtube">YouTube - Google for Developers</div>
+                <div class="card-title">What number does this SQL query actually run? Go!</div>
+                <div class="card-meta">🕒 2026-02-02 14:00:39</div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=HiC1J8a9V1I" target="_blank" class="news-card">
+                <div class="card-source youtube">YouTube - Liam Ottley</div>
+                <div class="card-title">How to Scale Your AI Agency (Forward Deployed Engineer Model Breakdown)</div>
+                <div class="card-meta">🕒 2026-02-03 09:35:22</div>
+            </a>
         </div>
-
-        <div id="newsContainer" class="news-grid"></div>
     </div>
-
-    <script>
-        const newsData = [{"标题": "Elon Musk is merging SpaceX and xAI to build data centers in space — or so he says", "内容": "On Monday, Elon Musk announced that he was merging two of his companies, SpaceX and xAI, in a deal said to be worth $1.25 trillion. The reason, Musk said in an announcement, was that in order for AI to grow, it needed to go to space. AI relies on \"large terrestrial data centers\" that run [&#8230;]", "日期": "2026-02-03 21:01:03", "链接": "https://www.theverge.com/transportation/873203/elon-musk-spacex-xai-merge-data-centers-space-tesla-ipo", "来源": "The Verge AI", "板块": "新闻", "分类": "AI"}, {"标题": "Microsoft says it’s building an app store for AI content licensing", "内容": "Microsoft says it is working on the Publisher Content Marketplace (PCM), an AI licensing hub that shows usage terms set by publishers. That way, AI companies can easily shop the terms and set up deals to use online content for \"grounding\" their AI models, while the content owners get usage-based reporting to help set prices. [&#8230;]", "日期": "2026-02-03 20:00:00", "链接": "https://www.theverge.com/news/873296/microsoft-publisher-content-marketplace-ai-licensing", "来源": "The Verge AI", "板块": "新闻", "分类": "AI"}, {"标题": "Apple’s Xcode adds OpenAI and Anthropic’s coding agents", "内容": "Apple is building OpenAI and Anthropic's AI-powered coding agents directly into Xcode. New integrations in Xcode 26.3 will give developers the ability to call upon Anthropic's Claude Agent and OpenAI's Codex to write and edit code, update project settings, search documentation, and more. Xcode is the software developers can use to create and test apps [&#8230;]", "日期": "2026-02-03 19:04:09", "链接": "https://www.theverge.com/news/873300/apple-xcode-openai-anthropic-ai-agentic-coding", "来源": "The Verge AI", "板块": "新闻", "分类": "AI"}, {"标题": "French police raid X&#8217;s Paris office as UK investigation continues", "内容": "A raid on X's Paris office was carried out by the Paris prosecutor's cybercrime unit on Tuesday with Europol and French police as part of an ongoing investigation that expanded in July to include Grok. As previously reported by Reuters, Elon Musk and former X CEO Linda Yaccarino were also summoned for hearings in April. [&#8230;]", "日期": "2026-02-03 17:10:33", "链接": "https://www.theverge.com/tech/873142/french-police-raid-x-investigation", "来源": "The Verge AI", "板块": "新闻", "分类": "AI"}, {"标题": "Claude Code was down, forcing developers to take a long coffee break", "内容": "Anthropic's Claude AI models experienced a major outage today, impacting products like Claude Code. Developers were seeing a 500 error when trying to use Claude Code, and Anthropic said that it was seeing elevated error rates on its APIs \"across all Claude models.\" Anthropic quickly identified the root cause and implemented a fix within around [&#8230;]", "日期": "2026-02-03 16:05:42", "链接": "https://www.theverge.com/news/873093/claude-code-down-outage-anthropic", "来源": "The Verge AI", "板块": "新闻", "分类": "AI"}, {"标题": "Millions of books died so Claude could live", "内容": "When ChatGPT launched, in November of 2022, it started a race that almost immediately consumed the tech industry. OpenAI didn't invent the concept of AI, but most of the state-of-the-art technology was confined to research labs at companies and institutions around the world. Then, suddenly, it was everywhere. And better than anyone expected. So many [&#8230;]", "日期": "2026-02-03 15:19:28", "链接": "https://www.theverge.com/podcast/872998/anthropic-claude-books-netflix-theaters-vergecast", "来源": "The Verge AI", "板块": "新闻", "分类": "AI"}, {"标题": "Intel will start making GPUs, a market dominated by Nvidia", "内容": "Intel has been bulking up a team to focus on this effort and will develop its GPU strategy around customer needs.", "日期": "2026-02-03 21:01:34", "链接": "https://techcrunch.com/2026/02/03/intel-will-start-making-gpus-a-market-dominated-by-nvidia/", "来源": "TechCrunch AI", "板块": "新闻", "分类": "AI"}, {"标题": "Xcode moves into agentic coding with deeper OpenAI and Anthropic integrations", "内容": "Xcode 26.3 offers agentic coding capabilities with Anthropic's Claude Agent and OpenAI's Codex.", "日期": "2026-02-03 18:00:00", "链接": "https://techcrunch.com/2026/02/03/xcode-moves-into-agentic-coding-with-deeper-openai-and-anthropic-integrations/", "来源": "TechCrunch AI", "板块": "新闻", "分类": "AI"}, {"标题": "Lotus Health nabs $35M for AI doctor that sees patients for free", "内容": "This AI doctor is licensed in all 50 states, the startup says. The deal was led by CRV and Kleiner Perkins.", "日期": "2026-02-03 17:14:27", "链接": "https://techcrunch.com/2026/02/03/lotus-health-nabs-35m-for-ai-doctor-that-sees-patients-for-free/", "来源": "TechCrunch AI", "板块": "新闻", "分类": "AI"}, {"标题": "Fitbit founders launch AI platform to help families monitor their health", "内容": "Luffu uses AI in the background to gather and organize family information, learn day-to-day patterns, and flag notable changes so families can stay aligned and address potential well-being issues.", "日期": "2026-02-03 15:53:36", "链接": "https://techcrunch.com/2026/02/03/fitbit-founders-launch-ai-platform-to-help-families-monitor-their-health/", "来源": "TechCrunch AI", "板块": "新闻", "分类": "AI"}, {"标题": "Are A.I. Bots Plotting a Revolution on Moltbook? Or Just Telling Stories?", "内容": "A social media platform like Reddit for A.I. has taken the internet by storm. But we’re not having the right conversations about it.", "日期": "2026-02-03 20:57:08", "链接": "https://www.nytimes.com/2026/02/03/opinion/ai-agents-moltbook.html", "来源": "NYT AI", "板块": "新闻", "分类": "AI"}, {"标题": "Police Search X’s Premises in France as Prosecutors Summon Elon Musk", "内容": "The move followed a yearlong investigation into X and escalated a wider standoff between European officials and American tech companies over the regulation of social media.", "日期": "2026-02-03 21:02:16", "链接": "https://www.nytimes.com/2026/02/03/world/europe/musk-x-france-police-search.html", "来源": "NYT AI", "板块": "新闻", "分类": "AI"}, {"标题": "How a Graphic Designer uses AI Studio for Interactive Art", "内容": "In this episode, artist and designer Khyati Trehan from Creative Lab joins Alex Chen and Logan Kilpatrick to share live demos made in Google AI Studio. Together, they explore new AI interfaces for sto", "日期": "2026-02-02 22:51:15", "链接": "https://www.youtube.com/watch?v=QikCsFDvt9g", "来源": "YouTube - Google", "板块": "视频", "播放量": 0}, {"标题": "Come on up–the air is fine!", "内容": "Search “SpongeBob” if nautical nonsense be something you wish 🫧 🧽", "日期": "2026-02-02 20:46:01", "链接": "https://www.youtube.com/shorts/OSgNg1Zv4os", "来源": "YouTube - Google", "板块": "视频", "播放量": 0}, {"标题": "Celebrating Black History Month #GoogleDoodle", "内容": "This Black History Month, we’re turning it up for the visionary hip-hop producers who flipped the script, chopped the sample and pushed the art of beat making to new frontiers. \n\n#GoogleDoodle track c", "日期": "2026-02-01 17:01:13", "链接": "https://www.youtube.com/shorts/mi-jgu3SO8Y", "来源": "YouTube - Google", "板块": "视频", "播放量": 0}, {"标题": "TFW you are one with the machine. 🧘", "内容": "The music hits just right, the caffeine is flowing, and you rewrite the entire legacy codebase in two hours. 🧘\n\nSubscribe to Google for Developers → https://goo.gle/developers \n\nSpeaker: M.E Francis", "日期": "2026-02-03 05:00:04", "链接": "https://www.youtube.com/shorts/3Imcjj1GWQs", "来源": "YouTube - Google for Developers", "板块": "视频", "播放量": 0}, {"标题": "What number does this SQL query actually run? Go!", "内容": "Here’s a SQL puzzle that looks almost too straightforward.We’re counting users and excluding banned and inactive ones using NOT IN. Assume the table has 100 active users, plus some banned and inactive", "日期": "2026-02-02 14:00:39", "链接": "https://www.youtube.com/shorts/KW6bXeDJEUE", "来源": "YouTube - Google for Developers", "板块": "视频", "播放量": 0}, {"标题": "How to Scale Your AI Agency (Forward Deployed Engineer Model Breakdown)", "内容": "📚 Grab Brandon’s board in the #1 community for AI entrepreneurs: https://bit.ly/4rmeaeP\n📈 Become a Wildly Profitable AI Entrepreneur: https://bit.ly/4rw2syC\n🤝 Ready to transform your business with AI?", "日期": "2026-02-03 09:35:22", "链接": "https://www.youtube.com/watch?v=HiC1J8a9V1I", "来源": "YouTube - Liam Ottley", "板块": "视频", "播放量": 0}];
-
-        function renderNewsCards(items) {
-            const container = document.getElementById('newsContainer');
-            if (items.length === 0) {
-                container.innerHTML = '<div style="text-align:center;padding:60px;color:var(--text-muted)">暂无数据</div>';
-                return;
-            }
-
-            container.innerHTML = items.map(item => {
-                const sourceLower = (item.来源 || '').toLowerCase();
-                const sourceClass = sourceLower.includes('verge') ? 'verge' :
-                                   sourceLower.includes('techcrunch') ? 'techcrunch' :
-                                   sourceLower.includes('nyt') ? 'nyt' :
-                                   sourceLower.includes('twitter') || sourceLower.includes('x') ? 'twitter' :
-                                   sourceLower.includes('reddit') ? 'reddit' :
-                                   sourceLower.includes('youtube') ? 'youtube' : '';
-
-                const date = item.日期 ? new Date(item.日期).toLocaleString('zh-CN', {
-                    month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
-                }) : '';
-
-                return `<div class="news-card" onclick="window.open('${item.链接 || ''}', '_blank')">
-                    <div class="card-source ${sourceClass}">${item.来源 || '未知'}</div>
-                    <div class="card-title">${item.标题 || '无标题'}</div>
-                    <div class="card-meta">
-                        <div class="card-date">🕒 ${date}</div>
-                        <div class="card-link">阅读原文 →</div>
-                    </div>
-                </div>`;
-            }).join('');
-        }
-
-        function filterNews(filter) {
-            document.querySelectorAll('.filter-tab').forEach(tab => {
-                tab.classList.remove('active');
-                if (tab.textContent.includes(filter === 'all' ? '全部' : filter)) {
-                    tab.classList.add('active');
-                }
-            });
-
-            const filtered = filter === 'all' ? newsData :
-                newsData.filter(item => item.来源?.toLowerCase().includes(filter.toLowerCase()));
-            renderNewsCards(filtered);
-        }
-
-        function refreshData() {
-            const btn = document.querySelector('.refresh-btn');
-            const originalText = btn.innerHTML;
-            btn.disabled = true;
-            btn.innerHTML = '🔄 刷新中...';
-
-            fetch('/api/refresh', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    // 更新数据
-                    newsData = data.data;
-                    renderNewsCards(newsData);
-
-                    // 更新所有统计信息
-                    const stats = data.stats;
-                    const bySource = stats.by_source || {};
-
-                    // 计算各平台数量
-                    let verge = 0, techcrunch = 0, nyt = 0, twitter = 0, reddit = 0, youtube = 0;
-                    for (const [source, count] of Object.entries(bySource)) {
-                        const s = source.toLowerCase();
-                        if (s.includes('verge')) verge += count;
-                        else if (s.includes('techcrunch')) techcrunch += count;
-                        else if (s.includes('nyt')) nyt += count;
-                        else if (s.includes('twitter') || s.includes('x')) twitter += count;
-                        else if (s.includes('reddit')) reddit += count;
-                        else if (s.includes('youtube')) youtube += count;
-                    }
-
-                    // 更新页面上的统计数字
-                    const statValues = document.querySelectorAll('.stat-value');
-                    if (statValues.length >= 7) {
-                        statValues[0].textContent = stats.total;      // 总条数
-                        statValues[1].textContent = verge;            // Verge
-                        statValues[2].textContent = techcrunch;       // TechCrunch
-                        statValues[3].textContent = nyt;              // NYT
-                        statValues[4].textContent = twitter;          // Twitter/X
-                        statValues[5].textContent = reddit;           // Reddit
-                        statValues[6].textContent = youtube;          // YouTube
-                    }
-
-                    // 显示成功消息
-                    alert('✅ ' + data.message + '\n\n更新时间: ' + data.timestamp);
-                } else {
-                    alert('❌ 刷新失败: ' + data.message);
-                }
-            })
-            .catch(error => {
-                console.error('刷新失败:', error);
-                alert('❌ 刷新失败，请确保 Web 服务器正在运行\n\n提示: 使用 python3 scripts/web_server.py 启动服务器');
-            })
-            .finally(() => {
-                btn.disabled = false;
-                btn.innerHTML = originalText;
-            });
-        }
-
-        renderNewsCards(newsData);
-    </script>
 </body>
 </html>
