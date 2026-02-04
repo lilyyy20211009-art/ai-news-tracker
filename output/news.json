@@ -1,0 +1,164 @@
+[
+  {
+    "标题": "Elon Musk is merging SpaceX and xAI to build data centers in space — or so he says",
+    "内容": "On Monday, Elon Musk announced that he was merging two of his companies, SpaceX and xAI, in a deal said to be worth $1.25 trillion. The reason, Musk said in an announcement, was that in order for AI to grow, it needed to go to space. AI relies on \"large terrestrial data centers\" that run [&#8230;]",
+    "日期": "2026-02-03 21:01:03",
+    "链接": "https://www.theverge.com/transportation/873203/elon-musk-spacex-xai-merge-data-centers-space-tesla-ipo",
+    "来源": "The Verge AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "Microsoft says it’s building an app store for AI content licensing",
+    "内容": "Microsoft says it is working on the Publisher Content Marketplace (PCM), an AI licensing hub that shows usage terms set by publishers. That way, AI companies can easily shop the terms and set up deals to use online content for \"grounding\" their AI models, while the content owners get usage-based reporting to help set prices. [&#8230;]",
+    "日期": "2026-02-03 20:00:00",
+    "链接": "https://www.theverge.com/news/873296/microsoft-publisher-content-marketplace-ai-licensing",
+    "来源": "The Verge AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "Apple’s Xcode adds OpenAI and Anthropic’s coding agents",
+    "内容": "Apple is building OpenAI and Anthropic's AI-powered coding agents directly into Xcode. New integrations in Xcode 26.3 will give developers the ability to call upon Anthropic's Claude Agent and OpenAI's Codex to write and edit code, update project settings, search documentation, and more. Xcode is the software developers can use to create and test apps [&#8230;]",
+    "日期": "2026-02-03 19:04:09",
+    "链接": "https://www.theverge.com/news/873300/apple-xcode-openai-anthropic-ai-agentic-coding",
+    "来源": "The Verge AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "French police raid X&#8217;s Paris office as UK investigation continues",
+    "内容": "A raid on X's Paris office was carried out by the Paris prosecutor's cybercrime unit on Tuesday with Europol and French police as part of an ongoing investigation that expanded in July to include Grok. As previously reported by Reuters, Elon Musk and former X CEO Linda Yaccarino were also summoned for hearings in April. [&#8230;]",
+    "日期": "2026-02-03 17:10:33",
+    "链接": "https://www.theverge.com/tech/873142/french-police-raid-x-investigation",
+    "来源": "The Verge AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "Claude Code was down, forcing developers to take a long coffee break",
+    "内容": "Anthropic's Claude AI models experienced a major outage today, impacting products like Claude Code. Developers were seeing a 500 error when trying to use Claude Code, and Anthropic said that it was seeing elevated error rates on its APIs \"across all Claude models.\" Anthropic quickly identified the root cause and implemented a fix within around [&#8230;]",
+    "日期": "2026-02-03 16:05:42",
+    "链接": "https://www.theverge.com/news/873093/claude-code-down-outage-anthropic",
+    "来源": "The Verge AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "Millions of books died so Claude could live",
+    "内容": "When ChatGPT launched, in November of 2022, it started a race that almost immediately consumed the tech industry. OpenAI didn't invent the concept of AI, but most of the state-of-the-art technology was confined to research labs at companies and institutions around the world. Then, suddenly, it was everywhere. And better than anyone expected. So many [&#8230;]",
+    "日期": "2026-02-03 15:19:28",
+    "链接": "https://www.theverge.com/podcast/872998/anthropic-claude-books-netflix-theaters-vergecast",
+    "来源": "The Verge AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "Intel will start making GPUs, a market dominated by Nvidia",
+    "内容": "Intel has been bulking up a team to focus on this effort and will develop its GPU strategy around customer needs.",
+    "日期": "2026-02-03 21:01:34",
+    "链接": "https://techcrunch.com/2026/02/03/intel-will-start-making-gpus-a-market-dominated-by-nvidia/",
+    "来源": "TechCrunch AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "Xcode moves into agentic coding with deeper OpenAI and Anthropic integrations",
+    "内容": "Xcode 26.3 offers agentic coding capabilities with Anthropic's Claude Agent and OpenAI's Codex.",
+    "日期": "2026-02-03 18:00:00",
+    "链接": "https://techcrunch.com/2026/02/03/xcode-moves-into-agentic-coding-with-deeper-openai-and-anthropic-integrations/",
+    "来源": "TechCrunch AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "Lotus Health nabs $35M for AI doctor that sees patients for free",
+    "内容": "This AI doctor is licensed in all 50 states, the startup says. The deal was led by CRV and Kleiner Perkins.",
+    "日期": "2026-02-03 17:14:27",
+    "链接": "https://techcrunch.com/2026/02/03/lotus-health-nabs-35m-for-ai-doctor-that-sees-patients-for-free/",
+    "来源": "TechCrunch AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "Fitbit founders launch AI platform to help families monitor their health",
+    "内容": "Luffu uses AI in the background to gather and organize family information, learn day-to-day patterns, and flag notable changes so families can stay aligned and address potential well-being issues.",
+    "日期": "2026-02-03 15:53:36",
+    "链接": "https://techcrunch.com/2026/02/03/fitbit-founders-launch-ai-platform-to-help-families-monitor-their-health/",
+    "来源": "TechCrunch AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "Are A.I. Bots Plotting a Revolution on Moltbook? Or Just Telling Stories?",
+    "内容": "A social media platform like Reddit for A.I. has taken the internet by storm. But we’re not having the right conversations about it.",
+    "日期": "2026-02-03 20:57:08",
+    "链接": "https://www.nytimes.com/2026/02/03/opinion/ai-agents-moltbook.html",
+    "来源": "NYT AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "Police Search X’s Premises in France as Prosecutors Summon Elon Musk",
+    "内容": "The move followed a yearlong investigation into X and escalated a wider standoff between European officials and American tech companies over the regulation of social media.",
+    "日期": "2026-02-03 21:02:16",
+    "链接": "https://www.nytimes.com/2026/02/03/world/europe/musk-x-france-police-search.html",
+    "来源": "NYT AI",
+    "板块": "新闻",
+    "分类": "AI"
+  },
+  {
+    "标题": "How a Graphic Designer uses AI Studio for Interactive Art",
+    "内容": "In this episode, artist and designer Khyati Trehan from Creative Lab joins Alex Chen and Logan Kilpatrick to share live demos made in Google AI Studio. Together, they explore new AI interfaces for sto",
+    "日期": "2026-02-02 22:51:15",
+    "链接": "https://www.youtube.com/watch?v=QikCsFDvt9g",
+    "来源": "YouTube - Google",
+    "板块": "视频",
+    "播放量": 0
+  },
+  {
+    "标题": "Come on up–the air is fine!",
+    "内容": "Search “SpongeBob” if nautical nonsense be something you wish 🫧 🧽",
+    "日期": "2026-02-02 20:46:01",
+    "链接": "https://www.youtube.com/shorts/OSgNg1Zv4os",
+    "来源": "YouTube - Google",
+    "板块": "视频",
+    "播放量": 0
+  },
+  {
+    "标题": "Celebrating Black History Month #GoogleDoodle",
+    "内容": "This Black History Month, we’re turning it up for the visionary hip-hop producers who flipped the script, chopped the sample and pushed the art of beat making to new frontiers. \n\n#GoogleDoodle track c",
+    "日期": "2026-02-01 17:01:13",
+    "链接": "https://www.youtube.com/shorts/mi-jgu3SO8Y",
+    "来源": "YouTube - Google",
+    "板块": "视频",
+    "播放量": 0
+  },
+  {
+    "标题": "TFW you are one with the machine. 🧘",
+    "内容": "The music hits just right, the caffeine is flowing, and you rewrite the entire legacy codebase in two hours. 🧘\n\nSubscribe to Google for Developers → https://goo.gle/developers \n\nSpeaker: M.E Francis",
+    "日期": "2026-02-03 05:00:04",
+    "链接": "https://www.youtube.com/shorts/3Imcjj1GWQs",
+    "来源": "YouTube - Google for Developers",
+    "板块": "视频",
+    "播放量": 0
+  },
+  {
+    "标题": "What number does this SQL query actually run? Go!",
+    "内容": "Here’s a SQL puzzle that looks almost too straightforward.We’re counting users and excluding banned and inactive ones using NOT IN. Assume the table has 100 active users, plus some banned and inactive",
+    "日期": "2026-02-02 14:00:39",
+    "链接": "https://www.youtube.com/shorts/KW6bXeDJEUE",
+    "来源": "YouTube - Google for Developers",
+    "板块": "视频",
+    "播放量": 0
+  },
+  {
+    "标题": "How to Scale Your AI Agency (Forward Deployed Engineer Model Breakdown)",
+    "内容": "📚 Grab Brandon’s board in the #1 community for AI entrepreneurs: https://bit.ly/4rmeaeP\n📈 Become a Wildly Profitable AI Entrepreneur: https://bit.ly/4rw2syC\n🤝 Ready to transform your business with AI?",
+    "日期": "2026-02-03 09:35:22",
+    "链接": "https://www.youtube.com/watch?v=HiC1J8a9V1I",
+    "来源": "YouTube - Liam Ottley",
+    "板块": "视频",
+    "播放量": 0
+  }
+]

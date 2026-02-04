@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 热点追踪 - 2026年02月04日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a25;
+            --text-primary: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --accent-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --accent-green: #10b981;
+            --border-color: #27272a;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; padding: 40px 0; border-bottom: 1px solid var(--border-color); margin-bottom: 30px; }
+        .header h1 { font-size: 2.5rem; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+        .header-meta { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px; }
+        .refresh-btn { padding: 12px 32px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); border: none; border-radius: 24px; color: white; font-size: 1rem; cursor: pointer; transition: all 0.3s; }
+        .refresh-btn:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3); }
+        .stats { display: flex; justify-content: center; gap: 30px; margin-top: 20px; flex-wrap: wrap; }
+        .stat-item { text-align: center; }
+        .stat-value { font-size: 1.8rem; font-weight: 700; color: var(--accent-blue); }
+        .stat-label { font-size: 0.85rem; color: var(--text-muted); }
+        .summary-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 30px; margin-bottom: 30px; }
+        .summary-section h2 { font-size: 1.5rem; margin-bottom: 20px; color: var(--accent-blue); }
+        .summary-section h3 { font-size: 1.2rem; margin: 20px 0 10px; color: var(--accent-purple); }
+        .summary-section ul { margin-left: 20px; }
+        .summary-section li { margin: 8px 0; color: var(--text-secondary); }
+        .filter-tabs { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; justify-content: center; }
+        .filter-tab { padding: 10px 24px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; cursor: pointer; transition: all 0.3s; color: var(--text-secondary); }
+        .filter-tab:hover { border-color: var(--accent-blue); color: var(--text-primary); }
+        .filter-tab.active { background: linear-gradient(135deg, #3b82f6, #8b5cf6); border-color: transparent; color: white; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 20px; }
+        .news-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 24px; transition: all 0.3s; cursor: pointer; position: relative; overflow: hidden; }
+        .news-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple)); opacity: 0; transition: opacity 0.3s; }
+        .news-card:hover { transform: translateY(-4px); border-color: var(--accent-blue); box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15); }
+        .news-card:hover::before { opacity: 1; }
+        .card-source { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; background: var(--bg-secondary); border-radius: 12px; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px; }
+        .card-source::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent-green); }
+        .card-source.verge::before { background: #e11d48; }
+        .card-source.techcrunch::before { background: #0a9f1a; }
+        .card-source.nyt::before { background: #3b82f6; }
+        .card-source.twitter::before { background: #000; }
+        .card-source.reddit::before { background: #ff4500; }
+        .card-source.youtube::before { background: #ff0000; }
+        .card-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; line-height: 1.4; }
+        .card-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-muted); }
+        .card-date { display: flex; align-items: center; gap: 4px; }
+        .card-link { display: inline-flex; align-items: center; gap: 4px; color: var(--accent-blue); text-decoration: none; font-size: 0.8rem; }
+        @media (max-width: 768px) { .header h1 { font-size: 1.8rem; } .news-grid { grid-template-columns: 1fr; } .stats { gap: 20px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🤖 AI 热点追踪</h1>
+            <div class="header-meta">
+                <span>2026年02月04日 14:43 更新</span>
+            </div>
+            <div class="stats">
+                <div class="stat-item"><div class="stat-value">18</div><div class="stat-label">总条数</div></div>
+                <div class="stat-item"><div class="stat-value">6</div><div class="stat-label">Verge</div></div>
+                <div class="stat-item"><div class="stat-value">4</div><div class="stat-label">TechCrunch</div></div>
+                <div class="stat-item"><div class="stat-value">2</div><div class="stat-label">NYT</div></div>
+                <div class="stat-item"><div class="stat-value">0</div><div class="stat-label">Twitter/X</div></div>
+                <div class="stat-item"><div class="stat-value">0</div><div class="stat-label">Reddit</div></div>
+                <div class="stat-item"><div class="stat-value">6</div><div class="stat-label">YouTube</div></div>
+            </div>
+        </header>
+
+        
+        <style>
+        .auto-refresh-note {
+            text-align: center;
+            padding: 15px;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .auto-refresh-note a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+        </style>
+        <div class="auto-refresh-note">
+            📅 数据每天 9:00 自动更新 |
+            <a href="https://github.com/你的用户名/ai-news-tracker" target="_blank">源码</a>
+        </div>
+        <div class="summary-section">
+            <h2>📊 今日热点摘要</h2>
+            **The Verge AI**: Verge 报道了OpenAI、Anthropic合并的相关消息<br><br>**TechCrunch AI**: TechCrunch 报道了OpenAI、Anthropic集成的相关消息<br><br>**NYT AI**: NYT 报道了关于Moltbook、马斯克的最新动态<br><br>**YouTube**: 3位博主发布6个视频，涵盖AI 理论与研究、AI 工具与应用、AI 编程与开发、AI 职业与变现等内容，涉及Google/Gemini等主流 AI 公司产品
+        </div>
+
+        <div class="filter-tabs">
+            <button class="filter-tab active" onclick="filterNews('all')">全部</button>
+            <button class="filter-tab" onclick="filterNews('Verge')">Verge</button>
+            <button class="filter-tab" onclick="filterNews('TechCrunch')">TechCrunch</button>
+            <button class="filter-tab" onclick="filterNews('NYT')">NYT</button>
+            <button class="filter-tab" onclick="filterNews('Twitter')">Twitter/X</button>
+            <button class="filter-tab" onclick="filterNews('Reddit')">Reddit</button>
+            <button class="filter-tab" onclick="filterNews('YouTube')">YouTube</button>
+        </div>
+
+        <div id="newsContainer" class="news-grid"></div>
+    </div>
+
+    <script>
+        const newsData = await fetch("./data.json").then(r => r.json());
+
+        function renderNewsCards(items) {
+            const container = document.getElementById('newsContainer');
+            if (items.length === 0) {
+                container.innerHTML = '<div style="text-align:center;padding:60px;color:var(--text-muted)">暂无数据</div>';
+                return;
+            }
+
+            container.innerHTML = items.map(item => {
+                const sourceLower = (item.来源 || '').toLowerCase();
+                const sourceClass = sourceLower.includes('verge') ? 'verge' :
+                                   sourceLower.includes('techcrunch') ? 'techcrunch' :
+                                   sourceLower.includes('nyt') ? 'nyt' :
+                                   sourceLower.includes('twitter') || sourceLower.includes('x') ? 'twitter' :
+                                   sourceLower.includes('reddit') ? 'reddit' :
+                                   sourceLower.includes('youtube') ? 'youtube' : '';
+
+                const date = item.日期 ? new Date(item.日期).toLocaleString('zh-CN', {
+                    month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'
+                }) : '';
+
+                return `<div class="news-card" onclick="window.open('${item.链接 || ''}', '_blank')">
+                    <div class="card-source ${sourceClass}">${item.来源 || '未知'}</div>
+                    <div class="card-title">${item.标题 || '无标题'}</div>
+                    <div class="card-meta">
+                        <div class="card-date">🕒 ${date}</div>
+                        <div class="card-link">阅读原文 →</div>
+                    </div>
+                </div>`;
+            }).join('');
+        }
+
+        function filterNews(filter) {
+            document.querySelectorAll('.filter-tab').forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.textContent.includes(filter === 'all' ? '全部' : filter)) {
+                    tab.classList.add('active');
+                }
+            });
+
+            const filtered = filter === 'all' ? newsData :
+                newsData.filter(item => item.来源?.toLowerCase().includes(filter.toLowerCase()));
+            renderNewsCards(filtered);
+        }
+
+        
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // 更新数据
+                    newsData = data.data;
+                    renderNewsCards(newsData);
+
+                    // 更新所有统计信息
+                    const stats = data.stats;
+                    const bySource = stats.by_source || {};
+
+                    // 计算各平台数量
+                    let verge = 0, techcrunch = 0, nyt = 0, twitter = 0, reddit = 0, youtube = 0;
+                    for (const [source, count] of Object.entries(bySource)) {
+                        const s = source.toLowerCase();
+                        if (s.includes('verge')) verge += count;
+                        else if (s.includes('techcrunch')) techcrunch += count;
+                        else if (s.includes('nyt')) nyt += count;
+                        else if (s.includes('twitter') || s.includes('x')) twitter += count;
+                        else if (s.includes('reddit')) reddit += count;
+                        else if (s.includes('youtube')) youtube += count;
+                    }
+
+                    // 更新页面上的统计数字
+                    const statValues = document.querySelectorAll('.stat-value');
+                    if (statValues.length >= 7) {
+                        statValues[0].textContent = stats.total;      // 总条数
+                        statValues[1].textContent = verge;            // Verge
+                        statValues[2].textContent = techcrunch;       // TechCrunch
+                        statValues[3].textContent = nyt;              // NYT
+                        statValues[4].textContent = twitter;          // Twitter/X
+                        statValues[5].textContent = reddit;           // Reddit
+                        statValues[6].textContent = youtube;          // YouTube
+                    }
+
+                    // 显示成功消息
+                    alert('✅ ' + data.message + '\n\n更新时间: ' + data.timestamp);
+                } else {
+                    alert('❌ 刷新失败: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('刷新失败:', error);
+                alert('❌ 刷新失败，请确保 Web 服务器正在运行\n\n提示: 使用 python3 scripts/web_server.py 启动服务器');
+            })
+            .finally(() => {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+            });
+        }
+
+        renderNewsCards(newsData);
+    </script>
+</body>
+</html>

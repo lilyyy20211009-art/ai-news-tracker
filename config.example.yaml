@@ -1,0 +1,80 @@
+# AI News Aggregator 配置文件
+
+# 数据源配置
+sources:
+  # RSS 订阅源 (默认启用，无需 API Key)
+  rss:
+    enabled: true
+    hours: 24  # 获取最近 24 小时的内容
+
+  # YouTube (需要 API Key)
+  youtube:
+    enabled: false
+    api_key: ""  # 在 Google Cloud Console 获取
+    hours: 24
+    min_views: 10000  # 最低播放量筛选
+
+  # Twitter/X (需要 API Key)
+  twitter:
+    enabled: false
+    api_key: ""  # Twitter API Bearer Token
+    hours: 24
+
+  # Reddit (需要完整认证)
+  reddit:
+    enabled: false
+    client_id: ""
+    client_secret: ""
+    hours: 24
+    min_upvotes: 50  # 最低点赞数筛选
+
+# LLM 处理配置
+llm:
+  # DeepSeek API Key (必填)
+  api_key: ""  # 在 https://platform.deepseek.com 获取
+  base_url: "https://api.deepseek.com"  # 可选: 自定义 API 端点
+
+  # 处理选项
+  translate: true      # 翻译为中文
+  summarize: true      # 生成摘要
+  categorize: true     # 自动分类
+  filter_by_value: true  # 过滤低价值内容
+
+# 输出配置
+output:
+  # 飞书多维表格
+  feishu:
+    enabled: false
+    app_id: ""         # 飞书应用 ID
+    app_secret: ""     # 飞书应用 Secret
+    table_id: ""       # 多维表格 ID
+
+  # JSON 文件输出
+  json:
+    enabled: true
+    path: "./output/news.json"
+
+  # Markdown 报告
+  markdown:
+    enabled: true
+    path: "./output/news.md"
+
+# 自定义配置
+custom:
+  # 添加自定义 RSS 源
+  custom_rss:
+    # "我的 RSS": "https://example.com/feed.xml"
+
+  # 添加自定义 YouTube 频道
+  custom_youtube_channels:
+    # - "UCBJycsmduvYEL83R_U4JriQ"  # Google AI
+
+  # 添加自定义 Twitter 账户
+  custom_twitter_accounts:
+    # - "OpenAI"
+    # - "GoogleAI"
+
+  # 添加自定义 Subreddit
+  custom_subreddits:
+    # - "artificial"
+    # - "MachineLearning"
