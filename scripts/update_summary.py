@@ -191,8 +191,8 @@ def generate_summary_html(items: List[Dict]) -> str:
     # 生成 HTML
     html_parts = []
 
-    # 标题
-    html_parts.append(f'            <h2>📊 今日热点摘要</h2>')
+    # 标题由 update_index_html 中的正则保留，这里不生成
+    # html_parts.append(f'            <h2>📊 今日热点摘要</h2>')
     html_parts.append(f'            <p class="highlight">{today}更新 · 共 {stats["total"]} 条内容</p>')
 
     # The Verge AI
@@ -273,12 +273,13 @@ def update_index_html(summary_html: str, index_path: str = None):
     with open(index_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # 查找并替换摘要部分（更精确的模式，只替换摘要内容）
-    # 匹配从 <div class="summary-section"> 开始，到第一个 </div> 结束（摘要部分的结束）
+    # 查找并替换摘要部分（更精确的模式，完全替换摘要内容）
+    # 匹配从 <div class="summary-section"> 之后，到第一个 </div> 结束（摘要部分的结束）
     pattern = r'(<div class="summary-section">\s*<h2>📊 今日热点摘要</h2>\s*).*?(</div>\s*(?=<div class="filter-tabs">|<div id="newsContainer"|<script>|$))'
 
     def replace_summary(match):
-        return match.group(1) + "\n" + summary_html + "\n        " + match.group(2)
+        # 只保留开头的 div 标签和 h2 标题，然后插入新的摘要内容
+        return match.group(1) + summary_html + "\n        " + match.group(2)
 
     new_content = re.sub(pattern, replace_summary, content, count=1, flags=re.DOTALL)
 
