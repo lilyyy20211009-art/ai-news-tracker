@@ -18,6 +18,32 @@ from llm_processor import process_batch, generate_daily_summary
 from feishu_output import export_to_json, export_to_markdown, export_to_feishu, export_to_html
 
 
+def update_web_summary():
+    """更新网站摘要"""
+    try:
+        import subprocess
+        project_root = Path(__file__).parent.parent
+        update_script = project_root / "scripts" / "update_summary.py"
+
+        if update_script.exists():
+            print("\n🌐 更新网站摘要...")
+            result = subprocess.run(
+                ["python3", str(update_script)],
+                capture_output=True,
+                text=True,
+                cwd=str(project_root)
+            )
+            if result.returncode == 0:
+                print("   ✅ 网站摘要已更新")
+                print(result.stdout)
+            else:
+                print(f"   ⚠️ 网站摘要更新失败: {result.stderr}")
+        else:
+            print(f"   ⚠️ 未找到摘要更新脚本: {update_script}")
+    except Exception as e:
+        print(f"   ⚠️ 更新网站摘要时出错: {e}")
+
+
 def load_config(config_path: str = None) -> dict:
     """加载配置文件"""
     if config_path is None:
@@ -123,6 +149,10 @@ def main():
     print("\n✅ 完成!")
     print(f"   共处理 {len(processed_items)} 条内容")
     print(f"   HTML 报告: {html_path}")
+
+    # 5. 更新网站摘要（index.html 和 app.js）
+    update_web_summary()
+
     print("=" * 60)
 
 
