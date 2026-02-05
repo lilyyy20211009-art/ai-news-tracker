@@ -303,8 +303,35 @@ def update_app_js(items: List[Dict], app_js_path: str = None):
 
     app_js_path = Path(app_js_path)
 
-    # 生成 JavaScript 数据
-    js_data = json.dumps(items, ensure_ascii=False, indent=0)
+    # 生成 JavaScript 数据 - 需要转义换行符
+    def escape_js_string(s):
+        """转义 JavaScript 字符串中的特殊字符"""
+        if not isinstance(s, str):
+            return s
+        # 转义换行符和其他特殊字符
+        s = s.replace('\\', '\\\\')  # 反斜杠必须先转义
+        s = s.replace('\n', '\\n')   # 换行
+        s = s.replace('\r', '\\r')   # 回车
+        s = s.replace('\t', '\\t')   # 制表符
+        s = s.replace('"', '\\"')    # 双引号
+        return s
+
+    # 手动构建 JavaScript 数组
+    js_lines = ['const newsData = [']
+    for item in items:
+        js_lines.append('    {')
+        for key, value in item.items():
+            if isinstance(value, str):
+                escaped_value = escape_js_string(value)
+                js_lines.append(f'"{key}": "{escaped_value}",')
+            else:
+                js_lines.append(f'"{key}": {value},')
+        # 移除最后一行的逗号
+        js_lines[-1] = js_lines[-1].rstrip(',')
+        js_lines.append('    },')
+    js_lines.append('];')
+
+    js_data = '\n'.join(js_lines)
 
     # 读取 app.js
     with open(app_js_path, 'r', encoding='utf-8') as f:
@@ -312,7 +339,7 @@ def update_app_js(items: List[Dict], app_js_path: str = None):
 
     # 替换 newsData 数组
     pattern = r'const newsData = \[.*?\];'
-    new_data = f'const newsData = {js_data};'
+    new_data = js_data
 
     new_content = re.sub(pattern, new_data, content, flags=re.DOTALL)
 
