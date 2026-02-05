@@ -30,7 +30,7 @@
         .header { text-align: center; padding: 40px 0; border-bottom: 1px solid var(--border-color); margin-bottom: 30px; }
         .header h1 { font-size: 2.5rem; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
         .header-meta { color: var(--text-secondary); font-size: 0.9rem; }
-        .summary-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 30px; margin-bottom: 30px; }
+        .summary-section { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; padding: 30px; margin-bottom: 50px; }
         .summary-section h2 { font-size: 1.5rem; margin-bottom: 20px; color: var(--accent-blue); }
         .summary-section h3 { font-size: 1.1rem; margin: 15px 0 8px; color: var(--accent-purple); }
         .summary-section p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 10px; }
@@ -68,14 +68,24 @@
             <h2>📊 今日热点摘要</h2>
             <p class="highlight">2026年02月05日更新 · 共 36 条内容</p>
             <h3>📰 The Verge AI（6条）</h3>
-            <p>Googles annual revenue tops $400 billion for the first time；Sam Altman responds to Anthropic’s ‘funny’ Super Bowl ads；OpenClaws AI skill extensions are a security nightmare</p>
+            <p>Google 年收入首次突破 4000 亿美元；Sam Altman 回应 Anthropic 超级碗广告；OpenClaw AI 扩展存在严重安全问题</p>
             <h3>💰 TechCrunch AI（13条）</h3>
-            <p>Sam Altman got exceptionally testy over Claude Super Bowl ads；Alphabet won’t talk about the Google-Apple AI deal, even to investors；Google’s Gemini app has surpassed 750M monthly active users</p>
+            <p>Sam Altman 对 Claude 超级碗广告反应强烈；Alphabet 拒绝谈论 Google-Apple AI 合作；Google Gemini 月活用户超 7.5 亿</p>
             <h3>🏛️ NYT AI（8条）</h3>
-            <p>Google Plans to Double Spending Amid A.I. Race；Babies, Robots and Climate Change；Why A.I. Fears Are Battering Stocks, Again</p>
+            <p>Google 计划在 AI 竞赛中加倍投入；婴儿、机器人与气候变化；AI 恐惧再次冲击股市</p>
             <h3>🎥 YouTube（9条）</h3>
             <p>5位博主发布9个视频，涵盖AI 理论与研究、AI 趋势与展望、AI 教程学习等内容，涉及DeepSeek等公司产品</p>
         </div>
+
+        <div class="filter-tabs">
+            <div class="filter-tab active" data-filter="all">全部</div>
+            <div class="filter-tab" data-filter="verge">The Verge</div>
+            <div class="filter-tab" data-filter="techcrunch">TechCrunch</div>
+            <div class="filter-tab" data-filter="nyt">NYT</div>
+            <div class="filter-tab" data-filter="youtube">YouTube</div>
+        </div>
+
+        <div class="news-grid" id="newsContainer"></div>
     </div>
 
     <script src="app.js"></script>

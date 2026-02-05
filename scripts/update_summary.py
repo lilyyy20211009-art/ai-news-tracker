@@ -1,13 +1,117 @@
 """
 AI News Aggregator - 摘要生成器
-自动生成详细的 AI 热点摘要并更新到 index.html
+自动生成详细的 AI 热点摘要并更新到 index.html 和 today.html
 """
 
+import html
 import json
 import re
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any
+
+
+# 英文标题到中文的简单翻译映射
+# 注意：这里的 key 必须与 HTML 实体解码后的标题完全匹配
+TITLE_TRANSLATIONS = {
+    # The Verge - 精确匹配解码后的标题
+    "Google's annual revenue tops $400 billion for the first time": "Google 年收入首次突破 4000 亿美元",
+    "Sam Altman responds to Anthropic's 'funny' Super Bowl ads": "Sam Altman 回应 Anthropic 超级碗广告",
+    "OpenClaw's AI 'skill' extensions are a security nightmare": "OpenClaw AI 扩展存在严重安全问题",
+    "GitHub adds Claude and Codex AI coding agents": "GitHub 添加 Claude 和 Codex AI 编程助手",
+    "Anthropic says 'Claude will remain ad-free,' unlike ChatGPT": "Anthropic 承诺 Claude 将永远无广告",
+    "Sen. Warren wants to know what Google Gemini's built-in checkout means for user privacy": "参议员 Warren 质疑 Google Gemini 结账功能隐私问题",
+
+    # TechCrunch
+    "Sam Altman got exceptionally testy over Claude Super Bowl ads": "Sam Altman 对 Claude 超级碗广告反应强烈",
+    "Alphabet won't talk about the Google-Apple AI deal, even to investors": "Alphabet 拒绝谈论 Google-Apple AI 合作",
+    "Google's Gemini app has surpassed 750M monthly active users": "Google Gemini 月活用户超 7.5 亿",
+    "Meet Gizmo: A TikTok for interactive, vibe-coded mini apps": "Gizmo：类似 TikTok 的交互式应用平台",
+    "AI SRE Resolve AI confirms $125M raise, unicorn valuation": "Resolve AI 获 1.25 亿美元融资，估值达独角兽",
+    "Amazon to begin testing AI tools for film and TV production next month": "Amazon 将开始测试影视制作 AI 工具",
+    "A16z just raised $1.7B for AI infrastructure": "A16z 筹集 17 亿美元专注 AI 基础设施",
+    "ElevenLabs raises $500M from Sequoia at an $11 billion valuation": "ElevenLabs 融资 5 亿美元，估值达 110 亿美元",
+    "Alexa+, Amazon's AI assistant, is now available to everyone in the US": "Alexa+ AI 助手向全美开放",
+    "Tinder looks to AI to help fight 'swipe fatigue' and dating app burnout": "Tinder 使用 AI 对抗滑动疲劳",
+    "ChatGPT now lets you call the AI for free": "ChatGPT 现在支持免费语音通话",
+    "OpenAI in 'advanced talks' to host a data center with Oracle": "OpenAI 与 Oracle 洽谈建设数据中心",
+    "Former Character.AI founders launch a new educational AI startup": "Character.AI 联合创始人推出教育 AI 创业公司",
+
+    # NYT
+    "Google Plans to Double Spending Amid A.I. Race": "Google 计划在 AI 竞赛中加倍投入",
+    "Babies, Robots and Climate Change": "婴儿、机器人与气候变化",
+    "Why A.I. Fears Are Battering Stocks, Again": "AI 恐惧再次冲击股市",
+    "Bedrock, an A.I. Start-Up for Construction, Raises $270 Million": "Bedrock 机器人公司融资 2.7 亿美元",
+    "A.I. Loves Fake Images. But They've Been a Thing Since Photography Began.": "AI 与虚假图片的历史",
+}
+
+
+def normalize_quotes(text: str) -> str:
+    """将各种引号规范化为标准的直引号"""
+    # Curly quotes to straight quotes mapping
+    quote_map = {
+        '\u2018': "'",  # Left single quotation mark
+        '\u2019': "'",  # Right single quotation mark
+        '\u201c': '"',  # Left double quotation mark
+        '\u201d': '"',  # Right double quotation mark
+        '\u0060': "'",  # Grave accent
+        '\u00b4': "'",  # Acute accent
+        '\u201a': ',',  # Single low-9 quotation mark
+        '\u201b': "'",  # Single high-reversed-9 quotation mark
+        '\u201e': '"',  # Double low-9 quotation mark
+        '\u201f': '"',  # Double high-reversed-9 quotation mark
+    }
+    for curly, straight in quote_map.items():
+        text = text.replace(curly, straight)
+    return text
+
+
+def translate_title(title: str) -> str:
+    """
+    翻译英文标题为中文
+
+    Args:
+        title: 英文标题
+
+    Returns:
+        中文标题（如果没有匹配则返回原文）
+    """
+    # 先解码 HTML 实体
+    decoded_title = html.unescape(title)
+
+    # 规范化引号：将 curly quotes 转换为 straight quotes
+    normalized_title = normalize_quotes(decoded_title)
+
+    # 先尝试完全匹配（使用规范化的标题）
+    if normalized_title in TITLE_TRANSLATIONS:
+        return TITLE_TRANSLATIONS[normalized_title]
+
+    # 移除多余空白
+    clean_title = ' '.join(normalized_title.split())
+
+    if clean_title in TITLE_TRANSLATIONS:
+        return TITLE_TRANSLATIONS[clean_title]
+
+    # 简单翻译：提取关键词
+    keywords = {
+        "Google": "谷歌", "OpenAI": "OpenAI", "Anthropic": "Anthropic",
+        "Claude": "Claude", "ChatGPT": "ChatGPT", "Gemini": "Gemini",
+        "AI": "AI", "raises": "融资", "raise": "融资", "investment": "投资",
+        "launch": "发布", "released": "发布", "revenue": "收入", "users": "用户",
+        "billion": "十亿", "million": "百万", "tops": "突破", "surpassed": "超过",
+        "monthly active": "月活跃", "app": "应用", "ads": "广告", "ad": "广告",
+        "extension": "扩展", "security": "安全", "nightmare": "噩梦",
+        "coding": "编程", "assistant": "助手", "available": "可用", "testing": "测试",
+        "tools": "工具", "production": "制作", "infrastructure": "基础设施",
+        "valuation": "估值", "plans": "计划", "spending": "投入", "race": "竞赛",
+    }
+
+    result = normalized_title
+    for en, zh in keywords.items():
+        result = re.sub(r'\b' + en + r'\b', zh, result, flags=re.IGNORECASE)
+
+    return result if result != normalized_title else normalized_title
 
 
 def extract_key_news(items: List[Dict], source_filter: str = None, limit: int = 3) -> str:
@@ -32,11 +136,9 @@ def extract_key_news(items: List[Dict], source_filter: str = None, limit: int = 
     key_news = []
     for item in filtered[:limit]:
         title = item.get("标题", "")
-        # 移除 HTML 实体
-        title = re.sub(r'&#\d+;', '', title)
-        # 移除多余空白
-        title = ' '.join(title.split())
-        key_news.append(title)
+        # 翻译成中文
+        translated = translate_title(title)
+        key_news.append(translated)
 
     return "；".join(key_news)
 
@@ -159,36 +261,66 @@ def generate_summary_html(items: List[Dict]) -> str:
 
 def update_index_html(summary_html: str, index_path: str = None):
     """
-    更新 index.html 中的摘要部分
+    更新 index.html 或 today.html 中的摘要部分
 
     Args:
         summary_html: 生成的摘要 HTML
-        index_path: index.html 文件路径
+        index_path: HTML 文件路径
     """
-    if index_path is None:
-        # 默认路径
-        project_root = Path(__file__).parent.parent
-        index_path = project_root / "index.html"
-
     index_path = Path(index_path)
 
-    # 读取 index.html
+    # 读取 HTML 文件
     with open(index_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # 查找并替换摘要部分
-    pattern = r'(<div class="summary-section">.*?<h2>📊 今日热点摘要</h2>).*?(</div>\s*</div>)'
+    # 查找并替换摘要部分（更精确的模式，只替换摘要内容）
+    # 匹配从 <div class="summary-section"> 开始，到第一个 </div> 结束（摘要部分的结束）
+    pattern = r'(<div class="summary-section">\s*<h2>📊 今日热点摘要</h2>\s*).*?(</div>\s*(?=<div class="filter-tabs">|<div id="newsContainer"|<script>|$))'
 
     def replace_summary(match):
         return match.group(1) + "\n" + summary_html + "\n        " + match.group(2)
 
-    new_content = re.sub(pattern, replace_summary, content, flags=re.DOTALL)
+    new_content = re.sub(pattern, replace_summary, content, count=1, flags=re.DOTALL)
 
     # 写回文件
     with open(index_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
 
     print(f"✅ 已更新 {index_path}")
+
+
+def update_app_js(items: List[Dict], app_js_path: str = None):
+    """
+    更新 app.js 中的新闻数据
+
+    Args:
+        items: 新闻列表
+        app_js_path: app.js 文件路径
+    """
+    if app_js_path is None:
+        project_root = Path(__file__).parent.parent
+        app_js_path = project_root / "app.js"
+
+    app_js_path = Path(app_js_path)
+
+    # 生成 JavaScript 数据
+    js_data = json.dumps(items, ensure_ascii=False, indent=0)
+
+    # 读取 app.js
+    with open(app_js_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # 替换 newsData 数组
+    pattern = r'const newsData = \[.*?\];'
+    new_data = f'const newsData = {js_data};'
+
+    new_content = re.sub(pattern, new_data, content, flags=re.DOTALL)
+
+    # 写回文件
+    with open(app_js_path, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+
+    print(f"✅ 已更新 {app_js_path.name}")
 
 
 def main():
@@ -215,18 +347,35 @@ def main():
     print(summary_html)
     print("\n")
 
-    # 更新根目录的 index.html（用于 GitHub Pages）
-    index_path = project_root / "index.html"
-    update_index_html(summary_html, index_path)
+    # 第一步：更新本地文件
+    print("🔄 第一步：更新本地文件...")
 
-    # 更新 output/today.html（用于本地服务器）
+    # 更新 output/today.html（本地服务器）
     today_path = project_root / "output" / "today.html"
     update_index_html(summary_html, today_path)
 
-    print("✅ 摘要更新完成！")
-    print("📌 已同步更新:")
-    print(f"   - {index_path} (GitHub Pages)")
-    print(f"   - {today_path} (本地服务器)")
+    # 更新 app.js（根目录，用于 GitHub Pages）
+    update_app_js(items)
+
+    print("\n✅ 本地文件更新完成！")
+    print(f"   - {today_path.name} (本地服务器)")
+    print(f"   - app.js (GitHub Pages 数据)")
+
+    # 第二步：更新根目录 index.html
+    print("\n🔄 第二步：更新 GitHub Pages 文件...")
+
+    index_path = project_root / "index.html"
+    update_index_html(summary_html, index_path)
+
+    print(f"   - {index_path.name} (GitHub Pages)")
+
+    print("\n✅ 全部更新完成！")
+    print("\n📌 下一步：")
+    print("   1. 本地测试：访问 http://127.0.0.1:5000/")
+    print("   2. 确认无误后，运行以下命令推送到 GitHub：")
+    print("      git add -A")
+    print("      git commit -m '更新 AI 热点摘要'")
+    print("      git push")
 
 
 if __name__ == "__main__":
