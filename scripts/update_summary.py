@@ -215,10 +215,18 @@ def main():
     print(summary_html)
     print("\n")
 
-    # 更新 index.html
-    update_index_html(summary_html)
+    # 更新根目录的 index.html（用于 GitHub Pages）
+    index_path = project_root / "index.html"
+    update_index_html(summary_html, index_path)
+
+    # 更新 output/today.html（用于本地服务器）
+    today_path = project_root / "output" / "today.html"
+    update_index_html(summary_html, today_path)
 
     print("✅ 摘要更新完成！")
+    print("📌 已同步更新:")
+    print(f"   - {index_path} (GitHub Pages)")
+    print(f"   - {today_path} (本地服务器)")
 
 
 if __name__ == "__main__":
