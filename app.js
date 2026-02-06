@@ -1,329 +1,176 @@
 // 筛选和渲染功能
 const newsData = [
     {
-        "标题": "Google&#8217;s annual revenue tops $400 billion for the first time",
-        "内容": "Google's parent company, Alphabet, has earned more than $400 billion in annual revenue for the first time. The company announced the milestone as part of its Q4 2025 earnings report released on Wednesday, which highlights the 15 percent year-over-year increase as its cloud business and YouTube continue to grow. As noted in the earnings report, [&#8230;]",
-        "日期": "2026-02-04 22:41:03",
-        "链接": "https://www.theverge.com/news/874161/google-400-billion-revenue-q4-2025-earnings",
-        "来源": "The Verge AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Super Bowl LX ads: all AI everything",
+"内容": "Super Bowl LX is nearly here, with the Seattle Seahawks taking on the New England Patriots. While Bad Bunny will be the star of the halftime show, AI could be the star of the commercial breaks, much like crypto was a few years ago. Last year’s Super Bowl featured a Google Gemini ad that fumbled [&#8230;]",
+"日期": "2026-02-05 18:18:34",
+"链接": "https://www.theverge.com/entertainment/874504/super-bowl-lx-ads-big-game",
+"来源": "The Verge AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Sam Altman responds to Anthropic’s ‘funny’ Super Bowl ads",
-        "内容": "Sam Altman responded to Anthropic's new Super Bowl ad in an X post on Wednesday, saying the OpenAI competitor's campaign is \"clearly dishonest,\" and called it \"on brand\" for Anthropic to \"doublespeak.\" \"We would obviously never run ads in the way Anthropic depicts them,\" he wrote. \"We are not stupid and we know our users [&#8230;]",
-        "日期": "2026-02-04 21:03:05",
-        "链接": "https://www.theverge.com/news/874084/ai-chatgpt-claude-super-bowl-ads-openai-anthropic",
-        "来源": "The Verge AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Claude has been having a moment — can it keep it up?",
+"内容": "Boris Cherny gets recognized in public relatively often. At the bar, at the airport, and in generally any public space, people want to take selfies with the creator and head of Claude Code. For the last couple of months, Anthropic's Claude and its coding platform have been having a moment - on social media, in [&#8230;]",
+"日期": "2026-02-05 18:00:00",
+"链接": "https://www.theverge.com/report/874308/anthropic-claude-code-opus-hype-moment",
+"来源": "The Verge AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "OpenClaw&#8217;s AI &#8216;skill&#8217; extensions are a security nightmare",
-        "内容": "OpenClaw, the AI agent that has exploded in popularity over the past week, is raising new security concerns after researchers uncovered malware in hundreds of user-submitted \"skill\" add-ons on its marketplace. In a post on Monday, 1Password product VP Jason Meller says OpenClaw's skill hub has become \"an attack surface,\" with the most-downloaded add-on serving [&#8230;]",
-        "日期": "2026-02-04 19:03:38",
-        "链接": "https://www.theverge.com/news/874011/openclaw-ai-skill-clawhub-extensions-security-nightmare",
-        "来源": "The Verge AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Anthropic debuts new model with hopes to corner the market beyond coding",
+"内容": "Anthropic's \"smartest model\" is getting a major boost, the company said in a blog post announcing Claude Opus 4.6. It called the new model a \"direct upgrade\" from its predecessor in a release, noting that it can better take on complex, multi-step tasks and get \"much closer to production-ready quality on the first try than [&#8230;]",
+"日期": "2026-02-05 18:00:00",
+"链接": "https://www.theverge.com/ai-artificial-intelligence/874440/anthropic-opus-4-6-new-model-claude",
+"来源": "The Verge AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "GitHub adds Claude and Codex AI coding agents",
-        "内容": "GitHub is making Claude by Anthropic and OpenAI's Codex AI coding agents directly available inside GitHub today. A new public preview adds Claude and Codex to GitHub, GitHub Mobile, and Visual Studio Code, for users with a Copilot Pro Plus or Copilot Enterprise subscription. The move is part of Agent HQ, GitHub's vision to make [&#8230;]",
-        "日期": "2026-02-04 17:00:00",
-        "链接": "https://www.theverge.com/news/873665/github-claude-codex-ai-agents",
-        "来源": "The Verge AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Nvidia&#8217;s RTX 50-series Super refresh is delayed, and the RTX 60-series might miss 2027",
+"内容": "The Super refresh to Nvidia's RTX 50-series GPUs was expected at CES 2026 in January, but it didn't make an appearance. The Information reports that in December, Nvidia managers decided not to release the new cards as scheduled, choosing to prioritize AI chips instead due to the limited supply of RAM currently available. On top [&#8230;]",
+"日期": "2026-02-05 16:33:27",
+"链接": "https://www.theverge.com/tech/874439/nvidia-rtx-50-super-60-series-delay",
+"来源": "The Verge AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Anthropic says ‘Claude will remain ad-free,’ unlike ChatGPT",
-        "内容": "Anthropic has announced that it won't be bringing ads to its AI chatbot Claude, in sharp contrast to confirmed plans from OpenAI to allow advertising in ChatGPT. To hammer the point home further, the company is releasing a Super Bowl commercial that makes fun of unnamed rivals adding adverts to their AI. \"We want Claude [&#8230;]",
-        "日期": "2026-02-04 13:09:50",
-        "链接": "https://www.theverge.com/ai-artificial-intelligence/873686/anthropic-claude-ai-ad-free-super-bowl-advert-chatgpt",
-        "来源": "The Verge AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Reality is losing the deepfake war",
+"内容": "Today, we’re going to talk about reality, and whether we can label photos and videos to protect our shared understanding of the world around us. No really, we’re gonna go there. It’s a deep one. To do this, I’m going to bring on Verge reporter Jess Weatherbed, who covers creative tools for us — a [&#8230;]",
+"日期": "2026-02-05 15:00:00",
+"链接": "https://www.theverge.com/podcast/874038/ai-deepfakes-war-on-reality-c2pa-labels",
+"来源": "The Verge AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Sen. Warren wants to know what Google Gemini’s built-in checkout means for user privacy",
-        "内容": "Sen. Elizabeth Warren (D-MA) is pressing Google for more information about its plans to build a checkout feature into its Gemini AI chatbot. In a letter to Google CEO Sundar Pichai, Warren expresses concerns that the integration could allow Google and retailers \"to exploit sensitive user data\" or \"manipulate consumers into spending more and paying [&#8230;]",
-        "日期": "2026-02-04 12:00:00",
-        "链接": "https://www.theverge.com/news/873476/senator-elizabeth-warren-google-gemini-ai-shopping-privacy",
-        "来源": "The Verge AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "OpenAI Frontier is a single platform to control your AI agents",
+"内容": "Managing humans is hard. Managing AI agents is… also hard. That's why OpenAI is launching a new platform called OpenAI Frontier, which it says will help businesses \"build, deploy, and manage\" AI agents, even those not made by OpenAI itself. OpenAI's description of Frontier sounds something like HR for AI. \"Frontier gives agents the same [&#8230;]",
+"日期": "2026-02-05 14:00:00",
+"链接": "https://www.theverge.com/ai-artificial-intelligence/874258/openai-frontier-ai-agent-platform-management",
+"来源": "The Verge AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Sam Altman got exceptionally testy over Claude Super Bowl ads",
-        "内容": "He posted a novella-sized rant that devolved into to calling his rival \"dishonest\" and \"authoritarian.\"",
-        "日期": "2026-02-05 00:45:11",
-        "链接": "https://techcrunch.com/2026/02/04/sam-altman-got-exceptionally-testy-over-claude-super-bowl-ads/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Sapiom raises $15M to help AI agents buy their own tech tools",
+"内容": "The startup -- with backing from Accel -- is building a financial layer that handles the authentication and micro-payments required for AI agents.",
+"日期": "2026-02-05 23:53:42",
+"链接": "https://techcrunch.com/2026/02/05/sapiom-raises-15m-to-help-ai-agents-buy-their-own-tech-tools/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Alphabet won’t talk about the Google-Apple AI deal, even to investors",
-        "内容": "Alphabet CEO skipped an analyst's question about Apple on the company's earnings call.",
-        "日期": "2026-02-04 23:28:31",
-        "链接": "https://techcrunch.com/2026/02/04/alphabet-wont-talk-about-the-google-apple-ai-deal-even-to-investors/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Reddit looks to AI search as its next big opportunity",
+"内容": "During the company's fourth-quarter earnings call on Thursday, it offered an update on its plans to merge traditional and AI search together and hinted that although search is not yet monetized, \"it's an enormous market and opportunity.\"",
+"日期": "2026-02-05 23:20:27",
+"链接": "https://techcrunch.com/2026/02/05/reddit-looks-to-ai-search-as-its-next-big-opportunity/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Google’s Gemini app has surpassed 750M monthly active users",
-        "内容": "Google revealed a significant milestone for its Gemini app, announcing over 750 million monthly active users as it competes with ChatGPT and Meta AI.",
-        "日期": "2026-02-04 22:53:46",
-        "链接": "https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "AWS revenue continues to soar as cloud demand remains high",
+"内容": "AWS recorded its best quarter, in terms of revenue growth, in 13 quarters in Q4 2025 as AI drives AWS adoption.",
+"日期": "2026-02-05 23:11:37",
+"链接": "https://techcrunch.com/2026/02/05/aws-revenue-continues-to-soar-as-cloud-demand-remains-high/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Meet Gizmo: A TikTok for interactive, vibe-coded mini apps",
-        "内容": "Gizmo's app is like a TikTok for vibe-coded mini apps... and it's a lot of fun.",
-        "日期": "2026-02-04 21:45:32",
-        "链接": "https://techcrunch.com/2026/02/04/meet-gizmo-a-tiktok-for-interactive-vibe-coded-mini-apps/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Amazon and Google are winning the AI capex race — but what’s the prize?",
+"内容": "In 2026, Amazon plans to spend $200 billion in capex. Google is just behind at $175 billion to $185 billion. It's a lot of money!",
+"日期": "2026-02-05 22:43:11",
+"链接": "https://techcrunch.com/2026/02/05/amazon-and-google-are-winning-the-ai-capex-race-but-whats-the-prize/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "AI SRE Resolve AI confirms $125M raise, unicorn valuation",
-        "内容": "The two-year-old startup confirms that it closed a Series A led by Lightspeed at $1 billion valuation.",
-        "日期": "2026-02-04 21:39:26",
-        "链接": "https://techcrunch.com/2026/02/04/ai-sre-resolve-ai-confirms-125m-raise-unicorn-valuation/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "OpenAI launches new agentic coding model only minutes after Anthropic drops its own",
+"内容": "The new model is built to accelerate the capabilities of Codex, the agentic coding tool OpenAI launched earlier this week.",
+"日期": "2026-02-05 20:01:39",
+"链接": "https://techcrunch.com/2026/02/05/openai-launches-new-agentic-coding-model-only-minutes-after-anthropic-drops-its-own/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Amazon to begin testing AI tools for film and TV production next month",
-        "内容": "Amazon MGM Studios will reportedly begin a closed beta program in March to test its AI tools to help with film and TV production.",
-        "日期": "2026-02-04 21:26:43",
-        "链接": "https://techcrunch.com/2026/02/04/amazon-to-begin-testing-ai-tools-for-film-and-tv-production-next-month/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Elon Musk is getting serious about orbital data centers",
+"内容": "We’re starting to see the idea of Musk-owned orbital AI data clusters cohere into an actual plan.",
+"日期": "2026-02-05 18:50:49",
+"链接": "https://techcrunch.com/2026/02/05/elon-musk-is-getting-serious-about-orbital-data-centers/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "A16z just raised $1.7B for AI infrastructure. Here’s where it’s going.",
-        "内容": "Andreessen Horowitz just raised&#160;a whopping&#160;⁠new&#160;$15 billion&#160;in funding⁠.&#160;And a&#160;$1.7 billion&#160;chunk&#160;of that is going to&#160;its&#160;⁠infrastructure&#160;team⁠,&#160;the one responsible for some of its biggest, most prominent&#160;AI investments including&#160;Black Forrest Labs, Cursor, OpenAI,&#160;⁠ElevenLabs⁠, Ideogram,&#160;⁠Fal⁠&#160;and dozens of others.&#160;&#160; A16z&#160;⁠general partner&#160;with the infra team Jennifer Li⁠&#160;(who oversees such&#160;investments&#160;as&#160;ElevenLabs&#160;– just valued at&#160;$11 billion);&#160;Ideagram&#160;and Fal, has a clear thesis on where&#160;the team is looking [&#8230;]",
-        "日期": "2026-02-04 20:24:12",
-        "链接": "https://techcrunch.com/video/a16z-just-raised-1-7b-for-ai-infrastructure-heres-where-its-going/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "OpenAI launches a way for enterprises to build and manage AI agents",
+"内容": "OpenAI launched Frontier, a new platform designed for enterprises to build and deploy agents while treating them like human employees.",
+"日期": "2026-02-05 18:09:50",
+"链接": "https://techcrunch.com/2026/02/05/openai-launches-a-way-for-enterprises-to-build-and-manage-ai-agents/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "What a16z is actually funding (and what it’s ignoring) when it comes to AI infra",
-        "内容": "Andreessen Horowitz just raised&#160;a whopping&#160;new&#160;$15 billion&#160;in funding.&#160;And a&#160;$1.7 billion&#160;chunk&#160;of that is going to&#160;its&#160;infrastructure&#160;team,&#160;the one responsible for some of its biggest, most prominent&#160;AI investments, including&#160;Black Forest Labs, Cursor, OpenAI,&#160;ElevenLabs, Ideogram,&#160;Fal,&#160;and dozens of others.&#160;&#160; a16z&#160;general partner&#160;with the infra team Jennifer Li&#160;(who oversees such&#160;investments&#160;as&#160;ElevenLabs&#160;&#8212; just valued at&#160;$11 billion) has a clear thesis on where&#160;the team is looking to [&#8230;]",
-        "日期": "2026-02-04 20:19:12",
-        "链接": "https://techcrunch.com/podcast/what-a16z-is-actually-funding-and-what-its-ignoring-when-it-comes-to-ai-infra/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Anthropic releases Opus 4.6 with new ‘agent teams’",
+"内容": "The newest version of Anthropic's model is designed to broaden its capabilities and appeal, allowing for a greater variety of uses and customers.",
+"日期": "2026-02-05 17:51:13",
+"链接": "https://techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Tinder looks to AI to help fight ‘swipe fatigue’ and dating app burnout",
-        "内容": "Tinder is testing AI recommendations and insight from your Camera Roll for better matches.",
-        "日期": "2026-02-04 18:08:00",
-        "链接": "https://techcrunch.com/2026/02/04/tinder-looks-to-ai-to-help-fight-swipe-fatigue-and-dating-app-burnout/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Meta tests a stand-alone app for its AI-generated ‘Vibes’ videos",
+"内容": "Launched last September, Vibes lets you create and share short-form AI-generated videos and access a dedicated feed that displays AI videos from others.",
+"日期": "2026-02-05 17:19:01",
+"链接": "https://techcrunch.com/2026/02/05/meta-tests-a-standalone-app-for-its-ai-generated-vibes-videos/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Roblox’s 4D creation feature is now available in open beta",
-        "内容": "Roblox's highly anticipated 4D creation feature has officially arrived in open beta.",
-        "日期": "2026-02-04 17:00:00",
-        "链接": "https://techcrunch.com/2026/02/04/robloxs-4d-creation-feature-is-now-available-in-open-beta/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Fundamental raises $255M Series A with a new take on big data analysis",
+"内容": "Fundamental has built a new foundation model to solve an old problem: how to draw insights from the huge quantities of structured data produced by enterprises.",
+"日期": "2026-02-05 15:00:02",
+"链接": "https://techcrunch.com/2026/02/05/fundamental-raises-255-million-series-a-with-a-new-take-on-big-data-analysis/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "ElevenLabs raises $500M from Sequoia at an $11 billion valuation",
-        "内容": "ElevenLabs' valuation has raised more than three times in the last 12 months.",
-        "日期": "2026-02-04 15:33:58",
-        "链接": "https://techcrunch.com/2026/02/04/elevenlabs-raises-500m-from-sequioia-at-a-11-billion-valuation/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "ElevenLabs CEO: Voice is the next interface for AI",
+"内容": "ElevenLabs CEO argued at Web Summit Qatar that voice is the next interface for AI, as OpenAI, Google, and Apple push conversational systems into wearables, new hardware, and everyday interactions.",
+"日期": "2026-02-05 14:41:12",
+"链接": "https://techcrunch.com/2026/02/05/elevenlabs-ceo-voice-is-the-next-interface-for-ai/",
+"来源": "TechCrunch AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Alexa+, Amazon’s AI assistant, is now available to everyone in the US",
-        "内容": "Amazon opens Alexa+ to everyone in the U.S. The AI feature is free for Prime members across devices, and free for everyone on mobile and web.",
-        "日期": "2026-02-04 14:00:00",
-        "链接": "https://techcrunch.com/2026/02/04/alexa-amazons-ai-assistant-is-now-available-to-everyone-in-the-u-s/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "Amazon’s $200 Billion Spending Plan Raises Stakes in A.I. Race",
+"内容": "The company reported a strong holiday quarter on Thursday. But its spending, like that at other big technology companies, is starting to make investors nervous.",
+"日期": "2026-02-05 23:51:01",
+"链接": "https://www.nytimes.com/2026/02/05/technology/amazon-200-billion-ai.html",
+"来源": "NYT AI",
+"板块": "新闻",
+"分类": "AI"
     },
     {
-        "标题": "Accel doubles down on Fibr AI as agents turn static websites into one-to-one experiences",
-        "内容": "Fibr AI replaces marketing agency- and engineering-heavy website personalization with autonomous systems designed for enterprise scale.",
-        "日期": "2026-02-04 13:00:00",
-        "链接": "https://techcrunch.com/2026/02/04/accel-doubles-down-on-fibr-ai-as-agents-turn-static-websites-into-one-to-one-experiences/",
-        "来源": "TechCrunch AI",
-        "板块": "新闻",
-        "分类": "AI"
+"标题": "‘Melania’: Watching a First Lady Vanish in Plain Sight",
+"内容": "Glamour, silence and a very big hat.",
+"日期": "2026-02-05 13:49:57",
+"链接": "https://www.nytimes.com/2026/02/05/opinion/melania-film-review.html",
+"来源": "NYT AI",
+"板块": "新闻",
+"分类": "AI"
     },
-    {
-        "标题": "Google Plans to Double Spending Amid A.I. Race",
-        "内容": "Profits jumped 30 percent to $34.5 billion last quarter, and the tech giant is increasing its capital spending this year to as much as $185 billion.",
-        "日期": "2026-02-05 00:43:08",
-        "链接": "https://www.nytimes.com/2026/02/04/business/google-earnings-ai.html",
-        "来源": "NYT AI",
-        "板块": "新闻",
-        "分类": "AI"
-    },
-    {
-        "标题": "Babies, Robots and Climate Change",
-        "内容": "It’s often assumed that lower birthrates could help slow climate change and A.I. disruption. The reality is more complex.",
-        "日期": "2026-02-04 21:22:41",
-        "链接": "https://www.nytimes.com/2026/02/04/world/population-decline-climate-change-ukraine-minneapolis.html",
-        "来源": "NYT AI",
-        "板块": "新闻",
-        "分类": "AI"
-    },
-    {
-        "标题": "Why A.I. Fears Are Battering Stocks, Again",
-        "内容": "New tools by artificial intelligence companies like Anthropic have reignited worries that businesses will pare down their subscriptions to software services.",
-        "日期": "2026-02-04 17:59:57",
-        "链接": "https://www.nytimes.com/2026/02/04/business/dealbook/ai-software-stocks-anthropic.html",
-        "来源": "NYT AI",
-        "板块": "新闻",
-        "分类": "AI"
-    },
-    {
-        "标题": "Bedrock, an A.I. Start-Up for Construction, Raises $270 Million",
-        "内容": "The two-year-old company, founded by veterans of the autonomous vehicle business Waymo, is seeking to automate excavators and other building equipment.",
-        "日期": "2026-02-04 15:40:03",
-        "链接": "https://www.nytimes.com/2026/02/04/business/dealbook/bedrock-robotics-ai-fundraise.html",
-        "来源": "NYT AI",
-        "板块": "新闻",
-        "分类": "AI"
-    },
-    {
-        "标题": "Moltbook Mania Explained",
-        "内容": "Is this the year the internet changes forever?",
-        "日期": "2026-02-04 12:00:06",
-        "链接": "https://www.nytimes.com/2026/02/04/podcasts/moltbook-mania-explained.html",
-        "来源": "NYT AI",
-        "板块": "新闻",
-        "分类": "AI"
-    },
-    {
-        "标题": "A.I. Loves Fake Images. But They’ve Been a Thing Since Photography Began.",
-        "内容": "An exhibition at the Rijksmuseum in Amsterdam reminds us that photography has always had a complicated relationship with the truth.",
-        "日期": "2026-02-04 10:51:44",
-        "链接": "https://www.nytimes.com/2026/02/04/arts/design/fakes-rijksmuseum-photo-manipulation.html",
-        "来源": "NYT AI",
-        "板块": "新闻",
-        "分类": "AI"
-    },
-    {
-        "标题": "Once the Hottest Bet on Wall St., Private Credit Has Started to Crack",
-        "内容": "Concerns about defaults, particularly among software companies, have spooked investors in the private credit firms that lend to them.",
-        "日期": "2026-02-04 14:13:14",
-        "链接": "https://www.nytimes.com/2026/02/04/business/private-credit-blue-owl-ai.html",
-        "来源": "NYT AI",
-        "板块": "新闻",
-        "分类": "AI"
-    },
-    {
-        "标题": "What if Labor Becomes Unnecessary?",
-        "内容": "Three economists debate the effects that artificial intelligence is having on the job market.",
-        "日期": "2026-02-04 13:54:31",
-        "链接": "https://www.nytimes.com/2026/02/04/opinion/ai-jobs-employment-industry.html",
-        "来源": "NYT AI",
-        "板块": "新闻",
-        "分类": "AI"
-    },
-    {
-        "标题": "Farming for the future | Where the Internet Lives",
-        "内容": "This is the story of Alphabet’s moonshot, Heritable Agriculture. At Heritable’s lab in the Bay Area, CEO Brad Zamft and his team are developing a platform that can predict which genetic combinations w",
-        "日期": "2026-02-04 20:15:35",
-        "链接": "https://www.youtube.com/watch?v=7hnvRBjuCW8",
-        "来源": "YouTube - Google",
-        "板块": "视频",
-        "播放量": 0
-    },
-    {
-        "标题": "Interested in Architecture? Test Yourself IRL.",
-        "内容": "Use Google Lens to take your studies out into the real world and test your practical knowledge. #GoogleSearch #GoogleLens",
-        "日期": "2026-02-04 17:16:17",
-        "链接": "https://www.youtube.com/shorts/aC0KO60yytE",
-        "来源": "YouTube - Google",
-        "板块": "视频",
-        "播放量": 0
-    },
-    {
-        "标题": "How a Graphic Designer uses AI Studio for Interactive Art",
-        "内容": "In this episode, artist and designer Khyati Trehan from Creative Lab joins Alex Chen and Logan Kilpatrick to share live demos made in Google AI Studio. Together, they explore new AI interfaces for sto",
-        "日期": "2026-02-02 22:51:15",
-        "链接": "https://www.youtube.com/watch?v=QikCsFDvt9g",
-        "来源": "YouTube - Google",
-        "板块": "视频",
-        "播放量": 0
-    },
-    {
-        "标题": "Come on up–the air is fine!",
-        "内容": "Search “SpongeBob” if nautical nonsense be something you wish 🫧 🧽",
-        "日期": "2026-02-02 20:46:01",
-        "链接": "https://www.youtube.com/shorts/OSgNg1Zv4os",
-        "来源": "YouTube - Google",
-        "板块": "视频",
-        "播放量": 0
-    },
-    {
-        "标题": "TFW you are one with the machine. 🧘",
-        "内容": "The music hits just right, the caffeine is flowing, and you rewrite the entire legacy codebase in two hours. 🧘\n\nSubscribe to Google for Developers → https://goo.gle/developers \n\nSpeaker: M.E Francis",
-        "日期": "2026-02-03 05:00:04",
-        "链接": "https://www.youtube.com/shorts/3Imcjj1GWQs",
-        "来源": "YouTube - Google for Developers",
-        "板块": "视频",
-        "播放量": 0
-    },
-    {
-        "标题": "What number does this SQL query actually run? Go!",
-        "内容": "Here’s a SQL puzzle that looks almost too straightforward.We’re counting users and excluding banned and inactive ones using NOT IN. Assume the table has 100 active users, plus some banned and inactive",
-        "日期": "2026-02-02 14:00:39",
-        "链接": "https://www.youtube.com/shorts/KW6bXeDJEUE",
-        "来源": "YouTube - Google for Developers",
-        "板块": "视频",
-        "播放量": 0
-    },
-    {
-        "标题": "I Built A Manga Drawing App In 24 Hours",
-        "内容": "Build your own app with Bolt  👉 https://bolt.new/?utm_medium=social&amp;utm_source=influencer&amp;utm_campaign=V2&amp;utm_content=tinahuang\n\nI've always wanted to make a manga but alas I don't know ho",
-        "日期": "2026-02-04 14:40:00",
-        "链接": "https://www.youtube.com/watch?v=I5y6hYfVY5o",
-        "来源": "YouTube - Tina Huang",
-        "板块": "视频",
-        "播放量": 0
-    },
-    {
-        "标题": "How to Scale Your AI Agency (Forward Deployed Engineer Model Breakdown)",
-        "内容": "📚 Grab Brandon’s board in the #1 community for AI entrepreneurs: https://bit.ly/4rmeaeP\n📈 Become a Wildly Profitable AI Entrepreneur: https://bit.ly/4rw2syC\n🤝 Ready to transform your business with AI?",
-        "日期": "2026-02-03 09:35:22",
-        "链接": "https://www.youtube.com/watch?v=HiC1J8a9V1I",
-        "来源": "YouTube - Liam Ottley",
-        "板块": "视频",
-        "播放量": 0
-    },
-    {
-        "标题": "New DeepSeek Research - The Future Is Here!",
-        "内容": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\nI use DeepSeek there by running an instance with enough GPU VRAM and using ollama.\n\n📝 The #DeepSeek paper is availabl",
-        "日期": "2026-02-04 13:29:19",
-        "链接": "https://www.youtube.com/watch?v=fFL7la73RO4",
-        "来源": "YouTube - Two Minute Papers",
-        "板块": "视频",
-        "播放量": 0
-    }
 ];
 
 function getSourceClass(source) {

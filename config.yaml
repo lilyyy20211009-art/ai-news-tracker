@@ -7,9 +7,9 @@ sources:
     enabled: true
     hours: 24  # 获取最近 24 小时的内容
 
-  # YouTube (使用 RSS，无需 API Key)
+  # YouTube (使用 RSS，无需 API Key) - 禁用，避免与低粉爆款监测冲突
   youtube:
-    enabled: true
+    enabled: false
     hours: 72  # 获取最近 3 天的视频
     min_views: 0  # RSS 不提供播放量数据，设为0不过滤
 
@@ -43,10 +43,14 @@ llm:
 output:
   # 飞书多维表格
   feishu:
-    enabled: false
-    app_id: ""         # 飞书应用 ID
-    app_secret: ""     # 飞书应用 Secret
-    table_id: ""       # 多维表格 ID
+    enabled: true
+    app_id: "cli_a90e8c0be0395cd3"         # 飞书应用 ID
+    app_secret: "DeNNOEjd5zXGoEzKZYYcKgGYGc3J2GPx"     # 飞书应用 Secret
+    app_token: "Uf16b8jCkabtIiseAQ8cfy6jnYe"  # 多维表格 app_token
+    table_id: "tblCxZglkQsGXe7l"       # 数据表 ID (AI新闻数据 - 第一个 sheet)
+    viral_table_id: "tbl7wjdIATQHaXbf"  # 低粉爆款视频数据表 ID (第二个 sheet)
+    conversation_id: ""  # 飞书群聊或机器人对话 ID，用于发送通知（可选）
+    webhook_url: "https://open.feishu.cn/open-apis/bot/v2/hook/2fab5dae-83f1-4d85-9c9a-0a09ca5dee45"  # 自定义机器人 Webhook URL，用于发送通知（推荐）
 
   # JSON 文件输出
   json:
@@ -84,3 +88,19 @@ custom:
   custom_subreddits:
     # - "artificial"
     # - "MachineLearning"
+
+# AI 内容情报监测 - YouTube 中文低粉爆款监测（自动发现模式）
+youtube_chinese:
+  enabled: true  # 设为 true 启用
+  api_key: "AIzaSyD5HhDKIQVcxvAc_MKw-pb5A8fvzxzYvno"  # YouTube Data API v3 密钥（在 https://console.cloud.google.com/apis/credentials 获取）
+
+  # 监测参数
+  days_threshold: 14  # 监测最近 N 天的视频
+  max_subscribers: 50000  # 最大订阅数阈值（低粉定义）
+  viral_ratio: 5  # 播放量达到订阅数的多少倍才算爆款
+
+  # 说明：
+  # - 系统会自动搜索 AI 相关的中文视频
+  # - 自动筛选低粉丝（≤50K）但高播放（≥5x订阅）的爆款视频
+  # - 搜索关键词包括：AI 教程、ChatGPT、AI 工具、GPT-4、Claude、AI 编程 等
+  # - 无需手动指定频道列表

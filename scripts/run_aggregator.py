@@ -6,6 +6,7 @@ AI News Aggregator - 主运行脚本
 import os
 import sys
 import yaml
+import subprocess
 from pathlib import Path
 from datetime import datetime
 
@@ -15,7 +16,20 @@ sys.path.insert(0, str(script_dir))
 
 from fetchers import fetch_all_sources
 from llm_processor import process_batch, generate_daily_summary
-from feishu_output import export_to_json, export_to_markdown, export_to_feishu, export_to_html
+from feishu_output import export_to_json, export_to_markdown, export_to_feishu, export_to_html, FeishuBitableClient
+
+
+def send_notification(title: str, message: str, sound: str = "default"):
+    """发送 macOS 系统通知"""
+    try:
+        cmd = [
+            "osascript",
+            "-e",
+            f'display notification "{message}" with title "{title}" sound "{sound}"'
+        ]
+        subprocess.run(cmd, check=True, capture_output=True)
+    except Exception as e:
+        print(f"   ⚠️ 发送通知失败: {e}")
 
 
 def update_web_summary():
@@ -141,10 +155,11 @@ def main():
     export_to_html(processed_items, daily_summary, html_path)
 
     # 飞书
+    feishu_count = 0
     if output_config.get("feishu", {}).get("enabled", False):
         feishu_config = output_config["feishu"]
-        count = export_to_feishu(processed_items, feishu_config)
-        print(f"   飞书: {count} 条记录")
+        feishu_count = export_to_feishu(processed_items, feishu_config, send_notification=True)
+        print(f"   飞书: {feishu_count} 条记录")
 
     print("\n✅ 完成!")
     print(f"   共处理 {len(processed_items)} 条内容")

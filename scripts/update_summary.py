@@ -5,11 +5,45 @@ AI News Aggregator - 摘要生成器
 
 import html
 import json
+import os
 import re
 import unicodedata
+import yaml
 from datetime import datetime
 from pathlib import Path
 from typing import List, Dict, Any
+
+# DeepSeek API 配置
+def load_api_key():
+    """从环境变量或配置文件加载 API Key"""
+    # 先尝试环境变量
+    api_key = os.environ.get("DEEPSEEK_API_KEY")
+    if api_key:
+        return api_key, os.environ.get("DEEPSEEK_BASE_URL", "https://api.deepseek.com/v1")
+
+    # 尝试从配置文件读取
+    config_paths = [
+        Path(__file__).parent.parent / "config.yaml",
+        Path("~/config.yaml").expanduser(),
+    ]
+
+    for config_path in config_paths:
+        if config_path.exists():
+            try:
+                with open(config_path, 'r', encoding='utf-8') as f:
+                    config = yaml.safe_load(f)
+                    api_key = config.get("llm", {}).get("api_key", "")
+                    base_url = config.get("llm", {}).get("base_url", "https://api.deepseek.com")
+                    if api_key:
+                        return api_key, base_url
+            except Exception as e:
+                print(f"读取配置文件失败: {e}")
+
+    return None, None
+
+DEEPSEEK_API_KEY, DEEPSEEK_BASE_URL = load_api_key()
+if DEEPSEEK_BASE_URL and not DEEPSEEK_BASE_URL.endswith("/v1"):
+    DEEPSEEK_BASE_URL = DEEPSEEK_BASE_URL + "/v1"
 
 
 # 英文标题到中文的简单翻译映射
@@ -65,6 +99,56 @@ def normalize_quotes(text: str) -> str:
     for curly, straight in quote_map.items():
         text = text.replace(curly, straight)
     return text
+
+
+def translate_with_deepseek(title: str) -> str:
+    """
+    使用 DeepSeek API 翻译英文标题为中文
+
+    Args:
+        title: 英文标题
+
+    Returns:
+        中文翻译
+    """
+    if not DEEPSEEK_API_KEY:
+        print("警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译")
+        return None
+
+    try:
+        from openai import OpenAI
+
+        client = OpenAI(
+            api_key=DEEPSEEK_API_KEY,
+            base_url=DEEPSEEK_BASE_URL
+        )
+
+        prompt = f"""请将以下新闻标题翻译成中文，要求简洁、准确、专业。标题：{title}
+
+注意：
+1. 只输出翻译后的中文标题，不要有任何解释或额外内容
+2. 保持专业术语的准确性（如 AI、Claude、ChatGPT 等）
+3. 公司名称可以保留英文或使用中文通译
+4. 翻译要简洁，符合中文新闻标题的习惯"""
+
+        response = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.3,
+            max_tokens=200
+        )
+
+        translated = response.choices[0].message.content.strip()
+        return translated
+
+    except ImportError:
+        print("警告：未安装 openai 库，使用简单翻译")
+        return None
+    except Exception as e:
+        print(f"DeepSeek API 调用失败: {e}")
+        return None
 
 
 def translate_title(title: str) -> str:
@@ -136,8 +220,13 @@ def extract_key_news(items: List[Dict], source_filter: str = None, limit: int = 
     key_news = []
     for item in filtered[:limit]:
         title = item.get("标题", "")
-        # 翻译成中文
-        translated = translate_title(title)
+
+        # 优先使用 DeepSeek API 翻译
+        translated = translate_with_deepseek(title)
+        if not translated:
+            # 如果 API 翻译失败，使用本地简单翻译
+            translated = translate_title(title)
+
         key_news.append(translated)
 
     return "；".join(key_news)

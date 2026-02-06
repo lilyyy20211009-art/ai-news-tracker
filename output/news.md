@@ -1,264 +1,143 @@
 # AI 信息聚合报告
 
-生成时间: 2026-02-05 09:02:23
+生成时间: 2026-02-06 09:00:13
 
-共 36 条信息
+共 19 条信息
 
 ---
 
 ## AI
 
-### Google&#8217;s annual revenue tops $400 billion for the first time
+### Super Bowl LX ads: all AI everything
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-04 22:41:03
-- **链接**: [https://www.theverge.com/news/874161/google-400-billion-revenue-q4-2025-earnings](https://www.theverge.com/news/874161/google-400-billion-revenue-q4-2025-earnings)
+- **日期**: 2026-02-05 18:18:34
+- **链接**: [https://www.theverge.com/entertainment/874504/super-bowl-lx-ads-big-game](https://www.theverge.com/entertainment/874504/super-bowl-lx-ads-big-game)
 - **板块**: 新闻
 
-### Sam Altman responds to Anthropic’s ‘funny’ Super Bowl ads
+### Claude has been having a moment — can it keep it up?
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-04 21:03:05
-- **链接**: [https://www.theverge.com/news/874084/ai-chatgpt-claude-super-bowl-ads-openai-anthropic](https://www.theverge.com/news/874084/ai-chatgpt-claude-super-bowl-ads-openai-anthropic)
+- **日期**: 2026-02-05 18:00:00
+- **链接**: [https://www.theverge.com/report/874308/anthropic-claude-code-opus-hype-moment](https://www.theverge.com/report/874308/anthropic-claude-code-opus-hype-moment)
 - **板块**: 新闻
 
-### OpenClaw&#8217;s AI &#8216;skill&#8217; extensions are a security nightmare
+### Anthropic debuts new model with hopes to corner the market beyond coding
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-04 19:03:38
-- **链接**: [https://www.theverge.com/news/874011/openclaw-ai-skill-clawhub-extensions-security-nightmare](https://www.theverge.com/news/874011/openclaw-ai-skill-clawhub-extensions-security-nightmare)
+- **日期**: 2026-02-05 18:00:00
+- **链接**: [https://www.theverge.com/ai-artificial-intelligence/874440/anthropic-opus-4-6-new-model-claude](https://www.theverge.com/ai-artificial-intelligence/874440/anthropic-opus-4-6-new-model-claude)
 - **板块**: 新闻
 
-### GitHub adds Claude and Codex AI coding agents
+### Nvidia&#8217;s RTX 50-series Super refresh is delayed, and the RTX 60-series might miss 2027
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-04 17:00:00
-- **链接**: [https://www.theverge.com/news/873665/github-claude-codex-ai-agents](https://www.theverge.com/news/873665/github-claude-codex-ai-agents)
+- **日期**: 2026-02-05 16:33:27
+- **链接**: [https://www.theverge.com/tech/874439/nvidia-rtx-50-super-60-series-delay](https://www.theverge.com/tech/874439/nvidia-rtx-50-super-60-series-delay)
 - **板块**: 新闻
 
-### Anthropic says ‘Claude will remain ad-free,’ unlike ChatGPT
+### Reality is losing the deepfake war
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-04 13:09:50
-- **链接**: [https://www.theverge.com/ai-artificial-intelligence/873686/anthropic-claude-ai-ad-free-super-bowl-advert-chatgpt](https://www.theverge.com/ai-artificial-intelligence/873686/anthropic-claude-ai-ad-free-super-bowl-advert-chatgpt)
+- **日期**: 2026-02-05 15:00:00
+- **链接**: [https://www.theverge.com/podcast/874038/ai-deepfakes-war-on-reality-c2pa-labels](https://www.theverge.com/podcast/874038/ai-deepfakes-war-on-reality-c2pa-labels)
 - **板块**: 新闻
 
-### Sen. Warren wants to know what Google Gemini’s built-in checkout means for user privacy
+### OpenAI Frontier is a single platform to control your AI agents
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-04 12:00:00
-- **链接**: [https://www.theverge.com/news/873476/senator-elizabeth-warren-google-gemini-ai-shopping-privacy](https://www.theverge.com/news/873476/senator-elizabeth-warren-google-gemini-ai-shopping-privacy)
+- **日期**: 2026-02-05 14:00:00
+- **链接**: [https://www.theverge.com/ai-artificial-intelligence/874258/openai-frontier-ai-agent-platform-management](https://www.theverge.com/ai-artificial-intelligence/874258/openai-frontier-ai-agent-platform-management)
 - **板块**: 新闻
 
-### Sam Altman got exceptionally testy over Claude Super Bowl ads
+### Sapiom raises $15M to help AI agents buy their own tech tools
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-05 00:45:11
-- **链接**: [https://techcrunch.com/2026/02/04/sam-altman-got-exceptionally-testy-over-claude-super-bowl-ads/](https://techcrunch.com/2026/02/04/sam-altman-got-exceptionally-testy-over-claude-super-bowl-ads/)
+- **日期**: 2026-02-05 23:53:42
+- **链接**: [https://techcrunch.com/2026/02/05/sapiom-raises-15m-to-help-ai-agents-buy-their-own-tech-tools/](https://techcrunch.com/2026/02/05/sapiom-raises-15m-to-help-ai-agents-buy-their-own-tech-tools/)
 - **板块**: 新闻
 
-### Alphabet won’t talk about the Google-Apple AI deal, even to investors
+### Reddit looks to AI search as its next big opportunity
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-04 23:28:31
-- **链接**: [https://techcrunch.com/2026/02/04/alphabet-wont-talk-about-the-google-apple-ai-deal-even-to-investors/](https://techcrunch.com/2026/02/04/alphabet-wont-talk-about-the-google-apple-ai-deal-even-to-investors/)
+- **日期**: 2026-02-05 23:20:27
+- **链接**: [https://techcrunch.com/2026/02/05/reddit-looks-to-ai-search-as-its-next-big-opportunity/](https://techcrunch.com/2026/02/05/reddit-looks-to-ai-search-as-its-next-big-opportunity/)
 - **板块**: 新闻
 
-### Google’s Gemini app has surpassed 750M monthly active users
+### AWS revenue continues to soar as cloud demand remains high
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-04 22:53:46
-- **链接**: [https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/](https://techcrunch.com/2026/02/04/googles-gemini-app-has-surpassed-750m-monthly-active-users/)
+- **日期**: 2026-02-05 23:11:37
+- **链接**: [https://techcrunch.com/2026/02/05/aws-revenue-continues-to-soar-as-cloud-demand-remains-high/](https://techcrunch.com/2026/02/05/aws-revenue-continues-to-soar-as-cloud-demand-remains-high/)
 - **板块**: 新闻
 
-### Meet Gizmo: A TikTok for interactive, vibe-coded mini apps
+### Amazon and Google are winning the AI capex race — but what’s the prize?
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-04 21:45:32
-- **链接**: [https://techcrunch.com/2026/02/04/meet-gizmo-a-tiktok-for-interactive-vibe-coded-mini-apps/](https://techcrunch.com/2026/02/04/meet-gizmo-a-tiktok-for-interactive-vibe-coded-mini-apps/)
+- **日期**: 2026-02-05 22:43:11
+- **链接**: [https://techcrunch.com/2026/02/05/amazon-and-google-are-winning-the-ai-capex-race-but-whats-the-prize/](https://techcrunch.com/2026/02/05/amazon-and-google-are-winning-the-ai-capex-race-but-whats-the-prize/)
 - **板块**: 新闻
 
-### AI SRE Resolve AI confirms $125M raise, unicorn valuation
+### OpenAI launches new agentic coding model only minutes after Anthropic drops its own
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-04 21:39:26
-- **链接**: [https://techcrunch.com/2026/02/04/ai-sre-resolve-ai-confirms-125m-raise-unicorn-valuation/](https://techcrunch.com/2026/02/04/ai-sre-resolve-ai-confirms-125m-raise-unicorn-valuation/)
+- **日期**: 2026-02-05 20:01:39
+- **链接**: [https://techcrunch.com/2026/02/05/openai-launches-new-agentic-coding-model-only-minutes-after-anthropic-drops-its-own/](https://techcrunch.com/2026/02/05/openai-launches-new-agentic-coding-model-only-minutes-after-anthropic-drops-its-own/)
 - **板块**: 新闻
 
-### Amazon to begin testing AI tools for film and TV production next month
+### Elon Musk is getting serious about orbital data centers
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-04 21:26:43
-- **链接**: [https://techcrunch.com/2026/02/04/amazon-to-begin-testing-ai-tools-for-film-and-tv-production-next-month/](https://techcrunch.com/2026/02/04/amazon-to-begin-testing-ai-tools-for-film-and-tv-production-next-month/)
+- **日期**: 2026-02-05 18:50:49
+- **链接**: [https://techcrunch.com/2026/02/05/elon-musk-is-getting-serious-about-orbital-data-centers/](https://techcrunch.com/2026/02/05/elon-musk-is-getting-serious-about-orbital-data-centers/)
 - **板块**: 新闻
 
-### A16z just raised $1.7B for AI infrastructure. Here’s where it’s going.
+### OpenAI launches a way for enterprises to build and manage AI agents
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-04 20:24:12
-- **链接**: [https://techcrunch.com/video/a16z-just-raised-1-7b-for-ai-infrastructure-heres-where-its-going/](https://techcrunch.com/video/a16z-just-raised-1-7b-for-ai-infrastructure-heres-where-its-going/)
+- **日期**: 2026-02-05 18:09:50
+- **链接**: [https://techcrunch.com/2026/02/05/openai-launches-a-way-for-enterprises-to-build-and-manage-ai-agents/](https://techcrunch.com/2026/02/05/openai-launches-a-way-for-enterprises-to-build-and-manage-ai-agents/)
 - **板块**: 新闻
 
-### What a16z is actually funding (and what it’s ignoring) when it comes to AI infra
+### Anthropic releases Opus 4.6 with new ‘agent teams’
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-04 20:19:12
-- **链接**: [https://techcrunch.com/podcast/what-a16z-is-actually-funding-and-what-its-ignoring-when-it-comes-to-ai-infra/](https://techcrunch.com/podcast/what-a16z-is-actually-funding-and-what-its-ignoring-when-it-comes-to-ai-infra/)
+- **日期**: 2026-02-05 17:51:13
+- **链接**: [https://techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/](https://techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/)
 - **板块**: 新闻
 
-### Tinder looks to AI to help fight ‘swipe fatigue’ and dating app burnout
+### Meta tests a stand-alone app for its AI-generated ‘Vibes’ videos
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-04 18:08:00
-- **链接**: [https://techcrunch.com/2026/02/04/tinder-looks-to-ai-to-help-fight-swipe-fatigue-and-dating-app-burnout/](https://techcrunch.com/2026/02/04/tinder-looks-to-ai-to-help-fight-swipe-fatigue-and-dating-app-burnout/)
+- **日期**: 2026-02-05 17:19:01
+- **链接**: [https://techcrunch.com/2026/02/05/meta-tests-a-standalone-app-for-its-ai-generated-vibes-videos/](https://techcrunch.com/2026/02/05/meta-tests-a-standalone-app-for-its-ai-generated-vibes-videos/)
 - **板块**: 新闻
 
-### Roblox’s 4D creation feature is now available in open beta
+### Fundamental raises $255M Series A with a new take on big data analysis
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-04 17:00:00
-- **链接**: [https://techcrunch.com/2026/02/04/robloxs-4d-creation-feature-is-now-available-in-open-beta/](https://techcrunch.com/2026/02/04/robloxs-4d-creation-feature-is-now-available-in-open-beta/)
+- **日期**: 2026-02-05 15:00:02
+- **链接**: [https://techcrunch.com/2026/02/05/fundamental-raises-255-million-series-a-with-a-new-take-on-big-data-analysis/](https://techcrunch.com/2026/02/05/fundamental-raises-255-million-series-a-with-a-new-take-on-big-data-analysis/)
 - **板块**: 新闻
 
-### ElevenLabs raises $500M from Sequoia at an $11 billion valuation
+### ElevenLabs CEO: Voice is the next interface for AI
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-04 15:33:58
-- **链接**: [https://techcrunch.com/2026/02/04/elevenlabs-raises-500m-from-sequioia-at-a-11-billion-valuation/](https://techcrunch.com/2026/02/04/elevenlabs-raises-500m-from-sequioia-at-a-11-billion-valuation/)
+- **日期**: 2026-02-05 14:41:12
+- **链接**: [https://techcrunch.com/2026/02/05/elevenlabs-ceo-voice-is-the-next-interface-for-ai/](https://techcrunch.com/2026/02/05/elevenlabs-ceo-voice-is-the-next-interface-for-ai/)
 - **板块**: 新闻
 
-### Alexa+, Amazon’s AI assistant, is now available to everyone in the US
-
-- **来源**: TechCrunch AI
-- **日期**: 2026-02-04 14:00:00
-- **链接**: [https://techcrunch.com/2026/02/04/alexa-amazons-ai-assistant-is-now-available-to-everyone-in-the-u-s/](https://techcrunch.com/2026/02/04/alexa-amazons-ai-assistant-is-now-available-to-everyone-in-the-u-s/)
-- **板块**: 新闻
-
-### Accel doubles down on Fibr AI as agents turn static websites into one-to-one experiences
-
-- **来源**: TechCrunch AI
-- **日期**: 2026-02-04 13:00:00
-- **链接**: [https://techcrunch.com/2026/02/04/accel-doubles-down-on-fibr-ai-as-agents-turn-static-websites-into-one-to-one-experiences/](https://techcrunch.com/2026/02/04/accel-doubles-down-on-fibr-ai-as-agents-turn-static-websites-into-one-to-one-experiences/)
-- **板块**: 新闻
-
-### Google Plans to Double Spending Amid A.I. Race
+### Amazon’s $200 Billion Spending Plan Raises Stakes in A.I. Race
 
 - **来源**: NYT AI
-- **日期**: 2026-02-05 00:43:08
-- **链接**: [https://www.nytimes.com/2026/02/04/business/google-earnings-ai.html](https://www.nytimes.com/2026/02/04/business/google-earnings-ai.html)
+- **日期**: 2026-02-05 23:51:01
+- **链接**: [https://www.nytimes.com/2026/02/05/technology/amazon-200-billion-ai.html](https://www.nytimes.com/2026/02/05/technology/amazon-200-billion-ai.html)
 - **板块**: 新闻
 
-### Babies, Robots and Climate Change
+### ‘Melania’: Watching a First Lady Vanish in Plain Sight
 
 - **来源**: NYT AI
-- **日期**: 2026-02-04 21:22:41
-- **链接**: [https://www.nytimes.com/2026/02/04/world/population-decline-climate-change-ukraine-minneapolis.html](https://www.nytimes.com/2026/02/04/world/population-decline-climate-change-ukraine-minneapolis.html)
+- **日期**: 2026-02-05 13:49:57
+- **链接**: [https://www.nytimes.com/2026/02/05/opinion/melania-film-review.html](https://www.nytimes.com/2026/02/05/opinion/melania-film-review.html)
 - **板块**: 新闻
-
-### Why A.I. Fears Are Battering Stocks, Again
-
-- **来源**: NYT AI
-- **日期**: 2026-02-04 17:59:57
-- **链接**: [https://www.nytimes.com/2026/02/04/business/dealbook/ai-software-stocks-anthropic.html](https://www.nytimes.com/2026/02/04/business/dealbook/ai-software-stocks-anthropic.html)
-- **板块**: 新闻
-
-### Bedrock, an A.I. Start-Up for Construction, Raises $270 Million
-
-- **来源**: NYT AI
-- **日期**: 2026-02-04 15:40:03
-- **链接**: [https://www.nytimes.com/2026/02/04/business/dealbook/bedrock-robotics-ai-fundraise.html](https://www.nytimes.com/2026/02/04/business/dealbook/bedrock-robotics-ai-fundraise.html)
-- **板块**: 新闻
-
-### Moltbook Mania Explained
-
-- **来源**: NYT AI
-- **日期**: 2026-02-04 12:00:06
-- **链接**: [https://www.nytimes.com/2026/02/04/podcasts/moltbook-mania-explained.html](https://www.nytimes.com/2026/02/04/podcasts/moltbook-mania-explained.html)
-- **板块**: 新闻
-
-### A.I. Loves Fake Images. But They’ve Been a Thing Since Photography Began.
-
-- **来源**: NYT AI
-- **日期**: 2026-02-04 10:51:44
-- **链接**: [https://www.nytimes.com/2026/02/04/arts/design/fakes-rijksmuseum-photo-manipulation.html](https://www.nytimes.com/2026/02/04/arts/design/fakes-rijksmuseum-photo-manipulation.html)
-- **板块**: 新闻
-
-### Once the Hottest Bet on Wall St., Private Credit Has Started to Crack
-
-- **来源**: NYT AI
-- **日期**: 2026-02-04 14:13:14
-- **链接**: [https://www.nytimes.com/2026/02/04/business/private-credit-blue-owl-ai.html](https://www.nytimes.com/2026/02/04/business/private-credit-blue-owl-ai.html)
-- **板块**: 新闻
-
-### What if Labor Becomes Unnecessary?
-
-- **来源**: NYT AI
-- **日期**: 2026-02-04 13:54:31
-- **链接**: [https://www.nytimes.com/2026/02/04/opinion/ai-jobs-employment-industry.html](https://www.nytimes.com/2026/02/04/opinion/ai-jobs-employment-industry.html)
-- **板块**: 新闻
-
-## 行业动态
-
-### Farming for the future | Where the Internet Lives
-
-- **来源**: YouTube - Google
-- **日期**: 2026-02-04 20:15:35
-- **链接**: [https://www.youtube.com/watch?v=7hnvRBjuCW8](https://www.youtube.com/watch?v=7hnvRBjuCW8)
-- **板块**: 视频
-
-### Interested in Architecture? Test Yourself IRL.
-
-- **来源**: YouTube - Google
-- **日期**: 2026-02-04 17:16:17
-- **链接**: [https://www.youtube.com/shorts/aC0KO60yytE](https://www.youtube.com/shorts/aC0KO60yytE)
-- **板块**: 视频
-
-### How a Graphic Designer uses AI Studio for Interactive Art
-
-- **来源**: YouTube - Google
-- **日期**: 2026-02-02 22:51:15
-- **链接**: [https://www.youtube.com/watch?v=QikCsFDvt9g](https://www.youtube.com/watch?v=QikCsFDvt9g)
-- **板块**: 视频
-
-### Come on up–the air is fine!
-
-- **来源**: YouTube - Google
-- **日期**: 2026-02-02 20:46:01
-- **链接**: [https://www.youtube.com/shorts/OSgNg1Zv4os](https://www.youtube.com/shorts/OSgNg1Zv4os)
-- **板块**: 视频
-
-### TFW you are one with the machine. 🧘
-
-- **来源**: YouTube - Google for Developers
-- **日期**: 2026-02-03 05:00:04
-- **链接**: [https://www.youtube.com/shorts/3Imcjj1GWQs](https://www.youtube.com/shorts/3Imcjj1GWQs)
-- **板块**: 视频
-
-### What number does this SQL query actually run? Go!
-
-- **来源**: YouTube - Google for Developers
-- **日期**: 2026-02-02 14:00:39
-- **链接**: [https://www.youtube.com/shorts/KW6bXeDJEUE](https://www.youtube.com/shorts/KW6bXeDJEUE)
-- **板块**: 视频
-
-### I Built A Manga Drawing App In 24 Hours
-
-- **来源**: YouTube - Tina Huang
-- **日期**: 2026-02-04 14:40:00
-- **链接**: [https://www.youtube.com/watch?v=I5y6hYfVY5o](https://www.youtube.com/watch?v=I5y6hYfVY5o)
-- **板块**: 视频
-
-### How to Scale Your AI Agency (Forward Deployed Engineer Model Breakdown)
-
-- **来源**: YouTube - Liam Ottley
-- **日期**: 2026-02-03 09:35:22
-- **链接**: [https://www.youtube.com/watch?v=HiC1J8a9V1I](https://www.youtube.com/watch?v=HiC1J8a9V1I)
-- **板块**: 视频
-
-### New DeepSeek Research - The Future Is Here!
-
-- **来源**: YouTube - Two Minute Papers
-- **日期**: 2026-02-04 13:29:19
-- **链接**: [https://www.youtube.com/watch?v=fFL7la73RO4](https://www.youtube.com/watch?v=fFL7la73RO4)
-- **板块**: 视频
 

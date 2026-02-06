@@ -5,6 +5,7 @@ AI News Aggregator - Feishu Output
 
 import os
 import requests
+from datetime import datetime
 from typing import List, Dict, Any, Optional
 
 
@@ -15,7 +16,11 @@ class FeishuBitableClient:
         self,
         app_id: Optional[str] = None,
         app_secret: Optional[str] = None,
-        table_id: Optional[str] = None
+        app_token: Optional[str] = None,
+        table_id: Optional[str] = None,
+        wiki_node_id: Optional[str] = None,
+        conversation_id: Optional[str] = None,
+        webhook_url: Optional[str] = None
     ):
         """
         初始化飞书客户端
@@ -23,17 +28,79 @@ class FeishuBitableClient:
         Args:
             app_id: 飞书应用 ID，默认从环境变量 FEISHU_APP_ID 读取
             app_secret: 飞书应用 Secret，默认从环境变量 FEISHU_APP_SECRET 读取
-            table_id: 多维表格 ID，默认从环境变量 FEISHU_TABLE_ID 读取
+            app_token: 多维表格 app_token，默认从环境变量 FEISHU_APP_TOKEN 读取
+            table_id: 数据表 ID，默认从环境变量 FEISHU_TABLE_ID 读取
+            wiki_node_id: Wiki 节点 ID（用于 Wiki 中的表格，已弃用）
+            conversation_id: 飞书群聊/机器人对话 ID，用于发送通知
+            webhook_url: 自定义机器人 Webhook URL，用于发送通知（推荐）
         """
         self.app_id = app_id or os.getenv("FEISHU_APP_ID")
         self.app_secret = app_secret or os.getenv("FEISHU_APP_SECRET")
+        self.app_token = app_token or os.getenv("FEISHU_APP_TOKEN")
         self.table_id = table_id or os.getenv("FEISHU_TABLE_ID")
+        self.wiki_node_id = wiki_node_id or os.getenv("FEISHU_WIKI_NODE_ID")
+        self.conversation_id = conversation_id or os.getenv("FEISHU_CONVERSATION_ID", "")
+        self.webhook_url = webhook_url or os.getenv("FEISHU_WEBHOOK_URL", "")
 
         self.base_url = "https://open.feishu.cn/open-apis"
         self.access_token = None
 
-        if not all([self.app_id, self.app_secret, self.table_id]):
-            print("警告: 飞书配置不完整，无法输出到飞书")
+        if not all([self.app_id, self.app_secret]):
+            print("警告: 飞书配置不完整，缺少 App ID 或 App Secret")
+
+    def _get_wiki_app_token(self) -> str:
+        """获取 Wiki 中表格的 app_token"""
+        if self.app_token:
+            return self.app_token
+
+        if not self.wiki_node_id:
+            raise RuntimeError("未配置 Wiki 节点 ID，无法获取 app_token")
+
+        try:
+            access_token = self._get_access_token()
+
+            # 对于 Wiki 中的表格，wiki_node_id 就是 bitable 的 app_token
+            # Wiki 表格本质上就是一个独立的多维表格
+            # 节点 token (wiki_node_id) 就是表格的 app_token
+
+            # 先尝试通过搜索 API 获取节点信息
+            url = f"{self.base_url}/wiki/v2/spaces/{self.wiki_node_id}/nodes/{self.wiki_node_id}"
+            headers = {
+                "Authorization": f"Bearer {access_token}",
+                "Content-Type": "application/json"
+            }
+
+            response = requests.get(url, headers=headers)
+            data = response.json()
+
+            if data.get("code") == 0 and "data" in data:
+                node_obj = data["data"].get("node_obj", {})
+                obj_type = node_obj.get("obj_type", "")
+
+                # 如果是表格类型，obj_token 就是 app_token
+                if obj_type == "bitable":
+                    self.app_token = node_obj.get("obj_token", "")
+                    if self.app_token:
+                        print(f"✅ 获取到 Wiki 表格 app_token: {self.app_token}")
+                        return self.app_token
+                else:
+                    print(f"⚠️ 节点类型不是 bitable，而是: {obj_type}")
+
+            # 如果 API 调用失败，对于 Wiki 中的表格，node_id 通常就是 app_token
+            print(f"⚠️ API 返回: {data.get('msg', data)}")
+            print(f"ℹ️  尝试直接使用 wiki_node_id 作为 app_token")
+
+            # Wiki 中的多维表格，node_id 通常可以作为 app_token 使用
+            self.app_token = self.wiki_node_id
+            return self.app_token
+
+        except Exception as e:
+            print(f"⚠️ 获取 app_token 失败: {e}")
+            import traceback
+            traceback.print_exc()
+            # 回退：使用 wiki_node_id
+            self.app_token = self.wiki_node_id
+            return self.app_token
 
     def _get_access_token(self) -> str:
         """获取访问令牌"""
@@ -72,24 +139,43 @@ class FeishuBitableClient:
         try:
             access_token = self._get_access_token()
 
+            # 确定 app_token
+            if self.app_token:
+                app_token = self.app_token
+            elif self.wiki_node_id:
+                app_token = self._get_wiki_app_token()
+            else:
+                app_token = self.table_id
+
             # 构造记录
             # 注意: 字段名称需要与飞书表格中的字段完全匹配
-            fields = {
-                "标题": item.get("标题", ""),
-                "日期": item.get("日期", ""),
-                "链接": {
-                    "text": "原文链接",
-                    "link": item.get("链接", "")
-                },
-                "来源": item.get("来源", ""),
-                "板块": item.get("板块", "")
-            }
 
-            # 如果有分类字段
-            if "分类" in item:
-                fields["分类"] = item["分类"]
+            # 定义需要转换为时间戳的字段名
+            date_field_names = ["日期", "发布时间"]
+            # 定义需要转换为 URL 格式的字段名
+            url_field_names = ["链接", "视频链接"]
 
-            url = f"{self.base_url}/bitable/v1/apps/{self.table_id}/tables/your_table_id/records"
+            fields = {}
+            for key, value in item.items():
+                # 处理日期字段 -> 毫秒时间戳
+                if key in date_field_names:
+                    if isinstance(value, str) and value:
+                        try:
+                            dt = datetime.strptime(value, "%Y-%m-%d %H:%M:%S")
+                            value = int(dt.timestamp() * 1000)
+                        except ValueError:
+                            value = 0
+                    else:
+                        value = value if isinstance(value, int) else 0
+
+                # 处理 URL 字段 -> {"link": "..."} 格式
+                elif key in url_field_names:
+                    value = {"link": value}
+
+                fields[key] = value
+
+            # 使用正确的 API URL 格式
+            url = f"{self.base_url}/bitable/v1/apps/{app_token}/tables/{self.table_id}/records"
             headers = {
                 "Authorization": f"Bearer {access_token}",
                 "Content-Type": "application/json"
@@ -98,9 +184,15 @@ class FeishuBitableClient:
             payload = {"fields": fields}
             response = requests.post(url, headers=headers, json=payload)
 
+            # 检查 HTTP 状态码和 API 响应码
             if response.status_code == 200:
-                print(f"✅ 已添加到飞书: {item.get('标题', '')[:30]}...")
-                return True
+                result = response.json()
+                if result.get("code") == 0:
+                    print(f"✅ 已添加到飞书: {item.get('标题', '')[:30]}...")
+                    return True
+                else:
+                    print(f"❌ 飞书 API 错误: {result.get('msg')} ({result.get('code')})")
+                    return False
             else:
                 print(f"❌ 飞书添加失败: {response.text}")
                 return False
@@ -109,9 +201,55 @@ class FeishuBitableClient:
             print(f"❌ 飞书输出错误: {e}")
             return False
 
+    def _get_existing_titles(self) -> set:
+        """获取表格中已存在的标题，用于去重"""
+        try:
+            access_token = self._get_access_token()
+
+            if self.app_token:
+                app_token = self.app_token
+            elif self.wiki_node_id:
+                app_token = self._get_wiki_app_token()
+            else:
+                app_token = self.table_id
+
+            url = f"{self.base_url}/bitable/v1/apps/{app_token}/tables/{self.table_id}/records"
+            headers = {
+                "Authorization": f"Bearer {access_token}",
+                "Content-Type": "application/json"
+            }
+
+            existing_titles = set()
+            page_token = None
+
+            while True:
+                params = {"page_size": 100}
+                if page_token:
+                    params["page_token"] = page_token
+
+                response = requests.get(url, headers=headers, params=params)
+                data = response.json()
+
+                items = data.get('data', {}).get('items', [])
+                for item in items:
+                    fields = item.get('fields', {})
+                    # 支持 "标题" 和 "视频标题" 两种字段名
+                    title = fields.get('标题', '') or fields.get('视频标题', '')
+                    if title:
+                        existing_titles.add(title)
+
+                if not data.get('data', {}).get('has_more'):
+                    break
+                page_token = data.get('data', {}).get('page_token')
+
+            return existing_titles
+        except Exception as e:
+            print(f"⚠️ 获取已有标题失败: {e}")
+            return set()
+
     def add_batch(self, items: List[Dict[str, Any]]) -> int:
         """
-        批量添加记录到飞书多维表格
+        批量添加记录到飞书多维表格（自动去重）
 
         Args:
             items: 内容项列表
@@ -123,32 +261,157 @@ class FeishuBitableClient:
             print("飞书配置不完整，无法批量添加")
             return 0
 
+        # 获取已存在的标题用于去重
+        existing_titles = self._get_existing_titles()
+        skipped_count = 0
+
         success_count = 0
         for item in items:
+            # 支持 "标题" 和 "视频标题" 两种字段名
+            title = item.get("标题", "") or item.get("视频标题", "")
+            if title in existing_titles:
+                skipped_count += 1
+                continue
+
             if self.add_record(item):
                 success_count += 1
+                existing_titles.add(title)
+
+        if skipped_count > 0:
+            print(f"   跳过 {skipped_count} 条已存在的记录")
 
         return success_count
 
+    def send_conversation_message(self, message: str) -> bool:
+        """
+        发送消息到飞书群聊或机器人对话
 
-def export_to_feishu(items: List[Dict[str, Any]], config: Dict[str, Any]) -> int:
+        Args:
+            message: 要发送的消息内容
+
+        Returns:
+            是否发送成功
+        """
+        if not self.conversation_id:
+            print("   ⚠️ 未配置 conversation_id，跳过飞书对话通知")
+            return False
+
+        try:
+            access_token = self._get_access_token()
+
+            url = f"{self.base_url}/message/v4/send"
+            headers = {
+                "Authorization": f"Bearer {access_token}",
+                "Content-Type": "application/json"
+            }
+
+            payload = {
+                "receive_id_type": "chat_id",
+                "receive_id": self.conversation_id,
+                "msg_type": "text",
+                "content": {"text": message}
+            }
+
+            response = requests.post(url, headers=headers, json=payload)
+            data = response.json()
+
+            if data.get("code") == 0:
+                print(f"   ✅ 飞书对话通知已发送")
+                return True
+            else:
+                print(f"   ⚠️ 飞书对话通知发送失败: {data.get('msg')}")
+                return False
+
+        except Exception as e:
+            print(f"   ⚠️ 发送飞书对话通知失败: {e}")
+            return False
+
+    def send_webhook_message(self, message: str) -> bool:
+        """
+        通过自定义机器人 Webhook 发送消息
+
+        Args:
+            message: 要发送的消息内容
+
+        Returns:
+            是否发送成功
+        """
+        if not self.webhook_url:
+            return False
+
+        try:
+            payload = {
+                "msg_type": "text",
+                "content": {"text": message}
+            }
+
+            response = requests.post(self.webhook_url, json=payload)
+            data = response.json()
+
+            if data.get("code") == 0 or response.status_code == 200:
+                print(f"   ✅ 飞书 Webhook 通知已发送")
+                return True
+            else:
+                print(f"   ⚠️ 飞书 Webhook 通知发送失败: {data.get('msg')}")
+                return False
+
+        except Exception as e:
+            print(f"   ⚠️ 发送飞书 Webhook 通知失败: {e}")
+            return False
+
+    def send_notification(self, message: str) -> bool:
+        """
+        发送通知（优先使用 Webhook，其次使用 conversation_id）
+
+        Args:
+            message: 要发送的消息内容
+
+        Returns:
+            是否发送成功
+        """
+        # 优先使用 Webhook
+        if self.webhook_url:
+            return self.send_webhook_message(message)
+        # 其次使用 conversation_id
+        elif self.conversation_id:
+            return self.send_conversation_message(message)
+        else:
+            return False
+
+
+def export_to_feishu(items: List[Dict[str, Any]], config: Dict[str, Any], table_id: Optional[str] = None, send_notification: bool = False) -> int:
     """
     将内容列表导出到飞书
 
-    config 格式:
-    {
-        "app_id": "",
-        "app_secret": "",
-        "table_id": ""
-    }
+    Args:
+        items: 内容项列表
+        config: 配置字典，包含 app_id, app_secret, app_token 等
+        table_id: 可选的自定义表格 ID（用于写入不同的表格）
+        send_notification: 是否发送飞书对话通知
+
+    Returns:
+        成功添加的数量
     """
+    # 使用指定的 table_id 或配置中的默认 table_id
+    target_table_id = table_id or config.get("table_id")
+
     client = FeishuBitableClient(
         app_id=config.get("app_id"),
         app_secret=config.get("app_secret"),
-        table_id=config.get("table_id")
+        app_token=config.get("app_token"),
+        table_id=target_table_id,
+        wiki_node_id=config.get("wiki_node_id"),
+        conversation_id=config.get("conversation_id"),
+        webhook_url=config.get("webhook_url")
     )
 
-    return client.add_batch(items)
+    count = client.add_batch(items)
+
+    # 发送飞书对话通知（优先使用 Webhook，其次使用 conversation_id）
+    if send_notification and count > 0:
+        client.send_notification(f"✅ 已成功更新 {count} 条记录到飞书多维表格")
+
+    return count
 
 
 def export_to_json(items: List[Dict[str, Any]], filepath: str) -> bool:
