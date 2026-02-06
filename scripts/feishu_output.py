@@ -154,11 +154,24 @@ class FeishuBitableClient:
             date_field_names = ["日期", "发布时间"]
             # 定义需要转换为 URL 格式的字段名
             url_field_names = ["链接", "视频链接"]
+            # 定义飞书表格中实际存在的字段（根据表格结构定义）
+            allowed_fields = ["标题", "内容", "日期", "链接", "来源", "板块", "分类"]
+            # 字段名映射：将数据中的字段名映射到飞书表格的实际字段名
+            field_mapping = {
+                "内容": "多行文本"  # 数据中的"内容"对应飞书表格的"多行文本"
+            }
 
             fields = {}
             for key, value in item.items():
+                # 跳过不在允许列表中的字段
+                if key not in allowed_fields:
+                    continue
+
+                # 应用字段名映射
+                field_name = field_mapping.get(key, key)
+
                 # 处理日期字段 -> 毫秒时间戳
-                if key in date_field_names:
+                if field_name in date_field_names:
                     if isinstance(value, str) and value:
                         try:
                             dt = datetime.strptime(value, "%Y-%m-%d %H:%M:%S")
@@ -169,10 +182,10 @@ class FeishuBitableClient:
                         value = value if isinstance(value, int) else 0
 
                 # 处理 URL 字段 -> {"link": "..."} 格式
-                elif key in url_field_names:
+                elif field_name in url_field_names:
                     value = {"link": value}
 
-                fields[key] = value
+                fields[field_name] = value
 
             # 使用正确的 API URL 格式
             url = f"{self.base_url}/bitable/v1/apps/{app_token}/tables/{self.table_id}/records"
