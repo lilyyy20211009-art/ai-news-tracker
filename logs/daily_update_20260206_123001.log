@@ -1,0 +1,126 @@
+============================================================
+AI News Aggregator 每日更新
+开始时间: 2026-02-06 12:30:01
+============================================================
+
+📡 步骤1: 聚合新闻数据...
+/Users/y/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+============================================================
+🤖 AI News Aggregator
+============================================================
+
+📋 加载配置...
+   RSS: ✅
+   YouTube: ❌
+   Twitter: ❌
+
+🔍 获取数据...
+   获取到 19 条原始内容
+
+⚠️  未配置 DeepSeek API Key，跳过 LLM 处理
+
+📤 输出结果...
+
+📝 生成中文摘要...
+警告: 未设置 API Key，LLM 处理功能将不可用
+✅ 已导出到 ./output/news.json
+✅ 已导出到 ./output/news.md
+✅ 已导出到 ./output/today.html
+   跳过 19 条已存在的记录
+   飞书: 0 条记录
+
+✅ 完成!
+   共处理 19 条内容
+   HTML 报告: ./output/today.html
+
+🌐 更新网站摘要...
+   ✅ 网站摘要已更新
+📊 读取到 19 条新闻
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+
+📝 生成的摘要预览：
+            <p class="highlight">2026年02月06日更新 · 共 19 条内容</p>
+            <h3>📰 The Verge AI（6条）</h3>
+            <p>Super Bowl LX 广告: all AI everything；Claude has been having a moment — can it keep it up?；Anthropic debuts new model with hopes to corner the market beyond 编程</p>
+            <h3>💰 TechCrunch AI（11条）</h3>
+            <p>Sapiom 融资 $15M to help AI agents buy their own tech 工具；Reddit looks to AI search as its next big opportunity；AWS 收入 continues to soar as cloud demand remains high</p>
+            <h3>🏛️ NYT AI（2条）</h3>
+            <p>Amazon's $200 十亿 投入 Plan 融资 Stakes in A.I. 竞赛；'Melania': Watching a First Lady Vanish in Plain Sight</p>
+
+
+🔄 第一步：更新本地文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/output/today.html
+✅ 已更新 app.js
+
+✅ 本地文件更新完成！
+   - today.html (本地服务器)
+   - app.js (GitHub Pages 数据)
+
+🔄 第二步：更新 GitHub Pages 文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/index.html
+   - index.html (GitHub Pages)
+
+✅ 全部更新完成！
+
+📌 下一步：
+   1. 本地测试：访问 http://127.0.0.1:5000/
+   2. 确认无误后，运行以下命令推送到 GitHub：
+      git add -A
+      git commit -m '更新 AI 热点摘要'
+      git push
+
+============================================================
+✅ 数据聚合完成
+
+📝 步骤2: 更新摘要...
+📊 读取到 19 条新闻
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+警告：未设置 DEEPSEEK_API_KEY 环境变量，使用简单翻译
+
+📝 生成的摘要预览：
+            <p class="highlight">2026年02月06日更新 · 共 19 条内容</p>
+            <h3>📰 The Verge AI（6条）</h3>
+            <p>Super Bowl LX 广告: all AI everything；Claude has been having a moment — can it keep it up?；Anthropic debuts new model with hopes to corner the market beyond 编程</p>
+            <h3>💰 TechCrunch AI（11条）</h3>
+            <p>Sapiom 融资 $15M to help AI agents buy their own tech 工具；Reddit looks to AI search as its next big opportunity；AWS 收入 continues to soar as cloud demand remains high</p>
+            <h3>🏛️ NYT AI（2条）</h3>
+            <p>Amazon's $200 十亿 投入 Plan 融资 Stakes in A.I. 竞赛；'Melania': Watching a First Lady Vanish in Plain Sight</p>
+
+
+🔄 第一步：更新本地文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/output/today.html
+✅ 已更新 app.js
+
+✅ 本地文件更新完成！
+   - today.html (本地服务器)
+   - app.js (GitHub Pages 数据)
+
+🔄 第二步：更新 GitHub Pages 文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/index.html
+   - index.html (GitHub Pages)
+
+✅ 全部更新完成！
+
+📌 下一步：
+   1. 本地测试：访问 http://127.0.0.1:5000/
+   2. 确认无误后，运行以下命令推送到 GitHub：
+      git add -A
+      git commit -m '更新 AI 热点摘要'
+      git push
+✅ 摘要更新完成
+
+🚀 步骤3: 推送到 GitHub...
