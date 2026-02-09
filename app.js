@@ -1,6 +1,15 @@
 // 筛选和渲染功能
 const newsData = [
     {
+"标题": "OpenAI’s supposedly ‘leaked’ Super Bowl ad with ear buds and a shiny orb was a hoax",
+"内容": "As if OpenAI didn't have enough drama around the Super Bowl and advertising, as the game wound down, word spread of a \"leaked\" ad that actually wasn't leaked at all; it was just a fake. Screenshots of a now-deleted Reddit thread told the tale of a frustrated employee who, while posting about how upset they [&#8230;]",
+"日期": "2026-02-09 04:54:36",
+"链接": "https://www.theverge.com/ai-artificial-intelligence/875615/openai-super-bowl-ai-hardware-leak-hoax-fake",
+"来源": "The Verge AI",
+"板块": "新闻",
+"分类": "AI"
+    },
+    {
 "标题": "Super Bowl LX ads: all AI everything",
 "内容": "Super Bowl LX is nearly here, with the Seattle Seahawks taking on the New England Patriots. While Bad Bunny will be the star of the halftime show, AI could be the star of the commercial breaks, much like crypto was a few years ago. Last year’s Super Bowl featured a Google Gemini ad that fumbled [&#8230;]",
 "日期": "2026-02-08 23:58:02",
@@ -28,46 +37,28 @@ const newsData = [
 "分类": "AI"
     },
     {
-"标题": "Okay, I’m slightly less mad about that ‘Magnificent Ambersons’ AI project",
-"内容": "But this is still a bad idea.",
-"日期": "2026-02-08 19:36:28",
-"链接": "https://techcrunch.com/2026/02/08/okay-im-slightly-less-mad-about-that-magnificent-ambersons-ai-project/",
-"来源": "TechCrunch AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "From Svedka to Anthropic, brands make bold plays with AI in Super Bowl ads",
-"内容": "From the first AI-generated Big Game ad courtesy of Svedka to Anthropic's beef with OpenAI, here are the biggest ads from Super Bowl LX.",
-"日期": "2026-02-08 16:18:16",
-"链接": "https://techcrunch.com/2026/02/08/super-bowl-60-ai-ads-svedka-anthropic-brands-commercials/",
-"来源": "TechCrunch AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "The Church of Molt",
-"内容": "A.I. agents are creating religions. What does that mean for us?",
-"日期": "2026-02-08 14:11:55",
-"链接": "https://www.nytimes.com/2026/02/08/briefing/the-church-of-molt.html",
+"标题": "Michael Pollan Says Humanity Is About to Undergo a Revolutionary Change",
+"内容": "The best-selling author Michael Pollan grapples with big questions about A.I., consciousness and the distractions polluting our minds.",
+"日期": "2026-02-09 11:27:20",
+"链接": "https://www.nytimes.com/video/podcasts/100000010699275/michael-pollan-says-humanity-is-about-to-undergo-a-revolutionary-change.html",
 "来源": "NYT AI",
 "板块": "新闻",
 "分类": "AI"
     },
     {
-"标题": "It’s the A.I. Economy, Stupid",
-"内容": "The Democratic Party needs to prepare for the coming tech revolution.",
-"日期": "2026-02-08 15:16:20",
-"链接": "https://www.nytimes.com/2026/02/08/opinion/ai-democrats-jobs-economy.html",
+"标题": "Hollywood Braces for New Round of Labor Talks",
+"内容": "The last time writers and actors negotiated contracts, in 2023, dual strikes froze the industry.",
+"日期": "2026-02-09 10:02:51",
+"链接": "https://www.nytimes.com/2026/02/09/business/media/hollywood-actors-writers-contract-talks.html",
 "来源": "NYT AI",
 "板块": "新闻",
 "分类": "AI"
     },
     {
-"标题": "Can AI Chatbots Write Emotionally Rich Romance Books?",
-"内容": "The romance industry, always at the vanguard of technological change, is rapidly adapting to A.I. Not everyone is on board.",
-"日期": "2026-02-08 15:16:21",
-"链接": "https://www.nytimes.com/2026/02/08/business/ai-claude-romance-books.html",
+"标题": "Michael Pollan Says Humanity Is About to Undergo a Revolutionary Change",
+"内容": "The best-selling author grapples with big questions about A.I., consciousness and the distractions polluting our minds.",
+"日期": "2026-02-09 11:28:07",
+"链接": "https://www.nytimes.com/2026/02/07/magazine/michael-pollan-interview.html",
 "来源": "NYT AI",
 "板块": "新闻",
 "分类": "AI"
