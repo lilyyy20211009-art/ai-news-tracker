@@ -309,3 +309,85 @@
       git push
 
 ============================================================
+/Users/y/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+============================================================
+🤖 AI News Aggregator
+============================================================
+
+📋 加载配置...
+   RSS: ✅
+   YouTube: ❌
+   Twitter: ❌
+
+🔍 获取数据...
+   获取到 20 条原始内容
+
+⚠️  未配置 DeepSeek API Key，跳过 LLM 处理
+
+📤 输出结果...
+
+📝 生成中文摘要...
+警告: 未设置 API Key，LLM 处理功能将不可用
+✅ 已导出到 ./output/news.json
+✅ 已导出到 ./output/news.md
+✅ 已导出到 ./output/today.html
+✅ 已添加到飞书: ChatGPT&#8217;s cheapest optio...
+✅ 已添加到飞书: AI-generated ads dropped the b...
+✅ 已添加到飞书: Siemens CEO Roland Busch’s mis...
+✅ 已添加到飞书: OpenAI will reportedly start t...
+✅ 已添加到飞书: Databricks CEO says SaaS isn’t...
+✅ 已添加到飞书: Anthropic’s India expansion co...
+✅ 已添加到飞书: ChatGPT rolls out ads...
+✅ 已添加到飞书: Workday CEO Eschenbach departs...
+✅ 已添加到飞书: Anthropic closes in on $20B ro...
+✅ 已添加到飞书: Ex-Googlers are building infra...
+✅ 已添加到飞书: Call for speakers: TechCrunch ...
+✅ 已添加到飞书: Lamenting ‘Our President’s Ove...
+✅ 已添加到飞书: A.I. Is Making Doctors Answer ...
+✅ 已添加到飞书: Health Advice From A.I. Chatbo...
+✅ 已添加到飞书: This Year’s Super Bowl Ads Wer...
+   跳过 5 条已存在的记录
+   ✅ 飞书 Webhook 通知已发送
+   飞书: 15 条记录
+
+✅ 完成!
+   共处理 20 条内容
+   HTML 报告: ./output/today.html
+
+🌐 更新网站摘要...
+   ✅ 网站摘要已更新
+📊 读取到 20 条新闻
+
+📝 生成的摘要预览：
+            <p class="highlight">2026年02月10日更新 · 共 20 条内容</p>
+            <h3>📰 The Verge AI（4条）</h3>
+            <p>超级碗 LX 广告：AI 唱主角；Claude 火了——能持续吗？；Anthropic 推出新模型，意在拓展编程之外的市场</p>
+            <h3>💰 TechCrunch AI（7条）</h3>
+            <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
+            <h3>🏛️ NYT AI（9条）</h3>
+            <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
+
+
+🔄 第一步：更新本地文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/output/today.html
+✅ 已更新 app.js
+
+✅ 本地文件更新完成！
+   - today.html (本地服务器)
+   - app.js (GitHub Pages 数据)
+
+🔄 第二步：更新 GitHub Pages 文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/index.html
+   - index.html (GitHub Pages)
+
+✅ 全部更新完成！
+
+📌 下一步：
+   1. 本地测试：访问 http://127.0.0.1:5000/
+   2. 确认无误后，运行以下命令推送到 GitHub：
+      git add -A
+      git commit -m '更新 AI 热点摘要'
+      git push
+
+============================================================
