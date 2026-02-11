@@ -1,8 +1,8 @@
 # AI 信息聚合报告
 
-生成时间: 2026-02-11 09:00:08
+生成时间: 2026-02-11 12:30:03
 
-共 22 条信息
+共 23 条信息
 
 ---
 
@@ -43,6 +43,20 @@
 - **链接**: [https://www.theverge.com/tech/876229/nothing-essential-ai-app-builder](https://www.theverge.com/tech/876229/nothing-essential-ai-app-builder)
 - **板块**: 新闻
 
+### OpenAI policy exec who opposed chatbot’s “adult mode” reportedly fired on discrimination claim
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-11 02:15:27
+- **链接**: [https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/](https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/)
+- **板块**: 新闻
+
+### Okay, now exactly half of xAI’s founding team has left the company
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-11 01:50:00
+- **链接**: [https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/](https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/)
+- **板块**: 新闻
+
 ### Amazon may launch a marketplace where media sites can sell their content to AI companies
 
 - **来源**: TechCrunch AI
@@ -69,13 +83,6 @@
 - **来源**: TechCrunch AI
 - **日期**: 2026-02-10 21:20:10
 - **链接**: [https://techcrunch.com/2026/02/10/boston-dynamics-ceo-robert-playter-steps-down-after-30-years-at-the-company/](https://techcrunch.com/2026/02/10/boston-dynamics-ceo-robert-playter-steps-down-after-30-years-at-the-company/)
-- **板块**: 新闻
-
-### Nearly half of xAI’s founding team has now left the company
-
-- **来源**: TechCrunch AI
-- **日期**: 2026-02-10 20:31:51
-- **链接**: [https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/](https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/)
 - **板块**: 新闻
 
 ### Facebook adds new AI features, animated profile photos, and backgrounds for text posts
@@ -120,10 +127,17 @@
 - **链接**: [https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/](https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/)
 - **板块**: 新闻
 
+### Elon Musk Wants to Build an A.I. Satellite Factory on the Moon
+
+- **来源**: NYT AI
+- **日期**: 2026-02-11 02:04:43
+- **链接**: [https://www.nytimes.com/2026/02/10/technology/elon-musk-lunar-factory.html](https://www.nytimes.com/2026/02/10/technology/elon-musk-lunar-factory.html)
+- **板块**: 新闻
+
 ### A.I. May Put Progressives to the Test
 
 - **来源**: NYT AI
-- **日期**: 2026-02-11 00:54:25
+- **日期**: 2026-02-11 01:04:33
 - **链接**: [https://www.nytimes.com/2026/02/10/opinion/ai-politics-left-progressive.html](https://www.nytimes.com/2026/02/10/opinion/ai-politics-left-progressive.html)
 - **板块**: 新闻
 
@@ -153,12 +167,5 @@
 - **来源**: NYT AI
 - **日期**: 2026-02-10 20:25:03
 - **链接**: [https://www.nytimes.com/2026/02/10/opinion/china-ai-ev-trump.html](https://www.nytimes.com/2026/02/10/opinion/china-ai-ev-trump.html)
-- **板块**: 新闻
-
-### Michael Pollan Says Humanity Is About to Undergo a Revolutionary Change
-
-- **来源**: NYT AI
-- **日期**: 2026-02-10 13:51:21
-- **链接**: [https://www.nytimes.com/video/podcasts/100000010699275/michael-pollan-says-humanity-is-about-to-undergo-a-revolutionary-change.html](https://www.nytimes.com/video/podcasts/100000010699275/michael-pollan-says-humanity-is-about-to-undergo-a-revolutionary-change.html)
 - **板块**: 新闻
 
