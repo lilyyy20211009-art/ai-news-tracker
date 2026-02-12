@@ -1,171 +1,178 @@
 # AI 信息聚合报告
 
-生成时间: 2026-02-11 12:30:03
+生成时间: 2026-02-12 12:30:03
 
-共 23 条信息
+共 24 条信息
 
 ---
 
 ## AI
 
-### ChatGPT’s deep research tool adds a built-in document viewer so you can read its reports
+### Two more xAI co-founders are among those leaving after the SpaceX merger
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-10 23:02:32
-- **链接**: [https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer](https://www.theverge.com/ai-artificial-intelligence/876775/openai-deep-research-chatgpt-full-screen-report-viewer)
+- **日期**: 2026-02-11 23:26:43
+- **链接**: [https://www.theverge.com/ai-artificial-intelligence/877609/two-more-xai-co-founders-are-among-those-leaving-after-the-spacex-merger](https://www.theverge.com/ai-artificial-intelligence/877609/two-more-xai-co-founders-are-among-those-leaving-after-the-spacex-merger)
 - **板块**: 新闻
 
-### Facebook can animate your profile pic with AI
+### Anthropic says it&#8217;ll try to keep its data centers from raising electricity costs
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-10 18:14:21
-- **链接**: [https://www.theverge.com/tech/876480/meta-facebook-animate-profile-picture-restyle-ai](https://www.theverge.com/tech/876480/meta-facebook-animate-profile-picture-restyle-ai)
+- **日期**: 2026-02-11 22:37:02
+- **链接**: [https://www.theverge.com/ai-artificial-intelligence/877526/anthropic-ai-electricity-costs-data-center-pledge](https://www.theverge.com/ai-artificial-intelligence/877526/anthropic-ai-electricity-costs-data-center-pledge)
 - **板块**: 新闻
 
-### Autodesk is suing Google over the name of its Flow AI videomaker
+### Apple keeps hitting bumps with its overhauled Siri
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-10 14:47:14
-- **链接**: [https://www.theverge.com/tech/876266/autodesk-google-flow-trademark-infringement-lawsuit](https://www.theverge.com/tech/876266/autodesk-google-flow-trademark-infringement-lawsuit)
+- **日期**: 2026-02-11 21:08:36
+- **链接**: [https://www.theverge.com/tech/877494/apple-siri-ai-overhaul-ios-personalized](https://www.theverge.com/tech/877494/apple-siri-ai-overhaul-ios-personalized)
 - **板块**: 新闻
 
-### Could the Trump Phone be a good phone?
+### Instagram and X have an impossible deepfake detection deadline
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-10 13:30:00
-- **链接**: [https://www.theverge.com/podcast/876188/trump-phone-specs-price-date-moltbook-openclaw-vergecast](https://www.theverge.com/podcast/876188/trump-phone-specs-price-date-moltbook-openclaw-vergecast)
+- **日期**: 2026-02-11 17:20:45
+- **链接**: [https://www.theverge.com/ai-artificial-intelligence/877206/youtube-instagram-x-india-deepfake-detection-deadline](https://www.theverge.com/ai-artificial-intelligence/877206/youtube-instagram-x-india-deepfake-detection-deadline)
 - **板块**: 新闻
 
-### Vibe coding Nothing’s apps is fun, until you try to make them useful
+### Here are the brands bringing ads to ChatGPT
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-10 13:00:00
-- **链接**: [https://www.theverge.com/tech/876229/nothing-essential-ai-app-builder](https://www.theverge.com/tech/876229/nothing-essential-ai-app-builder)
+- **日期**: 2026-02-11 16:08:03
+- **链接**: [https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible](https://www.theverge.com/ai-artificial-intelligence/877148/openai-chatgpt-advertisers-target-adobe-audible)
 - **板块**: 新闻
 
-### OpenAI policy exec who opposed chatbot’s “adult mode” reportedly fired on discrimination claim
+### How an ‘icepocalypse’ raises more questions about Meta’s biggest data center project
+
+- **来源**: The Verge AI
+- **日期**: 2026-02-11 14:06:11
+- **链接**: [https://www.theverge.com/science/876555/meta-data-center-winter-power-outages-storm-ice](https://www.theverge.com/science/876555/meta-data-center-winter-power-outages-storm-ice)
+- **板块**: 新闻
+
+### T-Mobile will live translate regular phone calls without an app
+
+- **来源**: The Verge AI
+- **日期**: 2026-02-11 12:35:00
+- **链接**: [https://www.theverge.com/tech/877008/t-mobile-live-translation-languages-ai-network](https://www.theverge.com/tech/877008/t-mobile-live-translation-languages-ai-network)
+- **板块**: 新闻
+
+### xAI lays out interplanetary ambitions in public all-hands
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-11 02:15:27
-- **链接**: [https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/](https://techcrunch.com/2026/02/10/openai-policy-exec-who-opposed-chatbots-adult-mode-reportedly-fired-on-discrimination-claim/)
+- **日期**: 2026-02-11 23:29:08
+- **链接**: [https://techcrunch.com/2026/02/11/xai-lays-out-interplanetary-ambitions-in-public-all-hands/](https://techcrunch.com/2026/02/11/xai-lays-out-interplanetary-ambitions-in-public-all-hands/)
 - **板块**: 新闻
 
-### Okay, now exactly half of xAI’s founding team has left the company
+### AI inference startup Modal Labs in talks to raise at $2.5B valuation, sources say
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-11 01:50:00
-- **链接**: [https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/](https://techcrunch.com/2026/02/10/nearly-half-of-xais-founding-team-has-now-left-the-company/)
+- **日期**: 2026-02-11 22:48:35
+- **链接**: [https://techcrunch.com/2026/02/11/ai-inference-startup-modal-labs-in-talks-to-raise-at-2-5b-valuation-sources-say/](https://techcrunch.com/2026/02/11/ai-inference-startup-modal-labs-in-talks-to-raise-at-2-5b-valuation-sources-say/)
 - **板块**: 新闻
 
-### Amazon may launch a marketplace where media sites can sell their content to AI companies
+### OpenAI disbands mission alignment team
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-10 23:16:28
-- **链接**: [https://techcrunch.com/2026/02/10/amazon-may-launch-a-marketplace-where-media-sites-can-sell-their-content-to-ai-companies/](https://techcrunch.com/2026/02/10/amazon-may-launch-a-marketplace-where-media-sites-can-sell-their-content-to-ai-companies/)
+- **日期**: 2026-02-11 21:57:18
+- **链接**: [https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/](https://techcrunch.com/2026/02/11/openai-disbands-mission-alignment-team-which-focused-on-safe-and-trustworthy-ai-development/)
 - **板块**: 新闻
 
-### An ice dance duo skated to AI music at the Olympics
+### Apple’s Siri revamp reportedly delayed… again
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-10 22:31:13
-- **链接**: [https://techcrunch.com/2026/02/10/olympics-czech-ice-dancers-duo-ai-music/](https://techcrunch.com/2026/02/10/olympics-czech-ice-dancers-duo-ai-music/)
+- **日期**: 2026-02-11 21:19:46
+- **链接**: [https://techcrunch.com/2026/02/11/apples-siri-revamp-reportedly-delayed-again/](https://techcrunch.com/2026/02/11/apples-siri-revamp-reportedly-delayed-again/)
 - **板块**: 新闻
 
-### This Sequoia-backed lab thinks the brain is ‘the floor, not the ceiling’ for AI
+### Uber Eats launches AI assistant to help with grocery cart creation
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-10 21:48:29
-- **链接**: [https://techcrunch.com/podcast/this-sequoia-backed-lab-thinks-the-brain-is-the-floor-not-the-ceiling-for-ai/](https://techcrunch.com/podcast/this-sequoia-backed-lab-thinks-the-brain-is-the-floor-not-the-ceiling-for-ai/)
+- **日期**: 2026-02-11 21:07:37
+- **链接**: [https://techcrunch.com/2026/02/11/uber-eats-launches-ai-assistant-to-help-with-grocery-cart-creation/](https://techcrunch.com/2026/02/11/uber-eats-launches-ai-assistant-to-help-with-grocery-cart-creation/)
 - **板块**: 新闻
 
-### Boston Dynamics CEO Robert Playter steps down after 30 years at the company
+### Glean’s fight to own the AI layer inside every company
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-10 21:20:10
-- **链接**: [https://techcrunch.com/2026/02/10/boston-dynamics-ceo-robert-playter-steps-down-after-30-years-at-the-company/](https://techcrunch.com/2026/02/10/boston-dynamics-ceo-robert-playter-steps-down-after-30-years-at-the-company/)
+- **日期**: 2026-02-11 21:07:28
+- **链接**: [https://techcrunch.com/podcast/glean-arvind-jain-equity-podcast-own-the-ai-layer-inside-every-company/](https://techcrunch.com/podcast/glean-arvind-jain-equity-podcast-own-the-ai-layer-inside-every-company/)
 - **板块**: 新闻
 
-### Facebook adds new AI features, animated profile photos, and backgrounds for text posts
+### Who will own your company’s AI layer? Glean’s CEO explains
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-10 19:34:51
-- **链接**: [https://techcrunch.com/2026/02/10/facebook-adds-new-ai-features-animated-profile-photos-and-backgrounds-for-text-posts/](https://techcrunch.com/2026/02/10/facebook-adds-new-ai-features-animated-profile-photos-and-backgrounds-for-text-posts/)
+- **日期**: 2026-02-11 20:49:07
+- **链接**: [https://techcrunch.com/video/who-will-own-your-companys-ai-layer-gleans-ceo-explains/](https://techcrunch.com/video/who-will-own-your-companys-ai-layer-gleans-ceo-explains/)
 - **板块**: 新闻
 
-### Vega raises $120M Series B to rethink how enterprises detect cyber threats
+### Elon Musk suggests spate of xAI exits have been push, not pull
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-10 16:00:00
-- **链接**: [https://techcrunch.com/2026/02/10/vega-raises-120m-series-b-to-rethink-how-enterprises-detect-cyber-threats/](https://techcrunch.com/2026/02/10/vega-raises-120m-series-b-to-rethink-how-enterprises-detect-cyber-threats/)
+- **日期**: 2026-02-11 20:47:00
+- **链接**: [https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/](https://techcrunch.com/2026/02/11/senior-engineers-including-co-founders-exit-xai-amid-controversy/)
 - **板块**: 新闻
 
-### Hauler Hero collects $16M for its AI waste management software
+### Why the economics of orbital AI are so brutal
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-10 15:00:00
-- **链接**: [https://techcrunch.com/2026/02/10/hauler-hero-collects-16m-for-its-ai-waste-management-software/](https://techcrunch.com/2026/02/10/hauler-hero-collects-16m-for-its-ai-waste-management-software/)
+- **日期**: 2026-02-11 18:15:21
+- **链接**: [https://techcrunch.com/2026/02/11/why-the-economics-of-orbital-ai-are-so-brutal/](https://techcrunch.com/2026/02/11/why-the-economics-of-orbital-ai-are-so-brutal/)
 - **板块**: 新闻
 
-### India orders social media platforms to take down deepfakes faster
+### Threads’ new ‘Dear Algo’ AI feature lets you personalize your feed
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-10 14:51:13
-- **链接**: [https://techcrunch.com/2026/02/10/india-orders-social-media-platforms-to-take-down-deepfakes-faster/](https://techcrunch.com/2026/02/10/india-orders-social-media-platforms-to-take-down-deepfakes-faster/)
+- **日期**: 2026-02-11 18:00:00
+- **链接**: [https://techcrunch.com/2026/02/11/threads-new-dear-algo-ai-feature-lets-you-personalize-your-feed/](https://techcrunch.com/2026/02/11/threads-new-dear-algo-ai-feature-lets-you-personalize-your-feed/)
 - **板块**: 新闻
 
-### Former GitHub CEO raises record $60M dev tool seed round at $300M valuation
+### How AI changes the math for startups, according to a Microsoft VP
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-10 14:30:00
-- **链接**: [https://techcrunch.com/2026/02/10/former-github-ceo-raises-record-60m-dev-tool-seed-round-at-300m-valuation/](https://techcrunch.com/2026/02/10/former-github-ceo-raises-record-60m-dev-tool-seed-round-at-300m-valuation/)
+- **日期**: 2026-02-11 17:51:37
+- **链接**: [https://techcrunch.com/2026/02/11/how-ai-changes-the-math-for-startups-according-to-a-microsoft-vp/](https://techcrunch.com/2026/02/11/how-ai-changes-the-math-for-startups-according-to-a-microsoft-vp/)
 - **板块**: 新闻
 
-### AI video startup Runway raises $315M at $5.3B valuation, eyes more capable world models
+### Former Founders Fund VC Sam Blond launches AI sales startup to upend Salesforce
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-10 14:00:00
-- **链接**: [https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/](https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/)
+- **日期**: 2026-02-11 16:00:00
+- **链接**: [https://techcrunch.com/2026/02/11/former-founders-fund-vc-sam-blond-launches-ai-sales-startup-to-upend-salesforce/](https://techcrunch.com/2026/02/11/former-founders-fund-vc-sam-blond-launches-ai-sales-startup-to-upend-salesforce/)
 - **板块**: 新闻
 
-### Elon Musk Wants to Build an A.I. Satellite Factory on the Moon
+### Build a pipeline and close deals with an exhibit table at TechCrunch Disrupt 2026
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-11 15:00:00
+- **链接**: [https://techcrunch.com/2026/02/11/build-a-pipeline-and-close-deals-with-an-exhibit-table-at-techcrunch-disrupt-2026/](https://techcrunch.com/2026/02/11/build-a-pipeline-and-close-deals-with-an-exhibit-table-at-techcrunch-disrupt-2026/)
+- **板块**: 新闻
+
+### Meridian raises $17 million to remake the agentic spreadsheet
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-11 14:00:00
+- **链接**: [https://techcrunch.com/2026/02/11/meridian-ai-raises-17-million-to-remake-the-agentic-spreadsheet/](https://techcrunch.com/2026/02/11/meridian-ai-raises-17-million-to-remake-the-agentic-spreadsheet/)
+- **板块**: 新闻
+
+### What Homeowners Need to Know About Smart Home Cameras
 
 - **来源**: NYT AI
-- **日期**: 2026-02-11 02:04:43
-- **链接**: [https://www.nytimes.com/2026/02/10/technology/elon-musk-lunar-factory.html](https://www.nytimes.com/2026/02/10/technology/elon-musk-lunar-factory.html)
+- **日期**: 2026-02-11 22:19:57
+- **链接**: [https://www.nytimes.com/2026/02/11/realestate/smart-home-cameras-nest-ring-privacy.html](https://www.nytimes.com/2026/02/11/realestate/smart-home-cameras-nest-ring-privacy.html)
 - **板块**: 新闻
 
-### A.I. May Put Progressives to the Test
+### OpenAI’s Biggest Challenge Is Turning Its A.I. Into a Cash Machine
 
 - **来源**: NYT AI
-- **日期**: 2026-02-11 01:04:33
-- **链接**: [https://www.nytimes.com/2026/02/10/opinion/ai-politics-left-progressive.html](https://www.nytimes.com/2026/02/10/opinion/ai-politics-left-progressive.html)
+- **日期**: 2026-02-11 16:01:22
+- **链接**: [https://www.nytimes.com/2026/02/11/technology/openai-revenue-challenge.html](https://www.nytimes.com/2026/02/11/technology/openai-revenue-challenge.html)
 - **板块**: 新闻
 
-### A.I. Personalizes the Internet but Takes Away Control
+### Wall St. and Washington Brace for a Big Jobs Report
 
 - **来源**: NYT AI
-- **日期**: 2026-02-10 19:28:27
-- **链接**: [https://www.nytimes.com/2026/02/10/technology/personaltech/ai-google-meta-opt-out.html](https://www.nytimes.com/2026/02/10/technology/personaltech/ai-google-meta-opt-out.html)
-- **板块**: 新闻
-
-### A.I. Can Fool Us Into Thinking It’s Human. Now What?
-
-- **来源**: NYT AI
-- **日期**: 2026-02-10 16:23:08
-- **链接**: [https://www.nytimes.com/video/podcasts/100000010702270/ai-can-fool-us-into-thinking-its-human-now-what.html](https://www.nytimes.com/video/podcasts/100000010702270/ai-can-fool-us-into-thinking-its-human-now-what.html)
-- **板块**: 新闻
-
-### Elon Musk’s Edge in the A.I. Race
-
-- **来源**: NYT AI
-- **日期**: 2026-02-10 16:23:03
-- **链接**: [https://www.nytimes.com/video/podcasts/100000010702414/elon-musks-edge-in-the-ai-race.html](https://www.nytimes.com/video/podcasts/100000010702414/elon-musks-edge-in-the-ai-race.html)
-- **板块**: 新闻
-
-### I Just Returned From China. We Are Not Winning.
-
-- **来源**: NYT AI
-- **日期**: 2026-02-10 20:25:03
-- **链接**: [https://www.nytimes.com/2026/02/10/opinion/china-ai-ev-trump.html](https://www.nytimes.com/2026/02/10/opinion/china-ai-ev-trump.html)
+- **日期**: 2026-02-11 12:46:37
+- **链接**: [https://www.nytimes.com/2026/02/11/business/dealbook/wall-street-washington-jobs.html](https://www.nytimes.com/2026/02/11/business/dealbook/wall-street-washington-jobs.html)
 - **板块**: 新闻
 
