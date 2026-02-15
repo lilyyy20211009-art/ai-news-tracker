@@ -1,6 +1,6 @@
 ============================================================
 AI News Aggregator 每日更新
-开始时间: 2026-02-13 20:00:00
+开始时间: 2026-02-15 20:03:40
 ============================================================
 
 📡 步骤1: 聚合新闻数据...
@@ -16,7 +16,7 @@ AI News Aggregator 每日更新
    Twitter: ❌
 
 🔍 获取数据...
-   获取到 15 条原始内容
+   获取到 2 条原始内容
 
 ⚠️  未配置 DeepSeek API Key，跳过 LLM 处理
 
@@ -27,29 +27,23 @@ AI News Aggregator 每日更新
 ✅ 已导出到 ./output/news.json
 ✅ 已导出到 ./output/news.md
 ✅ 已导出到 ./output/today.html
-✅ 已添加到飞书: My Dinner Date With A.I....
-✅ 已添加到飞书: Meta Plans to Add Facial Recog...
-✅ 已添加到飞书: Conspiracy Theories Only Flour...
-✅ 已添加到飞书: We’re All in a Throuple With A...
-✅ 已添加到飞书: How The Times Is Digging Into ...
-   跳过 10 条已存在的记录
+✅ 已添加到飞书: The great computer science exo...
+✅ 已添加到飞书: Is safety ‘dead’ at xAI?...
    ✅ 飞书 Webhook 通知已发送
-   飞书: 5 条记录
+   飞书: 2 条记录
 
 ✅ 完成!
-   共处理 15 条内容
+   共处理 2 条内容
    HTML 报告: ./output/today.html
 
 🌐 更新网站摘要...
    ✅ 网站摘要已更新
-📊 读取到 15 条新闻
+📊 读取到 2 条新闻
 
 📝 生成的摘要预览：
-            <p class="highlight">2026年02月13日更新 · 共 15 条内容</p>
-            <h3>💰 TechCrunch AI（5条）</h3>
+            <p class="highlight">2026年02月15日更新 · 共 2 条内容</p>
+            <h3>💰 TechCrunch AI（2条）</h3>
             <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
-            <h3>🏛️ NYT AI（10条）</h3>
-            <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
 
 
 🔄 第一步：更新本地文件...
@@ -77,14 +71,12 @@ AI News Aggregator 每日更新
 ✅ 数据聚合完成
 
 📝 步骤2: 更新摘要...
-📊 读取到 15 条新闻
+📊 读取到 2 条新闻
 
 📝 生成的摘要预览：
-            <p class="highlight">2026年02月13日更新 · 共 15 条内容</p>
-            <h3>💰 TechCrunch AI（5条）</h3>
+            <p class="highlight">2026年02月15日更新 · 共 2 条内容</p>
+            <h3>💰 TechCrunch AI（2条）</h3>
             <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
-            <h3>🏛️ NYT AI（10条）</h3>
-            <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
 
 
 🔄 第一步：更新本地文件...
@@ -110,26 +102,3 @@ AI News Aggregator 每日更新
 ✅ 摘要更新完成
 
 🚀 步骤3: 推送到 GitHub...
-[main 1ae026c] 自动更新 AI 热点摘要 - 2026-02-13 20:00
- Committer: Y <y@MacBook-Air.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 9 files changed, 440 insertions(+), 430 deletions(-)
- create mode 100644 logs/daily_update_20260213_200000.log
-failed to store: -61
-To https://github.com/lilyyy20211009-art/ai-news-tracker.git
-   516f0ff..1ae026c  main -> main
-✅ GitHub 推送完成
-
-============================================================
-✅ 全部完成! 结束时间: 2026-02-13 20:00:17
-============================================================

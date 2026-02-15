@@ -1,137 +1,20 @@
 // 筛选和渲染功能
 const newsData = [
     {
-"标题": "Amid disappointing earnings, Pinterest claims it sees more searches than ChatGPT",
-"内容": "Pinterest's stock tumbles after an earnings miss, with higher-than-expected usage its only bright spot.",
-"日期": "2026-02-12 23:26:56",
-"链接": "https://techcrunch.com/2026/02/12/amid-disappointing-earnings-pinterest-claims-it-sees-more-searches-than-chatgpt/",
+"标题": "The great computer science exodus (and where students are going instead)",
+"内容": "Students are losing some interest in computer science broadly but gaining interest in AI-specific majors and courses.",
+"日期": "2026-02-15 08:40:27",
+"链接": "https://techcrunch.com/2026/02/15/the-great-computer-science-exodus-and-where-students-are-going-instead/",
 "来源": "TechCrunch AI",
 "板块": "新闻",
 "分类": "AI"
     },
     {
-"标题": "IBM will hire your entry-level talent in the age of AI",
-"内容": "IBM plans to triple its entry-level hiring in the U.S. in 2026, but these jobs will have different tasks than in previous years.",
-"日期": "2026-02-12 23:23:17",
-"链接": "https://techcrunch.com/2026/02/12/ibm-will-hire-your-entry-level-talent-in-the-age-of-ai/",
+"标题": "Is safety ‘dead’ at xAI?",
+"内容": "Elon Musk is “actively” working to make xAI’s Grok chatbot “more unhinged, according to a former employee.",
+"日期": "2026-02-14 21:55:44",
+"链接": "https://techcrunch.com/2026/02/14/is-safety-is-dead-at-xai/",
 "来源": "TechCrunch AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "Musk needed a new vision for SpaceX and xAI. He landed on Moonbase Alpha.",
-"内容": "\"I really want to see a mass driver on the moon that is shooting AI satellites into deep space.\"",
-"日期": "2026-02-12 22:10:55",
-"链接": "https://techcrunch.com/2026/02/12/musk-needed-a-new-vision-for-spacex-and-xai-he-landed-on-moonbase-alpha/",
-"来源": "TechCrunch AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "Didero lands $30M to put manufacturing procurement on ‘agentic’ autopilot",
-"内容": "Didero functions as an agentic AI layer that sits on top of a company’s existing ERP, acting as a coordinator that reads incoming communications and automatically executes the necessary updates and tasks.",
-"日期": "2026-02-12 20:31:47",
-"链接": "https://techcrunch.com/2026/02/12/didero-lands-30m-to-put-manufacturing-procurement-on-agentic-autopilot/",
-"来源": "TechCrunch AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "Anthropic raises another $30B in Series G, with a new value of $380B",
-"内容": "The infusion of funding for the AI startup takes place as it is vying for customers and cultural attention with its competitor, OpenAI.",
-"日期": "2026-02-12 20:18:37",
-"链接": "https://techcrunch.com/2026/02/12/anthropic-raises-another-30-billion-in-series-g-with-a-new-value-of-380-billion/",
-"来源": "TechCrunch AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "My Dinner Date With A.I.",
-"内容": "Eating a burger in front of a virtual companion comes with its challenges.",
-"日期": "2026-02-13 10:04:22",
-"链接": "https://www.nytimes.com/2026/02/13/dining/ai-dinner-date-restaurant.html",
-"来源": "NYT AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "Meta Plans to Add Facial Recognition Technology to Its Smart Glasses",
-"内容": "In an internal memo last year, Meta said the political tumult in the United States would distract critics from the feature’s release.",
-"日期": "2026-02-13 10:03:01",
-"链接": "https://www.nytimes.com/2026/02/13/technology/meta-facial-recognition-smart-glasses.html",
-"来源": "NYT AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "Conspiracy Theories Only Flourish With More Epstein Evidence",
-"内容": "The dump of millions of documents has fueled a new wave of speculation, A.I.-generated hoaxes and foreign disinformation.",
-"日期": "2026-02-13 10:02:43",
-"链接": "https://www.nytimes.com/2026/02/13/business/media/jeffrey-epstein-conspiracy-theories-disinformation.html",
-"来源": "NYT AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "We’re All in a Throuple With A.I.",
-"内容": "What happens when the people building a new technology don’t want to use it?",
-"日期": "2026-02-13 10:00:27",
-"链接": "https://www.nytimes.com/2026/02/13/opinion/ai-relationships.html",
-"来源": "NYT AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "How The Times Is Digging Into Millions of Pages of Epstein Files",
-"内容": "Two dozen journalists. A pile of pages that would reach the top of the Empire State Building. And an effort to find the next revelation in a sprawling case.",
-"日期": "2026-02-13 02:17:52",
-"链接": "https://www.nytimes.com/2026/02/12/insider/jeffrey-epstein-files-documents.html",
-"来源": "NYT AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "‘We Don’t Know if the Models Are Conscious’",
-"内容": "Have A.I. models already reached consciousness? Dario Amodei, the chief executive of Anthropic, is open to that possibility. He hopes for a relationship between humans and A.I. where “they want the best for you” but you still have your freedom and your will.",
-"日期": "2026-02-12 22:18:02",
-"链接": "https://www.nytimes.com/video/opinion/100000010695663/we-dont-know-if-the-models-are-conscious.html",
-"来源": "NYT AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "Anthropic Is Valued at $380 Billion in New Funding Round",
-"内容": "The artificial intelligence start-up raised another $30 billion, and its valuation more than doubled since its last funding round in September.",
-"日期": "2026-02-12 22:38:03",
-"链接": "https://www.nytimes.com/2026/02/12/technology/anthropic-valuation-380-billion-funding.html",
-"来源": "NYT AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "Is A.I. Coming for Your Job?",
-"内容": "This isn’t your grandparents’ revolution. Anthropic’s chief executive, Dario Amodei, says artificial intelligence will change our world faster than anything we’ve experienced before.",
-"日期": "2026-02-12 22:07:35",
-"链接": "https://www.nytimes.com/video/opinion/100000010708249/is-ai-coming-for-your-job.html",
-"来源": "NYT AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "Now That It’s Been Unleashed, Can A.I. Be Controlled?",
-"内容": "Could A.I. go rogue? Dario Amodei, the chief executive of Anthropic, says “something will go wrong,” but he believes “there is a science of how to control” the technology.",
-"日期": "2026-02-12 22:05:01",
-"链接": "https://www.nytimes.com/video/opinion/100000010695660/now-that-its-been-unleashed-can-ai-be-controlled.html",
-"来源": "NYT AI",
-"板块": "新闻",
-"分类": "AI"
-    },
-    {
-"标题": "A.I. Companies Are Eating Higher Education",
-"内容": "Human intelligence — the thing we as educators are duty bound to defend and advance — is under attack.",
-"日期": "2026-02-12 20:54:51",
-"链接": "https://www.nytimes.com/2026/02/12/opinion/ai-companies-college-students.html",
-"来源": "NYT AI",
 "板块": "新闻",
 "分类": "AI"
     },
