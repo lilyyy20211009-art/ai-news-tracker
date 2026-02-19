@@ -751,3 +751,269 @@
 🔍 获取数据...
    获取到 0 条原始内容
    ⚠️  未获取到任何内容
+/Users/y/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+============================================================
+🤖 AI News Aggregator
+============================================================
+
+📋 加载配置...
+   RSS: ✅
+   YouTube: ❌
+   Twitter: ❌
+
+🔍 获取数据...
+   获取到 14 条原始内容
+
+⚠️  未配置 DeepSeek API Key，跳过 LLM 处理
+
+📤 输出结果...
+
+📝 生成中文摘要...
+警告: 未设置 API Key，LLM 处理功能将不可用
+✅ 已导出到 ./output/news.json
+✅ 已导出到 ./output/news.md
+✅ 已导出到 ./output/today.html
+✅ 已添加到飞书: OpenClaw founder Peter Steinbe...
+✅ 已添加到飞书: I hate my AI pet with every fi...
+✅ 已添加到飞书: AI can’t make good video game ...
+✅ 已添加到飞书: As AI data centers hit power l...
+✅ 已添加到飞书: Blackstone backs Neysa in up t...
+✅ 已添加到飞书: OpenClaw creator Peter Steinbe...
+✅ 已添加到飞书: Longtime NPR host David Greene...
+✅ 已添加到飞书: Anthropic and the Pentagon are...
+✅ 已添加到飞书: India has 100M weekly active C...
+✅ 已添加到飞书: The enterprise AI land grab is...
+✅ 已添加到飞书: Hollywood isn’t happy about th...
+✅ 已添加到飞书: More Than Ever, Videos Expose ...
+✅ 已添加到飞书: What C.E.O.s Are Worried About...
+✅ 已添加到飞书: Software? No Way. We’re an A.I...
+   ✅ 飞书 Webhook 通知已发送
+   飞书: 14 条记录
+
+✅ 完成!
+   共处理 14 条内容
+   HTML 报告: ./output/today.html
+
+🌐 更新网站摘要...
+   ✅ 网站摘要已更新
+📊 读取到 14 条新闻
+
+📝 生成的摘要预览：
+            <p class="highlight">2026年02月16日更新 · 共 14 条内容</p>
+            <h3>📰 The Verge AI（3条）</h3>
+            <p>超级碗 LX 广告：AI 唱主角；Claude 火了——能持续吗？；Anthropic 推出新模型，意在拓展编程之外的市场</p>
+            <h3>💰 TechCrunch AI（8条）</h3>
+            <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
+            <h3>🏛️ NYT AI（3条）</h3>
+            <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
+
+
+🔄 第一步：更新本地文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/output/today.html
+✅ 已更新 app.js
+
+✅ 本地文件更新完成！
+   - today.html (本地服务器)
+   - app.js (GitHub Pages 数据)
+
+🔄 第二步：更新 GitHub Pages 文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/index.html
+   - index.html (GitHub Pages)
+
+✅ 全部更新完成！
+
+📌 下一步：
+   1. 本地测试：访问 http://127.0.0.1:5000/
+   2. 确认无误后，运行以下命令推送到 GitHub：
+      git add -A
+      git commit -m '更新 AI 热点摘要'
+      git push
+
+============================================================
+/Users/y/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+============================================================
+🤖 AI News Aggregator
+============================================================
+
+📋 加载配置...
+   RSS: ✅
+   YouTube: ❌
+   Twitter: ❌
+
+🔍 获取数据...
+   获取到 13 条原始内容
+
+⚠️  未配置 DeepSeek API Key，跳过 LLM 处理
+
+📤 输出结果...
+
+📝 生成中文摘要...
+警告: 未设置 API Key，LLM 处理功能将不可用
+✅ 已导出到 ./output/news.json
+✅ 已导出到 ./output/news.md
+✅ 已导出到 ./output/today.html
+✅ 已添加到飞书: Let&#8217;s talk about Ring, l...
+✅ 已添加到飞书: After spooking Hollywood, Byte...
+✅ 已添加到飞书: Have money, will travel: a16z’...
+✅ 已添加到飞书: How Ricursive Intelligence rai...
+✅ 已添加到飞书: Flapping Airplanes on the futu...
+✅ 已添加到飞书: After all the hype, some AI ex...
+✅ 已添加到飞书: Fractal Analytics’ muted IPO d...
+✅ 已添加到飞书: All the important news from th...
+✅ 已添加到飞书: Why an A.I. Video of Tom Cruis...
+✅ 已添加到飞书: Auditioning to Beat Trump...
+✅ 已添加到飞书: Why Harry Potter Still Inspire...
+✅ 已添加到飞书: When A.I. Comes to Town: The B...
+✅ 已添加到飞书: He Studied Cognitive Science a...
+   ✅ 飞书 Webhook 通知已发送
+   飞书: 13 条记录
+
+✅ 完成!
+   共处理 13 条内容
+   HTML 报告: ./output/today.html
+
+🌐 更新网站摘要...
+   ✅ 网站摘要已更新
+📊 读取到 13 条新闻
+
+📝 生成的摘要预览：
+            <p class="highlight">2026年02月17日更新 · 共 13 条内容</p>
+            <h3>📰 The Verge AI（2条）</h3>
+            <p>超级碗 LX 广告：AI 唱主角；Claude 火了——能持续吗？；Anthropic 推出新模型，意在拓展编程之外的市场</p>
+            <h3>💰 TechCrunch AI（6条）</h3>
+            <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
+            <h3>🏛️ NYT AI（5条）</h3>
+            <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
+
+
+🔄 第一步：更新本地文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/output/today.html
+✅ 已更新 app.js
+
+✅ 本地文件更新完成！
+   - today.html (本地服务器)
+   - app.js (GitHub Pages 数据)
+
+🔄 第二步：更新 GitHub Pages 文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/index.html
+   - index.html (GitHub Pages)
+
+✅ 全部更新完成！
+
+📌 下一步：
+   1. 本地测试：访问 http://127.0.0.1:5000/
+   2. 确认无误后，运行以下命令推送到 GitHub：
+      git add -A
+      git commit -m '更新 AI 热点摘要'
+      git push
+
+============================================================
+/Users/y/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+============================================================
+🤖 AI News Aggregator
+============================================================
+
+📋 加载配置...
+   RSS: ✅
+   YouTube: ❌
+   Twitter: ❌
+
+🔍 获取数据...
+   获取到 27 条原始内容
+
+⚠️  未配置 DeepSeek API Key，跳过 LLM 处理
+
+📤 输出结果...
+
+📝 生成中文摘要...
+警告: 未设置 API Key，LLM 处理功能将不可用
+✅ 已导出到 ./output/news.json
+✅ 已导出到 ./output/news.md
+✅ 已导出到 ./output/today.html
+✅ 已添加到飞书: Meta&#8217;s new deal with Nvi...
+✅ 已添加到飞书: Google’s AI search results wil...
+✅ 已添加到飞书: Google announces dates for I/O...
+✅ 已添加到飞书: Apple is reportedly planning t...
+✅ 已添加到飞书: WordPress’ new AI assistant wi...
+✅ 已添加到飞书: Laurie Spiegel on the differen...
+✅ 已添加到飞书: Samsung is slopping AI ads all...
+✅ 已添加到飞书: Apple is reportedly cooking up...
+✅ 已添加到飞书: Anthropic releases Sonnet 4.6...
+✅ 已添加到飞书: Mistral AI buys Koyeb in first...
+✅ 已添加到飞书: SpaceX vets raise $50M Series ...
+✅ 已添加到飞书: Running AI models is turning i...
+✅ 已添加到飞书: European Parliament blocks AI ...
+✅ 已添加到飞书: WordPress.com adds an AI Assis...
+✅ 已添加到飞书: Amazon Fire TV’s new interface...
+✅ 已添加到飞书: Here are the 17 US-based AI co...
+✅ 已添加到飞书: India bids to attract over $20...
+✅ 已添加到飞书: SpendRule raises $2M, emerges ...
+✅ 已添加到飞书: Just 8 months in, India’s vibe...
+✅ 已添加到飞书: Adani pledges $100B to build A...
+✅ 已添加到飞书: As AI jitters rattle IT stocks...
+✅ 已添加到飞书: Practical Tips for Understandi...
+✅ 已添加到飞书: Question of True Remorse When ...
+✅ 已添加到飞书: Chatbots Are the New Influence...
+✅ 已添加到飞书: With Niche Tech World Referenc...
+✅ 已添加到飞书: A Doctor’s Guide to Using A.I....
+   跳过 1 条已存在的记录
+   ✅ 飞书 Webhook 通知已发送
+   飞书: 26 条记录
+
+✅ 完成!
+   共处理 27 条内容
+   HTML 报告: ./output/today.html
+
+🌐 更新网站摘要...
+   ✅ 网站摘要已更新
+📊 读取到 27 条新闻
+
+📝 生成的摘要预览：
+            <p class="highlight">2026年02月18日更新 · 共 27 条内容</p>
+            <h3>📰 The Verge AI（7条）</h3>
+            <p>超级碗 LX 广告：AI 唱主角；Claude 火了——能持续吗？；Anthropic 推出新模型，意在拓展编程之外的市场</p>
+            <h3>💰 TechCrunch AI（14条）</h3>
+            <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
+            <h3>🏛️ NYT AI（6条）</h3>
+            <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
+
+
+🔄 第一步：更新本地文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/output/today.html
+✅ 已更新 app.js
+
+✅ 本地文件更新完成！
+   - today.html (本地服务器)
+   - app.js (GitHub Pages 数据)
+
+🔄 第二步：更新 GitHub Pages 文件...
+✅ 已更新 /Users/y/.claude/skills/ai-news-aggregator/index.html
+   - index.html (GitHub Pages)
+
+✅ 全部更新完成！
+
+📌 下一步：
+   1. 本地测试：访问 http://127.0.0.1:5000/
+   2. 确认无误后，运行以下命令推送到 GitHub：
+      git add -A
+      git commit -m '更新 AI 热点摘要'
+      git push
+
+============================================================
+/Users/y/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+============================================================
+🤖 AI News Aggregator
+============================================================
+
+📋 加载配置...
+   RSS: ✅
+   YouTube: ❌
+   Twitter: ❌
+
+🔍 获取数据...
+   获取到 0 条原始内容
+   ⚠️  未获取到任何内容
