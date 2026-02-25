@@ -1,6 +1,6 @@
 ============================================================
 AI News Aggregator 每日更新
-开始时间: 2026-02-25 12:30:00
+开始时间: 2026-02-25 20:00:01
 ============================================================
 
 📡 步骤1: 聚合新闻数据...
@@ -16,7 +16,7 @@ AI News Aggregator 每日更新
    Twitter: ❌
 
 🔍 获取数据...
-   获取到 27 条原始内容
+   获取到 16 条原始内容
 
 ⚠️  未配置 DeepSeek API Key，跳过 LLM 处理
 
@@ -29,20 +29,20 @@ AI News Aggregator 每日更新
 ✅ 已导出到 ./output/today.html
 
 ✅ 完成!
-   共处理 27 条内容
+   共处理 16 条内容
    HTML 报告: ./output/today.html
 
 🌐 更新网站摘要...
    ✅ 网站摘要已更新
-📊 读取到 27 条新闻
+📊 读取到 16 条新闻
 
 📝 生成的摘要预览：
-            <p class="highlight">2026年02月25日更新 · 共 27 条内容</p>
-            <h3>📰 The Verge AI（6条）</h3>
+            <p class="highlight">2026年02月25日更新 · 共 16 条内容</p>
+            <h3>📰 The Verge AI（2条）</h3>
             <p>超级碗 LX 广告：AI 唱主角；Claude 火了——能持续吗？；Anthropic 推出新模型，意在拓展编程之外的市场</p>
-            <h3>💰 TechCrunch AI（14条）</h3>
+            <h3>💰 TechCrunch AI（5条）</h3>
             <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
-            <h3>🏛️ NYT AI（7条）</h3>
+            <h3>🏛️ NYT AI（9条）</h3>
             <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
 
 
@@ -71,15 +71,15 @@ AI News Aggregator 每日更新
 ✅ 数据聚合完成
 
 📝 步骤2: 更新摘要...
-📊 读取到 27 条新闻
+📊 读取到 16 条新闻
 
 📝 生成的摘要预览：
-            <p class="highlight">2026年02月25日更新 · 共 27 条内容</p>
-            <h3>📰 The Verge AI（6条）</h3>
+            <p class="highlight">2026年02月25日更新 · 共 16 条内容</p>
+            <h3>📰 The Verge AI（2条）</h3>
             <p>超级碗 LX 广告：AI 唱主角；Claude 火了——能持续吗？；Anthropic 推出新模型，意在拓展编程之外的市场</p>
-            <h3>💰 TechCrunch AI（14条）</h3>
+            <h3>💰 TechCrunch AI（5条）</h3>
             <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
-            <h3>🏛️ NYT AI（7条）</h3>
+            <h3>🏛️ NYT AI（9条）</h3>
             <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
 
 
@@ -106,26 +106,3 @@ AI News Aggregator 每日更新
 ✅ 摘要更新完成
 
 🚀 步骤3: 推送到 GitHub...
-[main 983ff03] 自动更新 AI 热点摘要 - 2026-02-25 12:30
- Committer: Y <y@MacBook-Air.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 10 files changed, 561 insertions(+), 292 deletions(-)
- rename logs/{daily_update_20260215_200340.log => daily_update_20260225_123000.log} (67%)
-failed to store: -61
-To https://github.com/lilyyy20211009-art/ai-news-tracker.git
-   52aeb22..983ff03  main -> main
-✅ GitHub 推送完成
-
-============================================================
-✅ 全部完成! 结束时间: 2026-02-25 12:30:06
-============================================================
