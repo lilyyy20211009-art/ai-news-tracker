@@ -1,6 +1,6 @@
 ============================================================
 AI News Aggregator 每日更新
-开始时间: 2026-02-19 12:31:11
+开始时间: 2026-02-28 12:30:00
 ============================================================
 
 📡 步骤1: 聚合新闻数据...
@@ -16,7 +16,7 @@ AI News Aggregator 每日更新
    Twitter: ❌
 
 🔍 获取数据...
-   获取到 19 条原始内容
+   获取到 23 条原始内容
 
 ⚠️  未配置 DeepSeek API Key，跳过 LLM 处理
 
@@ -27,41 +27,20 @@ AI News Aggregator 每日更新
 ✅ 已导出到 ./output/news.json
 ✅ 已导出到 ./output/news.md
 ✅ 已导出到 ./output/today.html
-✅ 已添加到飞书: Google’s AI music maker is com...
-✅ 已添加到飞书: OpenAI deepens India push with...
-✅ 已添加到飞书: Is your startup’s check engine...
-✅ 已添加到飞书: Google Cloud’s VP for startups...
-✅ 已添加到飞书: Amazon halts Blue Jay robotics...
-✅ 已添加到飞书: World Labs lands $1B, with $20...
-✅ 已添加到飞书: Google adds music-generation c...
-✅ 已添加到飞书: Kana emerges from stealth with...
-✅ 已添加到飞书: Microsoft says Office bug expo...
-✅ 已添加到飞书: OpenAI pushes into higher educ...
-✅ 已添加到飞书: India’s Sarvam wants to bring ...
-❌ 飞书输出错误: HTTPSConnectionPool(host='open.feishu.cn', port=443): Max retries exceeded with url: /open-apis/bitable/v1/apps/Uf16b8jCkabtIiseAQ8cfy6jnYe/tables/tblCxZglkQsGXe7l/records (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
-✅ 已添加到飞书: Decoding the A.I. Beliefs of A...
-✅ 已添加到飞书: Defense Department and Anthrop...
-✅ 已添加到飞书: Inside the Birthplace of Your ...
-✅ 已添加到飞书: What Do A.I. Chatbots Discuss ...
-✅ 已添加到飞书: Meta Begins $65 Million Electi...
-✅ 已添加到飞书: Elon Musk’s xAI Gets $3 Billio...
-✅ 已添加到飞书: The A.I. Disruption Has Arrive...
-   ✅ 飞书 Webhook 通知已发送
-   飞书: 18 条记录
 
 ✅ 完成!
-   共处理 19 条内容
+   共处理 23 条内容
    HTML 报告: ./output/today.html
 
 🌐 更新网站摘要...
    ✅ 网站摘要已更新
-📊 读取到 19 条新闻
+📊 读取到 23 条新闻
 
 📝 生成的摘要预览：
-            <p class="highlight">2026年02月19日更新 · 共 19 条内容</p>
-            <h3>📰 The Verge AI（1条）</h3>
+            <p class="highlight">2026年02月28日更新 · 共 23 条内容</p>
+            <h3>📰 The Verge AI（6条）</h3>
             <p>超级碗 LX 广告：AI 唱主角；Claude 火了——能持续吗？；Anthropic 推出新模型，意在拓展编程之外的市场</p>
-            <h3>💰 TechCrunch AI（11条）</h3>
+            <h3>💰 TechCrunch AI（10条）</h3>
             <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
             <h3>🏛️ NYT AI（7条）</h3>
             <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
@@ -92,13 +71,13 @@ AI News Aggregator 每日更新
 ✅ 数据聚合完成
 
 📝 步骤2: 更新摘要...
-📊 读取到 19 条新闻
+📊 读取到 23 条新闻
 
 📝 生成的摘要预览：
-            <p class="highlight">2026年02月19日更新 · 共 19 条内容</p>
-            <h3>📰 The Verge AI（1条）</h3>
+            <p class="highlight">2026年02月28日更新 · 共 23 条内容</p>
+            <h3>📰 The Verge AI（6条）</h3>
             <p>超级碗 LX 广告：AI 唱主角；Claude 火了——能持续吗？；Anthropic 推出新模型，意在拓展编程之外的市场</p>
-            <h3>💰 TechCrunch AI（11条）</h3>
+            <h3>💰 TechCrunch AI（10条）</h3>
             <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
             <h3>🏛️ NYT AI（7条）</h3>
             <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
@@ -127,26 +106,3 @@ AI News Aggregator 每日更新
 ✅ 摘要更新完成
 
 🚀 步骤3: 推送到 GitHub...
-[main 90d71c3] 自动更新 AI 热点摘要 - 2026-02-19 13:35
- Committer: Y <y@MacBook-Air.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 9 files changed, 897 insertions(+), 35 deletions(-)
- create mode 100644 logs/daily_update_20260219_123111.log
-failed to store: -61
-To https://github.com/lilyyy20211009-art/ai-news-tracker.git
-   1ae026c..90d71c3  main -> main
-✅ GitHub 推送完成
-
-============================================================
-✅ 全部完成! 结束时间: 2026-02-19 13:35:52
-============================================================

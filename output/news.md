@@ -1,101 +1,171 @@
 # AI 信息聚合报告
 
-生成时间: 2026-02-27 20:00:05
+生成时间: 2026-02-28 12:30:04
 
-共 13 条信息
+共 23 条信息
 
 ---
 
 ## AI
 
-### Anthropic refuses Pentagon’s new terms, standing firm on lethal autonomous weapons and mass surveillance
+### Defense secretary Pete Hegseth designates Anthropic a supply chain risk
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-26 23:22:44
-- **链接**: [https://www.theverge.com/news/885773/anthropic-department-of-defense-dod-pentagon-refusal-terms-hegseth-dario-amodei](https://www.theverge.com/news/885773/anthropic-department-of-defense-dod-pentagon-refusal-terms-hegseth-dario-amodei)
+- **日期**: 2026-02-28 02:19:16
+- **链接**: [https://www.theverge.com/policy/886632/pentagon-designates-anthropic-supply-chain-risk-ai-standoff](https://www.theverge.com/policy/886632/pentagon-designates-anthropic-supply-chain-risk-ai-standoff)
 - **板块**: 新闻
 
-### Microsoft&#8217;s Copilot Tasks AI uses its own computer to get things done
+### Trump orders federal agencies to drop Anthropic’s AI
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-26 22:56:09
-- **链接**: [https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai](https://www.theverge.com/tech/885741/microsoft-copilot-tasks-ai)
+- **日期**: 2026-02-27 21:30:47
+- **链接**: [https://www.theverge.com/policy/886489/pentagon-anthropic-trump-dod](https://www.theverge.com/policy/886489/pentagon-anthropic-trump-dod)
 - **板块**: 新闻
 
-### Jack Dorsey’s Block cuts nearly half of its staff in AI gamble
+### AI vs. the Pentagon: killer robots, mass surveillance, and red lines
 
 - **来源**: The Verge AI
-- **日期**: 2026-02-26 22:11:13
-- **链接**: [https://www.theverge.com/tech/885710/jack-dorsey-block-layoffs-job-cuts-ai](https://www.theverge.com/tech/885710/jack-dorsey-block-layoffs-job-cuts-ai)
+- **日期**: 2026-02-27 17:16:53
+- **链接**: [https://www.theverge.com/ai-artificial-intelligence/886082/ai-vs-the-pentagon-killer-robots-mass-surveillance-and-red-lines](https://www.theverge.com/ai-artificial-intelligence/886082/ai-vs-the-pentagon-killer-robots-mass-surveillance-and-red-lines)
 - **板块**: 新闻
 
-### Jack Dorsey just halved the size of Block’s employee base — and he says your company is next
+### We don&#8217;t have to have unsupervised killer robots
 
-- **来源**: TechCrunch AI
-- **日期**: 2026-02-26 23:43:32
-- **链接**: [https://techcrunch.com/2026/02/26/jack-dorsey-block-layoffs-4000-halved-employees-your-company-is-next/](https://techcrunch.com/2026/02/26/jack-dorsey-block-layoffs-4000-halved-employees-your-company-is-next/)
+- **来源**: The Verge AI
+- **日期**: 2026-02-27 16:18:26
+- **链接**: [https://www.theverge.com/ai-artificial-intelligence/885963/anthropic-dod-pentagon-tech-workers-ai-labs-react](https://www.theverge.com/ai-artificial-intelligence/885963/anthropic-dod-pentagon-tech-workers-ai-labs-react)
 - **板块**: 新闻
 
-### Anthropic CEO stands firm as Pentagon deadline looms
+### The Galaxy S26 is a photography nightmare
 
-- **来源**: TechCrunch AI
-- **日期**: 2026-02-26 23:19:06
-- **链接**: [https://techcrunch.com/2026/02/26/anthropic-ceo-stands-firm-as-pentagon-deadline-looms/](https://techcrunch.com/2026/02/26/anthropic-ceo-stands-firm-as-pentagon-deadline-looms/)
+- **来源**: The Verge AI
+- **日期**: 2026-02-27 15:15:52
+- **链接**: [https://www.theverge.com/podcast/885942/samsung-galaxy-s26-ai-camera-nightmare-vergecast](https://www.theverge.com/podcast/885942/samsung-galaxy-s26-ai-camera-nightmare-vergecast)
 - **板块**: 新闻
 
-### So, we’re getting Prada Meta AI glasses, right?
+### OpenAI snags $110 billion in investments from Amazon, Nvidia, and Softbank
+
+- **来源**: The Verge AI
+- **日期**: 2026-02-27 14:55:16
+- **链接**: [https://www.theverge.com/ai-artificial-intelligence/885958/openai-amazon-nvidia-softback-110-billion-investment](https://www.theverge.com/ai-artificial-intelligence/885958/openai-amazon-nvidia-softback-110-billion-investment)
+- **板块**: 新闻
+
+### Pentagon moves to designate Anthropic as a supply-chain risk
 
 - **来源**: TechCrunch AI
-- **日期**: 2026-02-26 20:11:55
-- **链接**: [https://techcrunch.com/2026/02/26/so-were-getting-prada-meta-ai-glasses-right/](https://techcrunch.com/2026/02/26/so-were-getting-prada-meta-ai-glasses-right/)
+- **日期**: 2026-02-27 21:53:14
+- **链接**: [https://techcrunch.com/2026/02/27/pentagon-moves-to-designate-anthropic-as-a-supply-chain-risk/](https://techcrunch.com/2026/02/27/pentagon-moves-to-designate-anthropic-as-a-supply-chain-risk/)
+- **板块**: 新闻
+
+### Musk bashes OpenAI in deposition, saying ‘nobody committed suicide because of Grok’
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-27 19:42:00
+- **链接**: [https://techcrunch.com/2026/02/27/musk-bashes-openai-in-deposition-saying-nobody-committed-suicide-because-of-grok/](https://techcrunch.com/2026/02/27/musk-bashes-openai-in-deposition-saying-nobody-committed-suicide-because-of-grok/)
+- **板块**: 新闻
+
+### Anthropic vs. the Pentagon: What’s actually at stake?
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-27 19:11:04
+- **链接**: [https://techcrunch.com/2026/02/27/anthropic-vs-the-pentagon-whats-actually-at-stake/](https://techcrunch.com/2026/02/27/anthropic-vs-the-pentagon-whats-actually-at-stake/)
+- **板块**: 新闻
+
+### ChatGPT reaches 900M weekly active users
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-27 18:25:51
+- **链接**: [https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users/](https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users/)
+- **板块**: 新闻
+
+### Who’s really running AI? Inside the billion-dollar battle over regulation with Alex Bores
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-27 17:35:50
+- **链接**: [https://techcrunch.com/podcast/whos-really-running-ai-inside-the-billion-dollar-battle-over-regulation-with-alex-bores/](https://techcrunch.com/podcast/whos-really-running-ai-inside-the-billion-dollar-battle-over-regulation-with-alex-bores/)
+- **板块**: 新闻
+
+### AI music generator Suno hits 2M paid subscribers and $300M in annual recurring revenue
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-27 17:22:02
+- **链接**: [https://techcrunch.com/2026/02/27/ai-music-generator-suno-hits-2-million-paid-subscribers-and-300m-in-annual-recurring-revenue/](https://techcrunch.com/2026/02/27/ai-music-generator-suno-hits-2-million-paid-subscribers-and-300m-in-annual-recurring-revenue/)
+- **板块**: 新闻
+
+### Perplexity’s new Computer is another bet that users need many AI models
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-27 17:00:55
+- **链接**: [https://techcrunch.com/2026/02/27/perplexitys-new-computer-is-another-bet-that-users-need-many-ai-models/](https://techcrunch.com/2026/02/27/perplexitys-new-computer-is-another-bet-that-users-need-many-ai-models/)
+- **板块**: 新闻
+
+### Employees at Google and OpenAI support Anthropic’s Pentagon stand in open letter
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-27 16:23:58
+- **链接**: [https://techcrunch.com/2026/02/27/employees-at-google-and-openai-support-anthropics-pentagon-stand-in-open-letter/](https://techcrunch.com/2026/02/27/employees-at-google-and-openai-support-anthropics-pentagon-stand-in-open-letter/)
+- **板块**: 新闻
+
+### Last 24 hours to get TechCrunch Disrupt 2026 tickets at the lowest rates of the year
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-27 15:00:00
+- **链接**: [https://techcrunch.com/2026/02/27/last-24-hours-to-get-techcrunch-disrupt-2026-tickets-at-the-lowest-rates-of-the-year/](https://techcrunch.com/2026/02/27/last-24-hours-to-get-techcrunch-disrupt-2026-tickets-at-the-lowest-rates-of-the-year/)
+- **板块**: 新闻
+
+### OpenAI raises $110B in one of the largest private funding rounds in history
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-02-27 14:13:01
+- **链接**: [https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/](https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/)
+- **板块**: 新闻
+
+### OpenAI Reaches A.I. Agreement With Defense Dept. After Anthropic Clash
+
+- **来源**: NYT AI
+- **日期**: 2026-02-28 03:49:20
+- **链接**: [https://www.nytimes.com/2026/02/27/technology/openai-reaches-ai-agreement-with-defense-dept-after-anthropic-clash.html](https://www.nytimes.com/2026/02/27/technology/openai-reaches-ai-agreement-with-defense-dept-after-anthropic-clash.html)
+- **板块**: 新闻
+
+### Silicon Valley Rallies Behind Anthropic in A.I. Clash With Trump
+
+- **来源**: NYT AI
+- **日期**: 2026-02-28 04:15:35
+- **链接**: [https://www.nytimes.com/2026/02/27/technology/anthropic-trump-pentagon-silicon-valley.html](https://www.nytimes.com/2026/02/27/technology/anthropic-trump-pentagon-silicon-valley.html)
+- **板块**: 新闻
+
+### Pentagon-Anthropic Standoff Is a Decisive Moment for How A.I. Will Be Used in War
+
+- **来源**: NYT AI
+- **日期**: 2026-02-27 21:06:42
+- **链接**: [https://www.nytimes.com/2026/02/27/technology/defense-department-anthropic-ai-safety.html](https://www.nytimes.com/2026/02/27/technology/defense-department-anthropic-ai-safety.html)
+- **板块**: 新闻
+
+### Trump Orders U.S. Agencies to Stop Using Anthropic AI Tech After Pentagon Standoff
+
+- **来源**: NYT AI
+- **日期**: 2026-02-28 03:52:12
+- **链接**: [https://www.nytimes.com/2026/02/27/us/politics/anthropic-military-ai.html](https://www.nytimes.com/2026/02/27/us/politics/anthropic-military-ai.html)
+- **板块**: 新闻
+
+### OpenAI Raises $110 Billion Led by Amazon, Nvidia and SoftBank, Extending A.I. Boom
+
+- **来源**: NYT AI
+- **日期**: 2026-02-27 19:08:19
+- **链接**: [https://www.nytimes.com/2026/02/27/business/openai-funding.html](https://www.nytimes.com/2026/02/27/business/openai-funding.html)
 - **板块**: 新闻
 
 ### What Both Anthropic and the Pentagon Get Wrong
 
 - **来源**: NYT AI
-- **日期**: 2026-02-27 10:04:13
+- **日期**: 2026-02-27 14:27:07
 - **链接**: [https://www.nytimes.com/2026/02/27/opinion/anthropic-pentagon-ai-defense.html](https://www.nytimes.com/2026/02/27/opinion/anthropic-pentagon-ai-defense.html)
-- **板块**: 新闻
-
-### A World Where All Is Free? That’s Elon Musk’s Theory of ‘Sustainable Abundance.’
-
-- **来源**: NYT AI
-- **日期**: 2026-02-27 10:02:41
-- **链接**: [https://www.nytimes.com/2026/02/27/business/a-world-where-all-is-free-thats-elon-musks-theory-of-sustainable-abundance.html](https://www.nytimes.com/2026/02/27/business/a-world-where-all-is-free-thats-elon-musks-theory-of-sustainable-abundance.html)
-- **板块**: 新闻
-
-### India Built the World’s Back Office. A.I. Is Starting to Shrink It.
-
-- **来源**: NYT AI
-- **日期**: 2026-02-27 05:01:15
-- **链接**: [https://www.nytimes.com/2026/02/27/technology/india-technology-jobs-ai.html](https://www.nytimes.com/2026/02/27/technology/india-technology-jobs-ai.html)
 - **板块**: 新闻
 
 ### How the S&P 500 Stock Index Became So Skewed to Tech and A.I.
 
 - **来源**: NYT AI
-- **日期**: 2026-02-27 08:21:12
+- **日期**: 2026-02-27 16:15:07
 - **链接**: [https://www.nytimes.com/interactive/2026/02/26/business/stock-market-sp-500-nvidia-tech-bubble-crises.html](https://www.nytimes.com/interactive/2026/02/26/business/stock-market-sp-500-nvidia-tech-bubble-crises.html)
-- **板块**: 新闻
-
-### Google Workers Seek ‘Red Lines’ on Military A.I., Echoing Anthropic
-
-- **来源**: NYT AI
-- **日期**: 2026-02-27 02:53:19
-- **链接**: [https://www.nytimes.com/2026/02/26/technology/google-deepmind-letter-pentagon.html](https://www.nytimes.com/2026/02/26/technology/google-deepmind-letter-pentagon.html)
-- **板块**: 新闻
-
-### Block Cuts 40% of Its Work Force Because of Its Embrace of A.I.
-
-- **来源**: NYT AI
-- **日期**: 2026-02-27 01:08:55
-- **链接**: [https://www.nytimes.com/2026/02/26/technology/block-square-job-cuts-ai.html](https://www.nytimes.com/2026/02/26/technology/block-square-job-cuts-ai.html)
-- **板块**: 新闻
-
-### Anthropic Says It Cannot ‘Accede’ to Pentagon in Talks Over A.I.
-
-- **来源**: NYT AI
-- **日期**: 2026-02-27 01:03:49
-- **链接**: [https://www.nytimes.com/2026/02/26/technology/anthropic-pentagon-talks-ai.html](https://www.nytimes.com/2026/02/26/technology/anthropic-pentagon-talks-ai.html)
 - **板块**: 新闻
 
