@@ -1,6 +1,6 @@
 ============================================================
 AI News Aggregator 每日更新
-开始时间: 2026-03-01 20:00:00
+开始时间: 2026-03-02 09:00:00
 ============================================================
 
 📡 步骤1: 聚合新闻数据...
@@ -16,7 +16,7 @@ AI News Aggregator 每日更新
    Twitter: ❌
 
 🔍 获取数据...
-   获取到 7 条原始内容
+   获取到 4 条原始内容
 
 ⚠️  未配置 DeepSeek API Key，跳过 LLM 处理
 
@@ -29,19 +29,17 @@ AI News Aggregator 每日更新
 ✅ 已导出到 ./output/today.html
 
 ✅ 完成!
-   共处理 7 条内容
+   共处理 4 条内容
    HTML 报告: ./output/today.html
 
 🌐 更新网站摘要...
    ✅ 网站摘要已更新
-📊 读取到 7 条新闻
+📊 读取到 4 条新闻
 
 📝 生成的摘要预览：
-            <p class="highlight">2026年03月01日更新 · 共 7 条内容</p>
-            <h3>💰 TechCrunch AI（3条）</h3>
+            <p class="highlight">2026年03月02日更新 · 共 4 条内容</p>
+            <h3>💰 TechCrunch AI（4条）</h3>
             <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
-            <h3>🏛️ NYT AI（4条）</h3>
-            <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
 
 
 🔄 第一步：更新本地文件...
@@ -69,14 +67,12 @@ AI News Aggregator 每日更新
 ✅ 数据聚合完成
 
 📝 步骤2: 更新摘要...
-📊 读取到 7 条新闻
+📊 读取到 4 条新闻
 
 📝 生成的摘要预览：
-            <p class="highlight">2026年03月01日更新 · 共 7 条内容</p>
-            <h3>💰 TechCrunch AI（3条）</h3>
+            <p class="highlight">2026年03月02日更新 · 共 4 条内容</p>
+            <h3>💰 TechCrunch AI（4条）</h3>
             <p>Sapiom 融资 1500 万美元，助 AI 代理自主购买技术工具；Reddit 将 AI 搜索视为下一个重大机遇；AWS 收入持续飙升，云需求保持高位</p>
-            <h3>🏛️ NYT AI（4条）</h3>
-            <p>亚马逊 2000 亿美元支出计划提升 AI 竞赛赌注；《梅拉尼娅》：看第一夫人在眼皮底下消失</p>
 
 
 🔄 第一步：更新本地文件...
@@ -102,26 +98,3 @@ AI News Aggregator 每日更新
 ✅ 摘要更新完成
 
 🚀 步骤3: 推送到 GitHub...
-[main 345a3b1] 自动更新 AI 热点摘要 - 2026-03-01 20:00
- Committer: Y <y@MacBook-Air.local>
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly:
-
-    git config --global user.name "Your Name"
-    git config --global user.email you@example.com
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 9 files changed, 371 insertions(+), 23 deletions(-)
- create mode 100644 logs/daily_update_20260301_200000.log
-failed to store: -61
-To https://github.com/lilyyy20211009-art/ai-news-tracker.git
-   26033e1..345a3b1  main -> main
-✅ GitHub 推送完成
-
-============================================================
-✅ 全部完成! 结束时间: 2026-03-01 20:00:07
-============================================================
