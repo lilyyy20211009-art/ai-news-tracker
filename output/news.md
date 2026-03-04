@@ -1,45 +1,80 @@
 # AI 信息聚合报告
 
-生成时间: 2026-03-02 20:00:03
+生成时间: 2026-03-04 20:00:04
 
-共 5 条信息
+共 10 条信息
 
 ---
 
 ## AI
 
-### A robot arm with puppy dog eyes is just one of Lenovo&#8217;s new desktop AI concepts
+### Inside the secret meeting that led to the AI political resistance
 
 - **来源**: The Verge AI
-- **日期**: 2026-03-01 23:01:00
-- **链接**: [https://www.theverge.com/tech/885228/lenovo-ai-workmate-companion-work-concept-robot-arm-desktop-clock-hub](https://www.theverge.com/tech/885228/lenovo-ai-workmate-companion-work-concept-robot-arm-desktop-clock-hub)
+- **日期**: 2026-03-04 11:00:00
+- **链接**: [https://www.theverge.com/ai-artificial-intelligence/888841/pro-human-ai-declaration-fli](https://www.theverge.com/ai-artificial-intelligence/888841/pro-human-ai-declaration-fli)
 - **板块**: 新闻
 
-### U.S. Schools Are Betting Big on A.I. Will New York City Be Next?
+### Why AI startups are selling the same equity at two different prices
 
-- **来源**: NYT AI
-- **日期**: 2026-03-02 08:00:08
-- **链接**: [https://www.nytimes.com/2026/03/02/nyregion/nyc-ai-schools-mamdani.html](https://www.nytimes.com/2026/03/02/nyregion/nyc-ai-schools-mamdani.html)
+- **来源**: TechCrunch AI
+- **日期**: 2026-03-04 00:31:25
+- **链接**: [https://techcrunch.com/2026/03/03/why-ai-startups-are-selling-the-same-equity-at-two-different-prices/](https://techcrunch.com/2026/03/03/why-ai-startups-are-selling-the-same-equity-at-two-different-prices/)
 - **板块**: 新闻
 
-### China’s Parents Are Outsourcing the Homework Grind to A.I.
+### Alibaba’s Qwen tech lead steps down after major AI push
 
-- **来源**: NYT AI
-- **日期**: 2026-03-02 05:01:06
-- **链接**: [https://www.nytimes.com/2026/03/02/world/asia/china-education-ai.html](https://www.nytimes.com/2026/03/02/world/asia/china-education-ai.html)
+- **来源**: TechCrunch AI
+- **日期**: 2026-03-03 23:16:36
+- **链接**: [https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/](https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/)
 - **板块**: 新闻
 
-### China’s New Study Buddy: The A.I. Chatbot
+### AI companies are spending millions to thwart this former tech exec’s congressional bid
 
-- **来源**: NYT AI
-- **日期**: 2026-03-02 05:02:09
-- **链接**: [https://www.nytimes.com/video/world/asia/100000010707197/china-ai-chatbot-homework.html](https://www.nytimes.com/video/world/asia/100000010707197/china-ai-chatbot-homework.html)
+- **来源**: TechCrunch AI
+- **日期**: 2026-03-03 21:44:09
+- **链接**: [https://techcrunch.com/2026/03/03/ai-companies-are-spending-millions-to-thwart-this-former-tech-execs-congressional-bid/](https://techcrunch.com/2026/03/03/ai-companies-are-spending-millions-to-thwart-this-former-tech-execs-congressional-bid/)
 - **板块**: 新闻
 
-### How Talks Between Anthropic and the Defense Dept. Fell Apart
+### ChatGPT’s new GPT-5.3 Instant model will stop telling you to calm down
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-03-03 20:20:56
+- **链接**: [https://techcrunch.com/2026/03/03/chatgpts-new-gpt-5-3-instant-model-will-stop-telling-you-to-calm-down/](https://techcrunch.com/2026/03/03/chatgpts-new-gpt-5-3-instant-model-will-stop-telling-you-to-calm-down/)
+- **板块**: 新闻
+
+### Claude Code rolls out a voice mode capability
+
+- **来源**: TechCrunch AI
+- **日期**: 2026-03-03 20:02:10
+- **链接**: [https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/](https://techcrunch.com/2026/03/03/claude-code-rolls-out-a-voice-mode-capability/)
+- **板块**: 新闻
+
+### I Worked for Block. Its A.I. Job Cuts Aren’t What They Seem.
 
 - **来源**: NYT AI
-- **日期**: 2026-03-01 20:47:22
-- **链接**: [https://www.nytimes.com/2026/03/01/technology/anthropic-defense-dept-openai-talks.html](https://www.nytimes.com/2026/03/01/technology/anthropic-defense-dept-openai-talks.html)
+- **日期**: 2026-03-04 10:03:25
+- **链接**: [https://www.nytimes.com/2026/03/04/opinion/block-jack-dorsey-layoffs-ai.html](https://www.nytimes.com/2026/03/04/opinion/block-jack-dorsey-layoffs-ai.html)
+- **板块**: 新闻
+
+### A.I. in New York Schools: What Lies Ahead?
+
+- **来源**: NYT AI
+- **日期**: 2026-03-04 10:01:49
+- **链接**: [https://www.nytimes.com/2026/03/04/nyregion/ai-in-new-york-schools-what-lies-ahead.html](https://www.nytimes.com/2026/03/04/nyregion/ai-in-new-york-schools-what-lies-ahead.html)
+- **板块**: 新闻
+
+### Where Are China’s A.I. Doomers?
+
+- **来源**: NYT AI
+- **日期**: 2026-03-04 08:53:17
+- **链接**: [https://www.nytimes.com/2026/03/04/world/asia/china-ai-enthusiasm.html](https://www.nytimes.com/2026/03/04/world/asia/china-ai-enthusiasm.html)
+- **板块**: 新闻
+
+### A Fight About the Future of War
+
+- **来源**: NYT AI
+- **日期**: 2026-03-04 05:53:38
+- **链接**: [https://www.nytimes.com/2026/03/03/world/anthropic-pentagon-lebanon-miami.html](https://www.nytimes.com/2026/03/03/world/anthropic-pentagon-lebanon-miami.html)
 - **板块**: 新闻
 
